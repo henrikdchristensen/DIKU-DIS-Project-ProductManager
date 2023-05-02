@@ -4,7 +4,8 @@ import { SiTeamviewer } from 'react-icons/si';
 const Navbar = () => {
     return (
         <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+            <div className='max-w-[70rem] m-auto'>
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-10 py-2">
                 <a href="https://mechtronic.dk" className="flex items-center">
                     <img src={process.env.PUBLIC_URL + '/Mechtronic-logo-web-350px.png'} className="h-6 mr-3" alt="logo" />
                 </a>
@@ -27,6 +28,7 @@ const Navbar = () => {
 
 
                 </div>
+            </div>
             </div>
         </nav>
     )

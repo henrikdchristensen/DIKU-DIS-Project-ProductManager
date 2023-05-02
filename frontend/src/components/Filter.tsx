@@ -14,7 +14,7 @@ const Filter = () => {
     });
 
     return (
-        <div className="flex justify-center mt-28 space-x-10 w-full items-center">
+        <div className="flex flex-wrap justify-center mt-24 space-x-10 w-full items-center px-10 row-span-2">
             <div className='flex space-x-3 items-center'>
                 <label className="text-base text-gray-500 font-semibold">Kategori:</label>
                 <div>
@@ -27,7 +27,7 @@ const Filter = () => {
                                 </svg>
                             </span>
                         </button>
-                        <div className='transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-32 '>
+                        <div className='transform z-20 scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-32 '>
                             <ul className="bg-white border text-center divide-y divide-gray-300 rounded-md shadow-lg mt-2">
                                 {activeDropdown}
                             </ul>
