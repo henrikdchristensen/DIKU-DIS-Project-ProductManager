@@ -1,4 +1,4 @@
-﻿APB-613-00;Advanced Power Box 613 (Stralis);;Mechtronic
+APB-613-00;Advanced Power Box 613 (Stralis);;Mechtronic
 APB-613-01;Advanced Power Box 613 (Trakker-Cargo);;Mechtronic
 APB-613-03;Advanced Power Box 613 (Daily);;Mechtronic
 APB-613-20;Advanced Power Box 613 (Mercedes Actos);;Mechtronic
@@ -104,7 +104,7 @@ ISU-100-30;Idle stop unit- Komatsu oa.;"HUSK at tilpasse ISU ved at følge ""Har
 W-350XL-0100-2;Winlet 350XL controller;;Mechtronic
 W-350-0118-3;GMV Winlet Remote 350.600 W/Emergency Stop;;GMV
 GVL-100;GMV Vacuum Løfteåg;;GMV
-W-LASIUS-0100-2;LASIUS Controller;17/3 2020 aftalt med Henrik Hedegaard at det er Ver3.16, der anvendes.NV (den version der er mærket: WindowLiftController-Lasius1T);Mechtronic
+W-LASIUS-0100-02;LASIUS Controller;17/3 2020 aftalt med Henrik Hedegaard at det er Ver3.16, der anvendes.NV (den version der er mærket: WindowLiftController-Lasius1T);Mechtronic
 JET-131 453000;Just Easy Tool Switch boks for omskifterventil;;Mechtronic
 NCN-38xDiode;KIT2350-1;24062019: Husk dioden skal være 5A Vareno.: 00.025.0550;Mechtronic
 SL1000-2900;Komplet print monteret i kasse;"2022/02/10 MR: Bug 112, længere skruer til ladestation tilføjet i C5 (190539)
@@ -947,7 +947,7 @@ W-400-03030;Hyd. ventil kabel v2.00;;GMV
 MWD-611;Remote control m/display;;Mechtronic
 W-400-030324;Ventilkabel 400 boom;;GMV
 MWD-6108;Mechtronic Wireless Devicekit 8Ch.;;Mechtronic
-SSM-101;UDVIK. Speeder modul for Volvo S60;;Langhøj
+SSM-101-U;UDVIK. Speeder modul for Volvo S60;;Langhøj
 FREI-TEMO200GMV;FREI CAN Interface GMV;HUSK Der skal påloddes manuelt parallelt over R2 3,9K 0603 Modstand. +5V forsyning tilpasses....;Mechtronic
 MONT-SL1000-2910;Monteret print Leaded + SMD;;Smartlift
 VMB-310;App til betonblander vægtvisning;;Skarpnes
