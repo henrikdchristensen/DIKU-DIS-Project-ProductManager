@@ -1,0 +1,244 @@
+"ID";"ProductNumber";"Severity";"Title";"Description";"Reporter";"Created";"Fixed"
+"4";"MSS-211 V2";"0";"Taber hastighedskalibrering";"Vi har ikke noget godt bud på hvorfor dette sker!
+Jeg har aftalt med Knud, at ændre kalibreringsproceduren, således at man ikke kan gemme en kalibrering af hastigheden, uden der er impulser. Altså – man kan ikke gemme 0 km/t. 
+Det vil fjerne muligheden for at man ved en fejl, kommer til gemme en kalibrering, hvis bilen står stille.
+
+KT: Laver ny software i denne uge. 
+";"Esben Kristensen";"2020-10-20";"2022-01-31"
+"5";"WIN-100-3";"2";"Ændring af printlayout inden næste PCB Bestilling";"141020EK:
+Læs nedenstående fil inden næste PCB bestilling:
+1PCB rettelser inden næste printbestilling.pdf";"Esben Kristensen";"2020-10-20";"2021-03-09"
+"7";"WWR-200";"1";"PCB Layout og stykliste rettes";"Gerber data, stykliste og stencil data opdateres efter udskiftning af lydgiver og modstande for vac. sw.";"Esben Kristensen";"2020-10-20";"2021-01-25"
+"11";"IBB-120";"0";"Rettelser i dimensioner";"Slids skal rettes til 11mm, radius lille rør skal rettes til 14.95mm, radius store rør skal rettes til 18.25mm.";"Simon B. Andersen";"2020-10-21";"2020-10-21"
+"13";"SL608-0114";"0";"Læg i ring, når der stripses.";;"Simon B. Andersen";"2020-10-22";"2020-11-11"
+"14";"SL408-0114";"0";"Læg i ring, når der stripses.";;"Simon B. Andersen";"2020-10-22";"2020-11-11"
+"15";"SL1000-0106";"0";"Læg i ring, når der stripses.";;"Simon B. Andersen";"2020-10-22";"2020-11-11"
+"16";"MCA-100";"1";"Produktions beskrivelse ";"Der skal laves en opdateret beskrivelse";"Klaus Graversen";"2020-10-26";NULL
+"17";"MCA-100";"1";"Monterings vejledning";"Monterings vejledning skal rettes, tror måske Hans skal gøre det";"Klaus Graversen";"2020-10-26";"2022-02-11"
+"18";"MWD-610";"0";"Print skal ændres";"Ben 42 på up skal luses til ben 43
+Antenne skal laves som printbane";"Klaus Graversen";"2020-10-27";"2020-11-24"
+"19";"W-400-0105";"0";"To stk. kabel skal rettes til et på tegningen.";;"Simon B. Andersen";"2020-10-28";"2020-10-28"
+"20";"MWD-610";"0";"Print";"Tilslutning til ladespole skal flyttes
+Print skal ændres således at display bliver flyttet lidt til venstre";"Klaus Graversen";"2020-10-29";"2020-11-24"
+"21";"MWD-610";"0";"DIP-Switch";"Tilføj DIP-Switch til at påtvinge forsyning, mens man programmerer.";"Simon B. Andersen";"2020-11-03";"2020-11-24"
+"22";"SL408-0130";"2";"Spadestik falder af. ";"Der skal findes en løsning, så spadestik ikke længere falder af.";"Simon B. Andersen";"2020-11-09";"2020-11-11"
+"23";"SL608-0130";"0";"Spadestik falder af. ";"Der skal findes en løsning, så spadestik ikke længere falder af.";"Simon B. Andersen";"2020-11-09";"2020-11-11"
+"24";"SL1000-0300";"2";"Spadestik falder af. ";"Der skal findes en løsning, så spadestik ikke længere falder af.";"Simon B. Andersen";"2020-11-09";"2020-11-11"
+"25";"W-350-575-0207";"0";"Produktions dokument med fejl";"Billeder og tekst passer ikke sammen....";"Lone";"2020-11-11";"2020-11-20"
+"26";"MWD-610";"1";"Printbaner";"Printbaner løber for tæt forbi knækpunkter på print";"Klaus Graversen";"2020-11-12";"2020-11-24"
+"27";"GEM-134";"0";"Ændring iht. Ændring 171120 EK.pdf";"Tilføjelse af forskruning på tegning og stykliste.
+Dette iht. mail 17/11-20 fra Henrik G. Nielsen.";"Esben Kristensen";"2020-11-17";"2021-01-06"
+"28";"SL1000-0103";"0";"Skal være 10 cm kortere.";"Ifølge aftale med Nikolaj.";"Simon B. Andersen";"2020-11-20";"2020-12-15"
+"29";"SL1000-0501";"0";"Skal være 5 cm kortere.";"Ifølge aftale med Nikolaj.";"Simon B. Andersen";"2020-11-20";"2020-11-20"
+"30";"SL1000-0501";"0";"Skal være 5 cm længere.";"Ifølge aftale med Nikolaj.";"Simon B. Andersen";"2020-11-20";"2020-12-15"
+"31";"SL1000-0300";"0";"Skal være 10 cm længere.";"Ifølge aftale med Nikolaj.";"Simon B. Andersen";"2020-11-20";"2020-12-15"
+"32";"W-575-0122-3";"0";"Kabel kortes op.";"Kabel gøres 625mm kortere efter aftale med Jesper (Mail).
+Ny længde på flex skal være 4245mm.
+Ny længde på kabel skal være 4575mm.";"Simon B. Andersen";"2020-11-20";"2020-11-20"
+"33";"MWD-610";"0";"Ingen summering af trailervægt";"Der er ingen summering af trailervægten på fjernbetjeningen.";"Simon B. Andersen";"2020-11-24";"2020-11-24"
+"34";"W-400-0100";"0";"produkdtiongrundlag ændres";"5710190058396 til ";"Erik S. Noesgaard";"2020-11-25";"2021-05-21"
+"35";"SL408-0135";"0";"Eget produceret kabel";"Ny produktionsbeskrivelse laves og tages i brug, når ikke længere der er flere leverede curtiskabler.";"Simon B. Andersen";"2020-12-02";"2022-02-11"
+"36";"SL608-0135";"0";"Eget produceret kabel";"Ny produktionsbeskrivelse laves og tages i brug, når ikke længere der er flere leverede curtiskabler.";"Simon B. Andersen";"2020-12-02";"2022-02-11"
+"37";"GEM-210";"0";"571";;"Dennis Riis Andersen";"2020-12-07";"2021-03-19"
+"38";"GEM-210";"0";"rettelse produktionsgrundlag plus C5";"5710190058396, skal indføres.";"Dennis Riis Andersen";"2020-12-07";"2021-03-19"
+"39";"GEM-212";"0";"rettelse produktionsgrundlag plus C5";"Mangler terminalrør 5710190058396";"Dennis Riis Andersen";"2020-12-07";"2021-03-19"
+"40";"W-575-0105-3";"1";"Ændring af stik.";"6pol stik til gearmotor skal ændres til et 4 og 2 pol stik";"Klaus Graversen";"2020-12-07";"2021-04-23"
+"41";"GEM-211";"0";"rettelse produktionsgrundlag plus C5";"Manglende terminalrør 5710190058396";"Dennis Riis Andersen";"2020-12-07";"2021-10-20"
+"42";"W-350-0113";"0";"Produktions dokument med fejl";"nyt produktionsgrundlag/tegning";"Lone";"2020-12-08";"2022-02-11"
+"43";"GEM-263";"0";"Længden af kablet rettes til 1420mm";;"Simon B. Andersen";"2020-12-09";"2020-12-14"
+"44";"GEM-264";"0";"Længden af kablet rettes til 1420mm";;"Simon B. Andersen";"2020-12-09";"2020-12-14"
+"45";"GEM-332";"0";"Længden af kablet rettes til 2600mm";;"Simon B. Andersen";"2020-12-09";"2020-12-14"
+"46";"W-253";"0";"Hvid ledning trækkes ud.";"Hvid ledning gøres 800mm lang, og køres igennem PVC-Flex.";"Simon B. Andersen";"2020-12-17";"2020-12-17"
+"47";"W-575-0301";"0";"DUMP V. Ventilstik vendes 180 grader";"Efter aftale pr. telefon med Henrik Hedegaard 06/01-21.";"Esben Kristensen";"2021-01-06";"2021-01-06"
+"48";"WWR-100V4";"0";;;"Esben Kristensen";"2021-01-25";"2021-01-25"
+"49";"WWR-100V4";"0";"Panel rettes inden print bestilles næste gang";"Se pdf - 
+Panel rettes inden print bestilles næste gang.pdf
+
+Knop kan ikke bølgelodde stikkene.";"Esben Kristensen";"2021-01-25";"2021-05-21"
+"50";"WWR-200";"0";"Ny stencil og PCBgerber inden næste produktion.";"Gerber panelet er ikke blevet opdateret fra WWR-200, hvor lydgiveren er udskiftet med en anden type. Produktion d. 270121, køres med montage af lydgiver, og Mech monterer selv ny type.";"Esben Kristensen";"2021-01-27";"2021-06-09"
+"51";"WIN-100-3";"0";"Beskyttelsesdioder v/de 3 powerrelæer";"Støjreduktion ved placering af reverse dioder 3 stk. 1n4007 mellem Kl.86 og 86 på de 3 relæer.
+Ændres også i layout til næste printproduktion.";"Esben Kristensen";"2021-02-23";"2021-03-09"
+"52";"SL1000-0900";"0";"Hul i print er for stort";"Hullerne i printet er for store, så skruen går igennem kassen, når printet skal monteres i kassen.";"Mads Jensen";"2021-02-26";"2022-04-17"
+"53";"W-400-0301";"1";"Ændring af no. på Krympeflex";"(65) 1X2 ændres til (65) 1X3";"Esben Kristensen";"2021-03-01";"2021-10-06"
+"54";"W-400-0301";"1";"Ændring af no. på Krympeflex ";"(62) Ændres til 1X8 på CabMark fil
+(25) Ændres til 1X9 på CabMark fil
+EK010321: rettet på tegning og i stykliste. ";"Esben Kristensen";"2021-03-01";"2021-10-06"
+"55";"WWR-100V4";"0";"V-cut line skal fjernes";"V-cut line skal fjernes";"Klaus Graversen";"2021-03-09";"2021-05-21"
+"56";"WWR-200";"0";"Modstande";"820 Ohm til LED skal ændres til 82 ohm";"Klaus Graversen";"2021-03-11";"2021-06-09"
+"57";"GEM-211";"0";"Tegning skal rettes. Pladerne vendes ikke om.";;"Erik S. Noesgaard";"2021-03-16";"2022-01-26"
+"58";"SSM-100";"1";"Ny stencil og pick&placefil i MPM";"Stykliste og P&P fil skal laves inden Knop producerer næste gang.
+Molex stikkene er placeret i yderkanten på alle print, så de kan bølgeloddes.";"Esben Kristensen";"2021-03-18";"2021-03-19"
+"59";"SL1000-0304";"0";"Produktions dokument med fejl";"bemærk at sort og rød ledning er 0,75kvadrat";"Lone";"2021-03-23";"2022-02-10"
+"60";"ATM-110";"0";"Produktionsbeskrivelse skal rettes til";"Der mangler at indgå påsætning af ESP-Pinheader. Derudover skal radiomodulet ikke laves fra bunden længere.
+Der kan ses et billede af, hvordan pinheaderen skal sættes på under ""Billeder"" på U-drevet..";"Simon B. Andersen";"2021-03-30";"2021-11-12"
+"61";"ATM-111";"0";"Produktionsbeskrivelse skal rettes til";"Produktionsbeskrivelse skal rettes til, så MMB-ESP32 indgår i produktionen af produktet.";"Simon B. Andersen";"2021-03-30";"2021-11-12"
+"62";"W-350-575-0205";"0";"Produktions dokument med fejl";"oplys hvilken side på kablet w-251 siddder";"Lone";"2021-05-05";"2021-05-27"
+"63";"SL1000-0506";"0";"Ret stykliste og produktionsrundlag";"Fjern forskruning fra både stykliste i C5 og produktionsgrundlag";"Mogens Randeris";"2021-05-05";"2021-05-05"
+"64";"W-0118-40";"0";"Mangel info";"Skal i pose med tekst og emergency skive skal også ilægges";"Hanne Barbesgård";"2021-05-10";"2021-09-28"
+"65";"DK80007503A";"0";"Generel opdatering";"Generel opdatering med fotos m.v.";"Mogens Ranneries";"2021-05-20";"2022-02-11"
+"66";"WWR-200";"0";"Pull down modstande til Vac SW. ændres";"Tjek inden næste print montage at begge Vacuum switche, har pull down modstande på 470 ohm.";"Esben Kristensen";"2021-06-09";"2021-06-09"
+"67";"W-575-0301";"0";"Produktions dokument med fejl + C5";"alle ledninger på 1 kvadrat skal have kabelsko 39-00-0038 ";"Lone";"2021-06-30";"2021-09-22"
+"68";"SL1000-0503";"0";"Produktions dokument med fejl";"tillføj gummipakning på tegning";"Lone";"2021-07-02";"2021-10-20"
+"69";"MSS-221";"0";"serienummer opdateres ikke";;"Niels Vejsgård";"2021-07-07";"2021-10-20"
+"70";"SSM-100";"0";;;"Esben Kristensen";"2021-08-05";"2021-08-05"
+"71";"SSM-100";"2";"Opret produkt variant - nyt print med bestyk.varia";"030821EK: Nyt PCBlayout så der kan laves bestykningsvariant til SSM-101 for SENT kommunikation. Vedr. PCB SSM-100V3.
+*BEMÆRK* Produktionsbeskrivelsen skal rettes, således at ved SSM-100 skal R43,46 fjernes, og (PE14,PE15 µP) skal være ""0"" permanent.
+SSM-101 skal C35,36 fjernes og tilhørende SW implementeres. ";"Esben Kristensen";"2021-08-05";"2021-10-20"
+"72";"GVL-100";"1";"Produktet er udgået";"Produktet er udgået";"Mogens Ranneries";"2021-08-05";"2022-02-10"
+"73";"GVL-110";"0";"Generel opdatering";"Generel opdatering";"Mogens Ranneries";"2021-08-05";NULL
+"74";"GVL-120";"0";"Generel opdatering";"Der skal findes erstatninger for kontaktor og thermorelæ (motorværn)";"Mogens Ranneries";"2021-08-05";NULL
+"75";"SSK-100";"0";"Forståelig vejledning mangler";;"Mads Jensen";"2021-08-17";"2022-01-17"
+"76";"SSM-100";"1";"Printlayout";"Printbaner er for tæt på knæk punkter";"Klaus Graversen";"2021-08-25";NULL
+"77";"SL1000-0305";"1";"Rækkefølge af ledningsfarver i stik";"Efter en række reklamationer hvor sort og brun har været ombyttet, indføres et advarselsskilt tegningen med følgende tekst tilknyttet: ""Det er vigtigt at få en kollega til
+at kontrollere farvernes rækkefølge i stikket"".";"Mogens Ranneries";"2021-08-27";"2021-08-27"
+"78";"SL1000-0306";"1";"Farverækkefølge i print";"Efter en række reklamationer hvor sort og brun har været ombyttet, indføres et advarselsskilt tegningen med følgende tekst tilknyttet: ""Det er vigtigt at få en kollega til
+at kontrollere farvernes rækkefølge i stikket"".";"Mogens Ranneries";"2021-08-27";"2021-08-27"
+"79";"W-0118-40";"0";"Generel opdatering";"Krympeflex Længde reduceres til 20 mm.
+
+Emergency skive skal ikke ilægges.";"Kate Jensen";"2021-08-30";"2021-09-28"
+"80";"JET-110-2";"1";"Hulstørrelse tilrettes på CNC";"Hulstørrelse til M20 forskruning skal rettes ned til 18mm (den er 19mm idag)";"Mogens Ranneries";"2021-09-07";"2021-09-07"
+"81";"JET-110-2";"1";"Rettelse af CNC data";"Hulstørrelse til M20 forskruning skal rettes ned til 18mm (den er 19mm idag). Desuden skal hullet flyttes 2 mm mod midten.";"Mogens Ranneries";"2021-09-07";NULL
+"82";"SL1000-0112";"0";"Tegning skal rettes";"Der skal ikke flex på ledning";"Kate Jensen";"2021-09-09";"2021-09-27"
+"83";"W-400-0100";"0";"Tegning skal rettes. Pladerne vendes ikke om.";;"Kate Jensen";"2021-09-27";"2021-09-27"
+"84";"JET-110-2";"1";"Mangler blå kodeblok";"Mangler blå kodeblok både i stykliste og dokumentationen";"Mogens Ranneries";"2021-09-28";"2021-10-20"
+"85";"W-400-0107";"0";"Tilretning af tekst";"Tilføj teksten ""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"86";"W-400-0108";"0";"Tilretning af tekst";"Tilføj tekst:""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"87";"W-400-0110";"0";"Tilretning af tekst";"Tilføj tekst:""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"88";"W-400-0109";"0";"Tilretning af tekst";"Tilføj tekst: ""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"89";"W-400-0111";"0";"Tilretning af tekst";"Tilføj tekst: ""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"90";"W-400-0300";"0";"Tilretning af tekst";"Tilføj tekst: ""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"91";"W-400-0302";"0";"Tilretning af tekst";"Tilføj tekst: ""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"92";"SL608-0115";"0";"Tilretning af tekst";"Tilføj tekst: ""Kablet rulles op og stripses""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"93";"SL608-0114";"0";"Tilretning af tekst";"Tilføj tekst: ""Kablet rulles op og stripses i bundter á 5 stk.""";"Mogens Ranneries";"2021-10-11";"2021-10-11"
+"94";"W-575-03011";"1";"Der er ikke en kabeltester der passer til kablet.";"Lav visuel kontrol af de kabler der ikke bliver testet indtil bug er fixet.
+Brug tester til W-400-0301.";"Kate Jensen";"2021-10-21";"2021-11-30"
+"95";"W-1298-0105-3";"1";"Rettelser til tegning";"Side 1:
+Stik tallene i højre side sidder skævt og ville være gode at få rettet til.
+Side 2:
+26 i højre side burde være 9.
+16 mangler på tegningen.
+Side 3:
+Hvorfor står der ""Se side 4!"" Skulle der stå 5?
+Hul til ledninger skal ikke være midt på flex den skal være 170 fra højre stik
+27 mangler sko
+";"Steffen Rasmussen";"2021-11-01";"2022-01-14"
+"96";"SL1000-2900";"0";;;"Mogens Ranneries";"2021-11-04";"2021-11-04"
+"97";"SL1000-2900";"0";"Skruer til holder Tracker ";"Vi skal finde fastgørelse af holderen uden de generer selve trackeren ved montage.
+Løsning må findes hos Disco support ";"Mogens Ranneries";"2021-11-04";"2022-02-10"
+"98";"Winlet-400";"0";"Fejl i Diagram";"10-11-2021EK Fejl i diagram benævnelser omkring. side 2 ved P4.7. Der henvises til (124)CN3:3,4. Det er en fejl og teksten er ikke sigende for funktionen.";"Esben Kristensen";"2021-11-10";"2023-03-01"
+"99";"SL1000-2127";"0";"Der skal rettes på tegning";"""Plade skal vendes og der bruges ledningsendemuffer"". Slettes da kabel er 25#";"Kate Jensen";"2021-11-23";"2022-01-14"
+"100";"W-1222-0105-3";"1";"Benkonfiguration i stik ændres";"Henrik Hedegaard: ""Da forbindelserne mellem de 2 curtiser blev delt op har der indsneget sig en fejl som jeg ikke fangede.
+Når man ligger de 2 tegninger ved siden af hinnanden ser farverne fint ud til at følge hen over det 4 polede stik.
+Hvad jeg ikke så var at det ene stik tæller 1 2 3 4 og det andet 4 3 2 1""";"Mogens Ranneries";"2021-12-02";"2021-12-02"
+"101";"SL1000-2910";"0";"Layout rettelse D-SUB stik.";"•	
+Der skal spænding på SUB-D connectoren, se vedhæftet billede. (Det gør at man kan bruge en håndhold programmeringsenhed fra Curtis, uden at skulle sætte batterier i den).
+•	
+Mere plads omkring SUB-D connectoren. Den vi bruger (Kvaser), kan lige være der – men andre modeller kan ikke være der for relæet.
+Pin 9 B+(8-36V)
+pin 6 B- (GND) 
+
+";"Esben Kristensen";"2022-01-06";"2022-01-12"
+"102";"SL608-0113";"0";"Afisolering tilrettes";"Afisoleres i modsatte ende af kabelsko 35 mm";"Erik S. Noesgaard";"2022-01-11";"2022-01-14"
+"103";"SL608-0115";"0";"Afisolering tilrettes";"Afisoleres i modsatte ende af kabelsko 35 mm
+
+Se SL408-0113";"Erik S. Noesgaard";"2022-01-11";"2022-01-14"
+"104";"SL608-0115";"0";"Tilretning af tekst";"""Kablet rulles op og stripses
+i bundter á 5 stk."" skal rettes til ""Kablet rulles op og stripses""";"Erik S. Noesgaard";"2022-01-11";"2022-01-14"
+"105";"W-0118-40";"1";;"tegning ændres så det er tydeligt hvor ledningerne skal monteres da der er 1 og 3 på begge sider.";"Hanne Barbesgård";"2022-01-12";"2022-01-14"
+"106";"MWD-630";"0";"Tilføj SN65HVD234D CAN kreds ";"1 stk. SN65HVD234D CAN-IC skal tilføjes, da modulet ikke længere leveres med 2 stk. ";"Mogens Ranneries";"2022-01-13";"2022-01-13"
+"107";"SL608-1130";"1";"Kabeltester mangler";"Der er ikke lavet kabeltester til Sl608-1130";"Kate Jensen";"2022-01-17";"2022-01-26"
+"108";"PWM-300";"0";"Produktions besk.";"Produktions besk skal rettes til. 
+KG ved hvad";"Klaus Graversen";"2022-01-24";NULL
+"109";"SL408-1130";"0";"Ændring label";"label laves ca.3-4 cm længere.(DRA)";"Dennis Riis Andersen";"2022-01-26";"2022-01-26"
+"110";"SL608-1130";"0";"Ændring label";"label laves ca.3-4 cm længere.(DRA)";"Dennis Riis Andersen";"2022-01-26";"2022-01-26"
+"111";"SL1000-2900";"1";"Ændring af wago stiks størrelse/type";"Pin 1 - 4 i J1 er for små til 2,5mm2 ledning. Udskift J1 (10-pin) med 2 stk. store 2-pins og 2 stk. små 3-pins";"Mogens Ranneries";"2022-01-26";"2022-11-23"
+"112";"SL1000-2900";"1";"Længere skruer til ladestationen";"Skruerne Y6-41 er forkorte. Indtil videre kan de blanke 190539 anvendes (er indført i C5), men de er blanke. Skal helst være sorteloxeret.";"Mogens Ranneries";"2022-01-27";"2022-02-10"
+"113";"SL1000-2000";"0";"CNC fiil - Hul for laderkabel ændres";"Det 5. hul for enden af laderen skal ændres til Ø15mm. 2mm fræser anvendes. Ny CNC fil til MPM produktion.
+Måske CNC filen ligger under produktet SL1000-2900!
+Mail sendt med tegning til SA 010222 om denne bug.";"Esben Kristensen";"2022-02-01";"2022-02-02"
+"114";"FREI-TEMO200SL";"1";"Modstande ændres så 5Volt bliver mere præcis";"For at nedsætte Vcc fra 6 volt til 5 volt skal modstand R2 udskiftes med en 2.2k? modstand i parallel med en 3.9k? ((R4?)";"Mogens Ranneries";"2022-02-01";"2022-04-12"
+"115";"W-400-03032";"0";"Rette testprocedure til";"Proceduren om at der skal pågældende kabel skal testes sammen med w-400-0303, skal rettes til, da denne kan testes alene uden brug af ekstra kabel.
+Derud over skal der tages et billede af hvordan kablet skal kobles til testkabel.";"Kate Jensen";"2022-02-11";NULL
+"116";"W-575-0127-1";"0";"Label printer";"Af den der hedder Print - printer den 10 i stedet for 5.";"Erik S. Noesgaard";"2022-02-16";"2022-03-09"
+"117";"8I10O";"0";"Print layout ændring S1";"S1 C1,2 ligges til GND. µP indgange skal lave intern pull up. 
+Software skal invertere binær læsning.";"Esben Kristensen";"2022-02-21";"2022-03-20"
+"118";"8I10O";"0";"Ændre modstande på input fra fjernbetjening.";"Modstande R16, R17, R20, R21, R22, R23, R18 og R19";"Simon B. Andersen";"2022-02-21";"2022-03-14"
+"119";"MMB-200";"0";"Rettelser fra Knud mail 30/11-21";;"Simon B. Andersen";"2022-02-21";"2022-02-21"
+"120";"MMB-200";"0";"Rettelser fra Knud mail 08/12-21";"1)    Det vil være godt med en 10K pull-up på Tx input til CAN driver
+Dvs. PB13 og PD1 (sikre mod ’støj’ på CAN bus ved opstart)
+
+2)    Det er ikke muligt at modtage data fra RS485 driver!
+PC7 forbindes direkte til ben 1 på IC4
+R8 + D2 fjernes.
+
+3)    Der må være en del I/O’er på CPU som ikke anvendes.
+Derfor ingen grund til at LED2 og LED3 skal dele med JTAG forbindelser.
+Dvs. LED2 og LED3 flyttes til ubrugte ”output” på CPU";"Simon B. Andersen";"2022-02-21";NULL
+"121";"MMB-ESP32 WiFi";"0";"Fejl i MMB-Reset";"Der er ikke trukket forbindelse fra MMB board til enable, så MMB kan resette ESP32.";"Simon B. Andersen";"2022-02-21";NULL
+"122";"VG-100";"2";"Rettelser iht. mail fra Thomas 22-03-22";"1)	Møtrikker til montering af controllere og I/O moduler falder af. [EK:] SA: Vi skal have fundet en anden ”møtrik løsning” – Næste PCB layout.
+2)	Stik ind i M3 kan ikke tages af uden af skrue controlleren af. (se billede) SA: Kan vi rykke på noget? – Næste PCB layout.
+3)	Kabel GRÅ og BLÅ på stik til I/O-modul er næsten for korte. [EK:] Rettets fra nu - Jeg har rettet længden fra 180mm til 220mm på de 2 kabler.
+4)	Sikring F5 skal forsynes uden om EM relæ. [EK:] Rettets fra nu – Vi forbinder F5 til B+ 12V. SA: Tjek ud om der kan laves PCB rettelse til F5 – Bemærk F5 er 15A .
+5)	Tilføje 2 stk. klemmer efter sikring F7 men inden relæ. [EK:] Rettes fra nu – SA: Tilføjelse af 1 stk. 2091-1172 i området mellem F7 og K2. Benævnes X1.7.1 - X1.7.2
+6)	Relæ K1A og B skal trækkes af W50C1-P31 i stedet for P32. [EK:] Rettes fra nu – SA: Næste PCB Layout 
+7)	Dioder fjernes fra alle indgange. (de giver forstyrrelser i signalerne)[EK:] Rettes fra nu EK: Retter MONT- stykliste N.M. : LED1-23
+8)	X3.17 og X3.18 skal have egn forsyning, både + og GND. [EK:] Rettes fra nu – SA: Tilføjelse af 1 stk. 2091-1172 Parallelt ud mod kanten mellem X3.16 og X3.17
+9)	Tilføje GND klemme til X3.8  [EK:] Rettes fra nu – SA: Tilføjelse af 1 stk. 2091-1172 tilføjet GND. Parallelt ud mod kanten.
+10)	Tilføje 3 stk. klemmer til X6.14 og tilføje 2stk GND klemmer ved siden af. [EK:] Rettes fra nu – SA: Tilføjelse af 1 stk. 2091-1172 tilføjet GND, og tilføjelse af 1 stk. 2091-1173 tilføjet X6.14 .Parallelt ud mod kanten ( Måske roteret 90grader så de flugter teksten.
+11)	Klemmer X2.1 til X2.9 Skal være samme størrelser som X7.2.[EK:]  Ændres til 5 stk. 2092-1172.
+12)	ISOBUS jeg skal bruge klemmer til en ISOBUS forbindelse (se side 1 i nyt el-diagram) [EK:] Jeg kan ikke se hvad du mener …..
+-	(ECU forsyning og CAN) Har du en løsning til terminering, ved montering på traktor uden ISOBUS?)  [EK:] Hvis det er termineringsmodstanden du mener – kan vi lave et stik på printet med tilhørende stikblok i forskellige farver der svarer til forskelige modstandsværdier.
+-	Fjerne evt. overflødige modstande i forbindelse med ny terminering af CAN???? [EK:] Det samme som do.
+-	Tilføje ensretter diode på ECU_PWR.  [EK:] Her mener du transientbesk. ? Beskyttelsesdioder – SA: Det bør tilføjes alle moduler …
+";"Esben Kristensen";"2022-02-24";"2022-07-01"
+"123";"8I10O";"1";"NPN Transistorer har forkert footprint";;"Simon B. Andersen";"2022-02-25";"2022-03-20"
+"124";"8I10O";"1";"Manglende VCC på sleep ben på DRV";;"Simon B. Andersen";"2022-03-02";"2022-03-20"
+"125";"8I10O";"1";"Relæer får + in på forkert side.";;"Simon B. Andersen";"2022-03-02";"2022-03-20"
+"126";"8I10O";"0";"Undersøge modstandsværdi til selvhold.";;"Simon B. Andersen";"2022-03-02";NULL
+"127";"SL1000-2125";"0";"spændeplader";"Spændeplader skal ikke vendes på denne, da det er et 25 kvadrat kabel.
+Tegning bør rettes.";"Kate Jensen";"2022-04-08";"2022-11-24"
+"128";"SL1000-2106";"0";"Emner bør slås sammen til een enhed";"sl1000-2106 og sl1000-2123 bør samles i c5 og laves ud fra kun et varenummer.";"Kate Jensen";"2022-04-08";NULL
+"129";"SL1000-2123";"0";"Emner skal samles til een enhed";"sl1000-2106 og sl1000-2123 bør samles i c5 og laves ud fra kun et varenummer.";"Kate Jensen";"2022-04-08";NULL
+"130";"SL1000-2101";"0";"NB! Skal sættes sammen med Sl1000-0107";;"Dennis Riis Andersen";"2022-04-08";NULL
+"131";"SL1000-2129";"0";"NB! Ændring fra 40mm til 50mm på tegning i v.side.";;"Dennis Riis Andersen";"2022-04-08";"2022-12-15"
+"132";"SL1000-2128";"0";"Rettelse på tegning";"Der skal afisoleres 35 mm i den ene ende for at det passer med stikket.
+Der skal vises hvor blå og brun leder skal placeres i stikket.";"Kate Jensen";"2022-04-08";"2022-05-18"
+"133";"SL1000-2130";"0";"NB! Label skal sidde 5cm inde tilføjes i h.side";;"Dennis Riis Andersen";"2022-04-08";"2022-12-15"
+"134";"SL608-0133";"0";"Rettelse af tegning";"0028308, afisoler først 160 mm, bibehold 200 mm og afisoler derefter resten af kablet.
+
+Før kabel gennem 12F flex og træk derefter pvc-flex 190177 over det nederste stykke af det afisoleret kabel.
+
+Sæt 40 mm krymp 193195 i den ende med stik og 50 mm over begge kabler i modsatte  ende.";"Kate Jensen";"2022-04-12";"2022-04-19"
+"135";"VG-100";"0";"M20 huller i kassen rettes.";"M20 huller i CNC-VG-100 er for små... 
+Tjek om det også er gældende i VT-100";"Esben Kristensen";"2022-04-25";"2022-05-06"
+"136";"W-400-0300";"0";"Tegning bør rettes til";"""Lim under flex"" bør fjernes.
+
+Vigtig mål, 150 mm fra flex til stik bibeholdes, men label med påskrift""CN8"" bør føres helt over krympeflex";"Kate Jensen";"2022-05-09";"2022-12-15"
+"137";"VG-100";"1";"Mangler forb. til F5";"Der skal laves ny gerber filer inden næste printbestilling. F5 sik.holder har ikke fat i banen. Det er rettet i Fusion, men ikke i Gerber! Bestil stencil også. Indtil dette er rettet, monterer vi 1,5mm2 ledning på bagsiden mellem B+ og F5.";"Esben Kristensen";"2022-05-18";"2022-07-01"
+"138";"SL1000-2200";"0";"4 ikke på tegning";"tegning viser 4, men denne figurere ikke på tegning. Evt fjerne 4 og så sætte 3 ind, hvor 4 er.";"Dennis Riis Andersen";"2022-05-18";"2022-12-06"
+"139";"SL1000-0107";"0";"NB! Skal sættes sammen med Sl1000-0107";;"Kate Jensen";"2022-05-20";"2022-05-20"
+"140";"SL1000-0107";"0";"NB! Skal sættes sammen med Sl1000-2101";;"Kate Jensen";"2022-05-20";NULL
+"141";"8I10O";"1";"BC818-40 Transistor har forkert footprint";"BC818-40 og DMP2305U-7 skal rettes til Mechtronics egne komponenter fra ME_Trans.";"Simon B. Andersen";"2022-05-21";NULL
+"142";"GMV-9020134";"0";"Opdatering af info på tegning";"Der skal skrives afisoleringslængde på begge ender.
+Krympeflex Modsat stikkene bør være 5710190548538.
+193170 skal skrives ind i styklisten";"Kate Jensen";"2022-05-31";"2022-10-31"
+"143";"SL1000-2120";"0";"Ændring af procedure og rettelse i C5 og tegning";"Der skal i den ene ende af kablet sættes tyller (1,5) på. Varenummer 71.025.1500";"Kate Jensen";"2022-06-16";"2022-06-16"
+"144";"SL608-1130";"0";"NB! Minus terminalrør. Afisoler 8mm istedet.";;"Dennis Riis Andersen";"2022-07-04";"2022-12-15"
+"145";"MCA-100";"1";"Cover + kabler";"Skal der stadig MWD-COV med?
+Skal vi ændre tilslutninger til alm. ledninger i stil med GH´s model?";"Niels Vejsgård";"2022-07-05";NULL
+"146";"W-400-0300";"0";"Kabel skal ikke afisoleres helt igennem!";"Da rillflex er skiftet, skal kabel ikke afisoleres helt mere. tegning ændres evt.";"Dennis Riis Andersen";"2022-09-13";"2022-12-15"
+"147";"SL409-609-2113";"0";"Fremstil kabeltester + testprogram";;"Esben Kristensen";"2022-10-03";"2022-10-27"
+"148";"SL1000-2200";"2";"Mangel i Kabeltestprogram....";"Smartlift oplever CAN_H & CAN_L er byttet i 35P stik.
+Dvs. vi ikke tester GN,BU,GY.
+Tilføj disse i testprogrammet.";"Esben Kristensen";"2022-10-06";"2022-12-06"
+"149";"SSM-130";"1";"3D print";"Kanten skal rundes så det kan gå ind i røret.";"Klaus Graversen";"2022-12-19";NULL
+"150";"JET-110-3";"1";"Softwareændring ikke testet!";"Se journal: 09-01-2023EK";"Esben Kristensen";"2023-01-09";NULL
+"151";"VT-100";"1";"Sikringholder";"Der mangler sikringsholder i F1,F2,F5";"Klaus Graversen";"2023-02-06";NULL
+"152";"VT-100";"1";"Mangler stik";"J41 og J42 mangler ";"Klaus Graversen";"2023-02-06";NULL
+"153";"GEM-2380";"1";"Tester";"Der skal laves tester";"Klaus Graversen";"2023-02-07";"2023-04-04"
+"154";"MCC-110";"2";"Tilføjelse af CAN II . + Ny software.";"Se Journal beskrivelse. 
+Tilføj ny funktion i produktionsbesk, stykliste osv.
+Jvf. Mail fra Kunden. :
+Med ledningslængde på 70 cm
+Og i må gerne undlade at montere den grønne ledning (OUT1 Låse signal)
+";"Esben Kristensen";"2023-04-03";NULL
