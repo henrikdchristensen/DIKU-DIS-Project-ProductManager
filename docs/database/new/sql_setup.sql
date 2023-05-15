@@ -42,9 +42,9 @@ CREATE TABLE Produced_Products
 
 CREATE TABLE Uses
    (produced_product_sn VARCHAR(50),
-	produced_product_ot VARCHAR(50),
+	produced_product_ot INTEGER,
 	uses_component_sn VARCHAR(50),
-	uses_component_ot VARCHAR(50),
+	uses_component_ot INTEGER,
     PRIMARY KEY (produced_product_sn, produced_product_ot, uses_component_sn, uses_component_ot),
     FOREIGN KEY (produced_product_sn, produced_product_ot) REFERENCES Produced_Products,
    	FOREIGN KEY (uses_component_sn, uses_component_ot) REFERENCES Produced_Products);
@@ -58,7 +58,7 @@ CREATE TABLE Compatible
 
 CREATE TABLE Set_To
    (produced_product_sn VARCHAR(50),
-	produced_product_ot VARCHAR(50),
+	produced_product_ot INTEGER,
 	parameter_name VARCHAR(50),
 	value VARCHAR(50),
     PRIMARY KEY (produced_product_sn, produced_product_ot, parameter_name),
