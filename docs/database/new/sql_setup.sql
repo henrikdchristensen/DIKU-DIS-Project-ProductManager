@@ -5,11 +5,10 @@ CREATE TABLE Companies
     PRIMARY KEY (name));
 
 CREATE TABLE Product_Templates
-   (id INTEGER,
+   (id VARCHAR(50),
     name VARCHAR(50),
     journal VARCHAR(5000),
 	owned_by VARCHAR(50),
-    rating INTEGER,
     PRIMARY KEY (id),
     FOREIGN KEY (owned_by) REFERENCES Companies);
 
@@ -25,14 +24,14 @@ CREATE TABLE Users
 
 CREATE TABLE Parameters
    (name VARCHAR(50),
-	related_to INTEGER NOT NULL,
+	related_to VARCHAR(50) NOT NULL,
     PRIMARY KEY (name, related_to),
     FOREIGN KEY (related_to) REFERENCES Product_Templates
    		ON DELETE NO ACTION);
 
 CREATE TABLE Produced_Products
    (serial_number VARCHAR(50),
-	of_type INTEGER NOT NULL,
+	of_type VARCHAR(50) NOT NULL,
 	date DATE,
 	produced_by VARCHAR(50),
     PRIMARY KEY (serial_number, of_type),
@@ -51,8 +50,8 @@ CREATE TABLE Uses
    	FOREIGN KEY (uses_component_sn, uses_component_ot) REFERENCES Produced_Products);
 
 CREATE TABLE Compatible
-   (component INTEGER,
-	compatible_to INTEGER,
+   (component VARCHAR(50),
+	compatible_to VARCHAR(50),
     PRIMARY KEY (component, compatible_to),
     FOREIGN KEY (component) REFERENCES Product_Templates,
    	FOREIGN KEY (compatible_to) REFERENCES Product_Templates);

@@ -1,0 +1,1070 @@
+﻿APB-613-00;Advanced Power Box 613 (Stralis);;Mechtronic
+APB-613-01;Advanced Power Box 613 (Trakker-Cargo);;Mechtronic
+APB-613-03;Advanced Power Box 613 (Daily);;Mechtronic
+APB-613-20;Advanced Power Box 613 (Mercedes Actos);;Mechtronic
+MSS-100;Mechtronic Slave Speedometer 100;;Mechtronic
+W-350-0118-2;GMV Winlet Remote 350.600;;GMV
+W-231;Winlet Tillerhead;;GMV
+Winlet-575-NIV;NIV-100 For GMV;;GMV
+MRT-006;Print til Manitou;;Mechtronic
+MOT-300;Motorværn;;Mechtronic
+W-575-0100-2;Winlet-575 Controler;;GMV
+W-350-0100-2;Winlet-350 Controler;080321 : Softwareversion 3,20 er nu med nødstopsfunktion.;GMV
+W-350-575-0203-2;Winlet Terminal Print;;Mechtronic
+W-575-0125-2;GMV Winlet Remote 575;;GMV
+SMR-006;SMR-006 Scantruck print;;Mechtronic
+W-600HD-0100-2;Winlet 600HD Controller;;GMV
+OLW-200;Overload Warning;;Lausø
+W-350TH-0100-2;Winlet Controller;;Mechtronic
+NIV-110;Niveau sensor +/-90Grader X/Y +5V;;Mechtronic
+MMB-102;MMB-100 Config for MGG ( GSM/GPS/RF);;Mechtronic
+MSS-210;Server for MSS-200;;Mechtronic
+MSS-220;MSS-200 spejl;;Mechtronic
+MSL-100;Mechtronic Speed Limit;;Mechtronic
+MSS-150;Mechtronic Slave Speedometer;"11092017
+Fra sn.17-0118 er kontrastsymbol synligt indtil hastighed registeres.";Mechtronic
+MHC-100;Mechtronic Heat Control;;Mechtronic
+MTC-150;Mechtrinoc Trip Counter;;Mechtronic
+PSR-200;Proportional Styrings Regulering PSR-200;;Mechtronic
+FRB-101;FM Relæ Boks - FRB-101 model 2010;;FM Maskiner
+KAX-700;Omformer 220v - 30A;;Mechtronic
+FBR-100;BLUESPOT styreboks incl. kabler;;Mechtronic
+DAI-112;Digital Analog Inverter 2ch 12V;;Mechtronic
+DAI-124;Digital Analog Inverter 2ch 24V;;Mechtronic
+MMM-120;MiniMounter Controller print V2.00;;Mechtronic
+FRB-100;FM Relæ Boks - FRB-100 model 2009;;FM Maskiner
+NIV-200;Nieau sensor X/Y/Z 360Grader CAN bus;Nyeste SW. version 1.6;Mechtronic
+MSS-211;MSS-200 server;;Mechtronic
+JET-110;Powerbox for Gripper/Stacker V2.0;;Mechtronic
+KFD-100;Print til joystick m/4 stk switche;11/11-19 EK:Tilføjet 2 Ø3,5mm huller over regtangul. udskæring. Dett for at Jels Entrprenør kan anvende det.;Mechtronic
+FFR-300;Flip Forstærker Relæ kit. med FF;"Ejer : NCN
+241019: 
+De 2 trykknapper er udskiftet til 083863062 (Grøn). 
+Iht. mail rpp@nc-nielsen.dk 181019 
+";Mechtronic
+MGG-100;GSM/GPS modul for MMB-100;;Mechtronic
+ISU-100-10;Idle stop unit - Entreprenør maskiner;"HUSK at tilpasse ISU ved at følge ""Hardware ændringer""
+OBS:Software hentes i KT-Software";Mechtronic
+ISU-100-20;Idle stop unit - Scania;;Mechtronic
+AGV-200v1;AGV Controller;"01-07-2017EK: Alle BAS85 dioder SKAL monteres fra d.d.
+18-01-2018KG: R85 + R131 + R139 + R159 + R160 + R161 + R162 + R163 + R164 er fjernet fra d.d
+
+02-02-2018KG: C43 + C44 fjernet.
+R122 + R132 + R133 + R134 + R135 + R136 + R137 + R138 fjernet.
+R123 + R124 + R125 + R126 + R127 + R128 + R129 + R130 + R165 fjernet.
+R166 ændret til 1K d.d
+Layout ændres-10 uF monteres til GND på POTSUP1  og POTSUP2, Buffer(MC33202) på DAC udgange mellem CPU og analog-switch.";Mechtronic
+APB-613-04;Advanced Power Box 613 (Stralis 04);;Mechtronic
+W-230;Winlet Tillerhead;;GMV
+NIV-511;Display for grusafretter.;;Mechtronic
+AGV-250;Powerbox for  grusagretter.;;Mechtronic
+MOU-311;Moutit Multi Trolly controller;;Mechtronic
+U2F-210;2 ch. speeder interface for rendegraver;;Lausø
+FFR-310;FLIP FLOP RELAY;"Ejer: NCN
+241019: 
+De 2 trykknapper er udskiftet til 083863062 (Grøn). 
+Iht. mail rpp@nc-nielsen.dk 181019 
+";Mechtronic
+TT-1000;Komplet Kabelkit for Mountit Transittrol;;Mechtronic
+LPC-100;Liniær Position Controller;;Mechtronic
+APC-102;Analog PWM Converter - 2 kanal;;Mechtronic
+APB-613-05;Advanced Power Box 613 (Daily MY2016);;Mechtronic
+APB-613;Advanced Power Box 613 (12V);;Mechtronic
+W-1000-0100;Controller for Winlet 1000 V2.0;;GMV
+W-785-0100;Winlet-785 Controller;;Mechtronic
+AFK-1000;AL Flexmover Kit;;Mechtronic
+NIV-100;Niveau sensor +/-10Grader X/Y +5V;;Mechtronic
+JRK-210;JCB Relæ Kit;;Mechtronic
+MAM-110;Mechtronic Analog Monitor 110;;Mechtronic
+MAM-100;Mechtronic Analog Monitor 100;;Mechtronic
+PSI-050;Passeger Speed Instrument;;Mechtronic
+NIV-200-GMV;Niveau sensor X/Y/Z 360Grader CAN bus;;GMV
+APB-613-IO;Advanced Power Box 613 ( IO );;Mechtronic
+HVL-100;Hvalpelytter (Specialbutikken Holstebro);;Mechtronic
+MCA-100;Mechtronic Code Access;2022/02/11 MR/KG: BUG 17 aflyses, da monterings- og betjeningsvejledning er opdateret.;Mechtronic
+MSS-211 V2;Server for MSS-220/221 ;;Mechtronic
+MSS-221;MSS-200 Spejl V. 2 ;"OBS!!!
+Keil software startes fra KT Software
+2021/10/20 MR: Bug er tilsyneladende rettet af NK";Mechtronic
+APB-6132;Advanced Power Box 6132;;Mechtronic
+W-350-0118;Winlet 350 Bet. LEAX;;Mechtronic
+W-575-0125;Winlet 575 Bet LEAX;;Mechtronic
+W-575-0100;LEAX CONTROLLER WINLET 350;;Mechtronic
+GDL-100;Geo Data Log PC tool;28062018: RS232 kreds skal være monteret.;Ivan Jakobsen
+NIV-101;Niveau sensor +/-10Grader X/Y +10-30V;;Mechtronic
+NIV-120;Niveau sensor +/-90Grader X/Y +12-30Vsup;;Mechtronic
+AHB-210;Styringsprint;;Mechtronic
+AHB-220;Betjeningspanel;;Mechtronic
+UVC-8000;UVC 30 kanals controler med GSM interface;"GSM No.:
+";NatDis
+W-350-0100;LEAX CONTROLLER WINLET 350;;Mechtronic
+Winlet-100;Winlet terminalprint Leax;;Mechtronic
+W-600-0100;LEAX WINLET CONTROLLER 600;;Mechtronic
+ISU-100-30;Idle stop unit- Komatsu oa.;"HUSK at tilpasse ISU ved at følge ""Hardware ændringer""";Mechtronic
+W-350XL-0100-2;Winlet 350XL controller;;Mechtronic
+W-350-0118-3;GMV Winlet Remote 350.600 W/Emergency Stop;;GMV
+GVL-100;GMV Vacuum Løfteåg;;GMV
+W-LASIUS-0100-2;LASIUS Controller;17/3 2020 aftalt med Henrik Hedegaard at det er Ver3.16, der anvendes.NV (den version der er mærket: WindowLiftController-Lasius1T);Mechtronic
+JET-131 453000;Just Easy Tool Switch boks for omskifterventil;;Mechtronic
+NCN-38xDiode;KIT2350-1;24062019: Husk dioden skal være 5A Vareno.: 00.025.0550;Mechtronic
+SL1000-2900;Komplet print monteret i kasse;"2022/02/10 MR: Bug 112, længere skruer til ladestation tilføjet i C5 (190539)
+2022/02/10 MR: Bug 97, fladere møtrikker til tracker-holder indført i C5 (M3x6x6)";Smartlift
+JSC-100;Joystik print 3SW adapter;"060921EK: Ny gerber til næste printbestilling.
+Silklayer ændret.";Mechtronic
+JET-140;JET Light supply cable for 3 LED Lights;260619: Oprettet.;Mechtronic
+KLT-600;Lysautomatik for Linde Lltraktor;;Mechtronic
+KLT-601;Lysautomatik for Linde Lltraktor;;Mechtronic
+GVL-110;Styring for GMV Løfteåg;Husk at CNC bearbejdning findes under: CNC-GVL-100;GMV
+SSK-100;Start stabiliserings-kondensator;;Mechtronic
+JET-BET-3;Just Easy Tool Betjening V3.00;"EK010720: Nyt Layout nu bestilt, med nedenstående rettelse.
+
+EK120919: Tilføj R12-C6 iht. diagram. Tilføjelsen er lavet nu, men ikke på de første printpaneler der er kommet hjem.";Just Easy Tools
+W-575-0125-3;Fjernbetjening komplet V3.00;;Mechtronic
+ATM-100;Animal Transport Monitor 100;;Breeders
+JET-110-2;Power logik box V.2.0;EK181119:MONT-JET-110-2 & KNOP-JET-110-2 monteres her i huset på 2 MPer, indtil videre. ;Mechtronic
+JET-120-2;Terminalbox V.2.0;;Mechtronic
+ATM-101;Animal Transport Monitor 101 Tablet      ;"04-07-2022NK:
+""Køling"" funk tilføjet i App.
+08-04-2021MJ:
+Mulighed for at invertere ""TAG"" og ""BAGKLAP""
+indgange.";Breeders
+UCD-100;USB Charge Data modul;;Mechtronic
+SSM-100;Speeder Servo Modul;"030821EK: Nyt PCBlayout så der kan laves bestykningsvariant til SSM-101 for SENT kommunikation.
+*BEMÆRK* Produktionsbeskrivelsen skal rettes, således at ved SSM-100 skal R43,46 fjernes, og (PE14,PE15 µP) skal være ""0"" permanent.
+SSM-101 skal C35,36 fjernes og tilhørende SW implementeres. 
+
+110621EK: Ny software release V2.9.0
+
+190321EK (Nyt panel layout)
+Panelet er ændret så Molex stikkene vender ud mod rammens yderkant, og kan derfor monteres og bølgeloddes. PCB Prodfil er opdateret d.d.
+
+190321EK (Stykliste ændring)
+R29,38 Ændret i værdi fra 100K til 27K. 
+Dette ændre indgangsområdet fra 5V til 10V.
+
+061020EK (SW Ver2.7.0.)
+Ændring i SW: Ved kørsel med håndspeeder og fartpilot, hvor håndspeeder er i ""tomgang"", skifter relæerne signalet over til fodspeeder.
+Dette for at undgå fejllamper(især på Mercedes)
+Issue i Ålborg dd. (EK/KT). 
+
+160920EK Prod. data opdateret stykliste Rev2.
+2 stk. 10µF 16V 0603 tilføjet. 
+
+
+Leif: monterer med følgende bestykning 09-2020.
+R24, 25 = 5k6
+R26, 27, 35 = 22k
+R33, 34, 38 = 10K
+
+EK:271119 
+R24,25,26,35 ændret til 56K
+R27,33,34,38 ændret til 100K
+
+SBA:010520
+Rykket hullerne i fræserfilen 0.5mm op.";Langhøj
+FBR-APC-100;APC-102 sikkerhedsrelæ;;Mechtronic
+W-400-0100-3;Winlet Controller V3.00;"041219 EK:
+Der anvendes stykliste for GMV-100 Rev.E.
+R92,93 ændret fra 10K til 22K. XIN1 og XIN2 ændret fra 0-5V indgange til 0-10V. Hvilket er nødvendigt på Winlet ver. 3 styringer.
+-----------------------------------------------";GMV
+SSM-101;Speeder Servo Modul Digital;;Langhøj
+UVC-821;UVC Controller for Clean Box;;NatDis
+GEM-220;Tiller <16x 0,5#> Controlbox;;GMV
+DEFAULT;Standard produkt;;Mechtronic
+MSS-200 V2;Spejl speedometer komplet V2;"EK: Oprettet i MPM 141119- Spejl (MSS-220) og 
+server (MSS-211) er tilføjet som komponenter.
+Dette produkt skal IKKE have påsat serie no.
+HUSK at intaste komponenternes serieno.
+";Mechtronic
+JET-KAB08;Kabel for Gripper / Stacker 8m m/stik;;Mechtronic
+MMBToolbox;Mechtronic Toolbox for programming.;;All
+JET-100-3;Komplet JET-100-3 Kit;140120 MPM oprettet;Just Easy Tools
+SSM-130;Servo speeder potentiometer;Første SMD mont 09.2020.;Langhøj
+SSK-120;Start Spændings Kondensator;;Mechtronic
+ISU-100-KAB1;Ledningsnet til ISU-100;;Mechtronic
+SL608-0110;Powerkabel til SL608;;Smartlift
+MWD-510;MWD-510 Remote;"120718 Knud opdatering pga. dårligt radiosignal og stort strømforbrug.
+
+Firmware version 2.1.0 til MWD-510, MWD-520 og MWD-530 opdateret på FTP server.
+
+
+Som nævnt, fik jeg i går øje på at MWD-500 brugte lidt mere strøm end den ladestrømmen.
+-	Og fik øje på et stort forbrug fra display – det kæmpende jeg også en del med.
+Lavede bla. en mellemforbindelse til display, så jeg kunne måle strømmen i alle forbindelser imellem MMB100 og display.
+-	Konklusionen blev, at det display som var i den MWD-500 i sendte, er deffekt!
+I forhold til et andet display jeg har fået fra jer, bruger displayet ca. 52mA hvis men forsyner den direkte med +5V
++ den bruger 112mA ved 100% backligt (mod 100mA på et andet display).
+
+Udover at det blå print er forskellig på de 2 display, så er det også 2 forskellige LCD moduler.
+Har taget billede hvor selve LCD modulet er vippet op, ”Display(gammel).jpg” er den ’model’ som er OK.
+Søgte på Internet omkring dette, men fandt ikke information herom.
+
+
+MWD-510 ændringer i version 2.1.0 :
+1)	Beep signal ved lav radiosignal ændret:
+a) Ny ’kort’ beep signal hver sekund, hvis der er tabte 2 eller flere besked indenfor det sidste sekund (der sendes 10 gang pr. sekund).
+b) Det oprindelige Beep-signal kommer nu ved noget svagere signal
+    Har set en del gang, at den stadig kan holde forbindelse i lang tid når beep signal høres.
+c) Det oprindelige Beep-signal stopper når den har modtaget 10 beskeder i træk.
+2)	Har fundet en fejl i radiodelen udlæsning af Radio-signal-styrke fra Chippen, hvilket vil påvirke styrke af sendestyrke, m.m.
+3)	Har fundet en mindre fejl ved SPI til Touch.
+Er dog ikke fatal, da Touch har sin egen SPI bus.
+Medført dog ca. 4mA ekstra forbrug.
+4)	Har indført dæmpning af BackLight:
+- Efter 1 minut uden betjening + under opladning dæmpes til 40%.
+- 100% kan ’aktiveres’ igen ved et tryk på Touch (også uden at A-tasten holdes inde).
+5)	Har målet de enkelt forbrug igennem (med et OK display)
+a) CPU + Disp                                                    46,3mA
+b) CPU + Disp + Radio (20mW)                        84,4mA
+c) CPU + Disp + Radio (120mW)                       101,0mA
+d) CPU + Disp + Radio (20mW) + 40% BL       122,0mA
+e) CPU + Disp + Radio (20mW) + 100% BL     185,0mA
+
+Ladestrøm (til batteri)                                        145mA
+Ladestrøm (total)                                               266mA
+6)	MWD-500 Radio sendestyrke: 20mW, 60mW, 120mW (målt ledningsbåren, styres efter behov).
+Jf. EN 300 220-1 må der max. sende med 25mW, men det er den udstrålede effekt.
+Jeg vurdere at, der er et ret stort tab i antennen – men kan ikke måle det….
+
+MWD-520 + MWD-530 ændringer:
+1)	CAN ændret til Active mode
+2)	Radio sendestyrke: 20mW, 60mW (målt ledningsbåren, styres efter behov).
+Jf. EN 300 220-1 må der max. sende med 25mW, men det er den udstrålede effekt.
+
+Der er ingen forstærning i Procom antennen.
+Vil forvente at der tabes ca. 1,5..2dB i den relative lave antenne.
+Dvs. udstrålet effekt kan komme op på 90mW, hvilket er ca.2dB over det tilladte.
+
+I forrige version fik basen lov at sende med op til 120mW.
+
+Andet:
+1)	Oplever periodisk fejl på DC stik til opladning.
+2)	Antenneledning var loddet på antenneprint, så den gik direkte tilbage over antenne.
+Ved ikke hvor meget det betyder – men tænker det ikke er optimal…
+3)	Tror at antennen har ’problemer’ med den korte afstand til metalkabinet i siderne.
+Vil forslå vi prøver en anden løsning – tegning vedhæftet.
+4)	Da jeg har udskifte display i MWD-510 med det jeg ofte bruger til andre tests, vil jeg gerne – ved lejlighed – have et nyt display.
+
+Test:
+1)	I mine test har jeg brugte Procomm antenne, monteret i et skruestik som stod på bordet inde på kontoret.
+Har så gået rundt med MWD-510 i haven og ned af jernbanestien.
+2)	Oplever nu kun enkelte korte beep når jeg går rundt i haven.
+3)	I går lavet rigtig mange test, hvor jeg log’ede data med PC fra MWD-510.
+- Her skulle jeg ca. 150meter ned at jernbanestien før der begyndte at komme flere korte-beep.
+- Ved ca. 250..300 begyndte det oprindelige Beep af lyde.
+4)	I dag samlede jeg MWD-500 helt, og oplevede lidt kortere rækkevikke.
+- I haven, stadig kun ganske får korte beep.
+- ca. 100 meter nede af jernbanestien begyndte det oprindelige Beep signal.
+  Blev stående nogen tid på de 100 meter, hvor den holdt forbindelsen.
+";Mechtronic
+SL608-0111;Powerkabel til SL608;;Smartlift
+SL608-0112;Powerkabel til SL608;;Smartlift
+SL608-0113;Powerkabel til SL608;2022/01/14 MR: Tilrettet iht. bug nr. 102;Smartlift
+SL608-0114;Powerkabel til SL608;;Smartlift
+SL608-0115;Powerkabel til SL608;2022/01/14 MR: Tilrettet i henhold til bug 103 og 104.;Smartlift
+SL608-0116;Powerkabel til SL608;;Smartlift
+SL608-0120;Kabel til SL608;;Smartlift
+SL608-0126;Kabel til SL608;;Smartlift
+SL608-0122;Kabel til SL608;;Smartlift
+SL608-0123;Kabel til SL608;250522 EK kabler ændret fra 2x2,5mm2 til 2x1,5mm2;Smartlift
+SL608-0124;Kabel til SL608;;Smartlift
+SL608-0125;Kabel til SL608;;Smartlift
+SL608-0130;Kabel til SL608;2022/01/13 MR: Afisolering højre side rettet fra 25 til 16 cm. Anfordret af Nikolaj Holst <nh@smartlift.com>;Smartlift
+SL608-0131;Kabel til SL608;;Smartlift
+SL608-0132;Kabel til SL608;;Smartlift
+SL608-0133;Kabel til SL608;;Smartlift
+MWD-500;MWD-500 fjernbetjening sæt;;Mechtronic
+SL608-0135;Kabel til SL608;"19/10-20 - SBA
+Den gule ledning klippes, mens den pinke bruges i stedet.
+2022/02/11 MR/KG: Dette produkt er erstattet af SL608-1135 og udgår dermed.";Smartlift
+WWR-100V4;Winlet fjernbet.;"21-05-2021. EK Rettet panel layout.
+25-01-2021. EK. BUG Oprette....Panelrettelse 
+19-10-2020. KG. Print rettet, ny lydgiver.";GMV
+WWR-200;Winlet fjernbet.;"09-06-2021. EK BUG Rettet - Ny Stykliste.
+
+08-06-2021. EK BUG Oprettet Vac.SW pull down modstand.
+
+27-01-2021 EK. Endnu ny Gerber fil klar :
+WWR-200x3PanelGerber270121.zip med ny lydgiver.
+HUSK at anvende den ved næste printbest. 
+
+25-01-2021 EK. Ny Gerber og stykliste anvend WWR-200Panel3 Gerber-25012.zip fil.
+
+16-10-2020 KG. Print rettet, ny lydgiver.
+";GMV
+SL608-0134;Kabel til SL608;;Smartlift
+PAD-100;Proportional Analog Divider;;Mechtronic
+SID-100;Service Indicator Display;;Mechtronic
+JFD-100;Print til joystick m/4 stk switches;;Mechtronic
+NCN-100;SVAB parallel joystick modul;;NCN
+SKS-103;Joystick 3P switch print m/ledning;;Mechtronic
+WIN-100-3;Terminalprint V.3.00;"090621EK:
+Stykliste opdateret efter sidste rettelse af 141020.
+141020EK:
+Læs nedenstående fil inden næste PCB bestilling:
+1PCB rettelser inden næste printbestilling.pdf
+
+140920EK:
+Rette R4,6 fra 100ohm til 1K.
+Rette R7,10 fra 1K til 10K.
+Årsag: µP kunne brænde af pga. manglende GND ved tilslutning af fjernbet.
+
+
+Henrik det er WIN-100-3- 
+110620.S19 der er den nyeste fil du skal programmere med!
+EK - 6/8-20.
+";GMV
+U2F-224;2ch analog joystik sig til 2x 2 PWM signal ;;Lausø
+MMB-433-868;433/868Mhz RF modul for MMB-100;;Mechtronic
+U2F-240;2 ch. speeder interface for rendegraver;"R29 og R38 skal ændres fra 100K til 27K
+
+211020EK SW ændret med signal gennemgang via relæer, indtil IN1 aktiv ( Extern speeder valgt ).
+Herefter aktiveres relæerne, og signalerne fødes fra ekstern speeder.  ";Engcon
+MWD-6008;Mechtronic Wireless Devicekit 8Ch.;;Mechtronic
+SL1000-0101;Powerkabel til SL1000;;Smartlift
+SL1000-0102;Powerkabel til SL1000;;Smartlift
+SL1000-0103;Powerkabel til SL1000;;Smartlift
+SL1000-0104;Powerkabel til SL1000;;Smartlift
+SL1000-0105;Powerkabel til SL1000;;Smartlift
+SL1000-0106;Powerkabel til SL1000;;Smartlift
+SL1000-0107;Powerkabel til SL1000;;Smartlift
+SL1000-0108;Powerkabel til SL608;;Smartlift
+SL1000-0109;Powerkabel til SL1000;;Smartlift
+SL1000-0110;Powerkabel til SL1000;;Smartlift
+SL1000-0111;Powerkabel til SL1000;;Smartlift
+SL1000-0112;Powerkabel til SL1000;;Smartlift
+SL1000-0300;Kabel til SL1000;;Smartlift
+SL1000-0301;Kabel til SL1000;;Smartlift
+SL1000-0200;Kabel til SL1000;;Smartlift
+SL1000-0201;Kabel til SL1000;;Smartlift
+SL1000-0302;Kabel til SL1000;;Smartlift
+SL1000-0303;Kabel til SL1000;;Smartlift
+SL1000-0400;Kabelsæt SL1000-0400;;Smartlift
+SL1000-0401;Kabel til SL1000;;Smartlift
+SL1000-0402;Kabel til SL1000;;Smartlift
+SL1000-0403;Kabel til SL1000;;Smartlift
+SL1000-0404;Kabel til SL1000;;Smartlift
+SL1000-0405;Kabel til SL1000;;Smartlift
+SL1000-0406;Kabel til SL1000;;Smartlift
+SL1000-0407;Kabel til SL1000;;Smartlift
+SL1000-0408;Kabel til SL1000;;Smartlift
+SL1000-0409;Kabel til SL1000;;Smartlift
+SL1000-0410;Kabel til SL1000;;Smartlift
+SL1000-0411;Kabel til SL1000;;Smartlift
+SL1000-0500;Kabelsæt SL1000-0500;;Smartlift
+SL1000-0501;Kabel til SL1000;;Smartlift
+SL1000-0502;Kabel til SL1000;;Smartlift
+SL1000-0503;Kabel til SL1000;"SL1000-0503Rev230321EK :
+Stik og tyller tilføjet. Kabelængden øget med 250mm.
+2021/10/20 MR: Gummipakning tilføjet på tegning. ";Smartlift
+SL1000-0504;Kabel til SL1000;;Smartlift
+SL1000-0505;Kabel til SL1000;;Smartlift
+SL1000-0506;Kabel til SL1000;;Smartlift
+SL1000-0507;Kabel til SL1000;;Smartlift
+SL408-0112;Powerkabel til SL408;;Smartlift
+SL408-0113;Powerkabel til SL408;;Smartlift
+SL408-0114;Powerkabel til SL408;;Smartlift
+SL408-0115;Powerkabel til SL408;;Smartlift
+SL408-0116;Powerkabel til SL408;;Smartlift
+SL408-0117;Powerkabel til SL408;;Smartlift
+SL408-0123;Kabel til SL408;250522 EK Ændret kabelet fra 2x2,5mm2 til 2x1,5mm2;Smartlift
+SL408-0124;Kabel til SL408;;Smartlift
+SL408-0126;Kabel til SL408;;Smartlift
+SL408-0127;Kabel til SL408;;Smartlift
+SL408-0128;Kabel til SL408;;Smartlift
+SL408-0130;Kabel til SL408;;Smartlift
+SL408-0131;Kabel til SL408;;Smartlift
+SL408-0132;Kabel til SL408;;Smartlift
+SL408-0134;Kabel til SL408;;Smartlift
+SL408-0135;Kabel til SL408;2022/02/11 MR/KG: Dette produkt er erstattet af SL408-1135 og udgår dermed.;Smartlift
+SL408-0136;Kabel til SL408;;Smartlift
+SL1000-0412;Kabel til SL1000;;Smartlift
+SL1000-0508;Kabel til SL1000;;Smartlift
+MONT-GMV-100-3;Knop produktin af GMV-100;"04-03-2020.
+Samme print som MONT-GMV-100-2, men følgende er ændret.
+R77 ændret fra 1,8K til 1,2K.
+R86 ændret fra 470ohm til 390ohm.
+R92 ændret fra 10K til 22K
+R93 ændret fra 10K til 22K";GMV
+CAN-SNIF;Can Sniffer ;;All
+NIV-200v2;Niveau-sensor X/Y/Z 360Grader CAN bus;;Mechtronic
+JET-210;Stacker 800 styring;;JET
+HVJ-6I5O;HV Elektro Jesper blæserstyring;;Mechtronic
+W-400-0301;Vac.Cen Vac.Val Terminal<>Controller;;GMV
+W-400-0100;Powerkabel til W-400;;GMV
+W-400-0101;Powerkabel til W-400;;GMV
+W-400-0102;Powerkabel til W-400;;GMV
+W-400-0103;Powerkabel til W-400;;GMV
+W-400-0104;Powerkabel til W-400;;GMV
+W-400-0105;Powerkabel til W-400;;GMV
+W-400-0106;Powerkabel til W-400;;GMV
+W-400-0107;Powerkabel til W-400;;GMV
+W-400-0108;Powerkabel til W-400;;GMV
+W-400-0109;Powerkabel til W-400;;GMV
+W-400-0110;Powerkabel til W-400;;GMV
+W-400-0111;Powerkabel til W-400;;GMV
+W-400-0300;TILLERHEAD <7X0.5#> TERMINALP.;;GMV
+W-400-0302;Længdemåler kabel M12 5P<>6P CAN;;GMV
+W-400-0305;Curtis <> Winlet computer;;GMV
+W-400-0303;Hyd. ventil kabel;;GMV
+GEM-333;Override switch;;GMV
+W-400-0304;EM Brakecable;;GMV
+MS-04-028-2;Nødstop m/kabel for MountIt Trolley;;Mechtronic
+6I5O;IO Modul 6I-5O;;Mechtronic
+BAT-124;Batterivagt;;Mechtronic
+PWM-100(6I5O);PWM generator 100Hz;;Mechtronic
+NIV-512;Powerboks for NIV-510;;Mechtronic
+KIV-100(6I5O);Kumatzu Interval Viskermodul;;Mechtronic
+MWD-520;MWD-520 Powerboks;"120718 Knud opdatering pga. dårligt radiosignal og stort strømforbrug.
+
+Firmware version 2.1.0 til MWD-510, MWD-520 og MWD-530 opdateret på FTP server.
+
+
+Som nævnt, fik jeg i går øje på at MWD-500 brugte lidt mere strøm end den ladestrømmen.
+-	Og fik øje på et stort forbrug fra display – det kæmpende jeg også en del med.
+Lavede bla. en mellemforbindelse til display, så jeg kunne måle strømmen i alle forbindelser imellem MMB100 og display.
+-	Konklusionen blev, at det display som var i den MWD-500 i sendte, er deffekt!
+I forhold til et andet display jeg har fået fra jer, bruger displayet ca. 52mA hvis men forsyner den direkte med +5V
++ den bruger 112mA ved 100% backligt (mod 100mA på et andet display).
+
+Udover at det blå print er forskellig på de 2 display, så er det også 2 forskellige LCD moduler.
+Har taget billede hvor selve LCD modulet er vippet op, ”Display(gammel).jpg” er den ’model’ som er OK.
+Søgte på Internet omkring dette, men fandt ikke information herom.
+
+
+MWD-510 ændringer i version 2.1.0 :
+1)	Beep signal ved lav radiosignal ændret:
+a) Ny ’kort’ beep signal hver sekund, hvis der er tabte 2 eller flere besked indenfor det sidste sekund (der sendes 10 gang pr. sekund).
+b) Det oprindelige Beep-signal kommer nu ved noget svagere signal
+    Har set en del gang, at den stadig kan holde forbindelse i lang tid når beep signal høres.
+c) Det oprindelige Beep-signal stopper når den har modtaget 10 beskeder i træk.
+2)	Har fundet en fejl i radiodelen udlæsning af Radio-signal-styrke fra Chippen, hvilket vil påvirke styrke af sendestyrke, m.m.
+3)	Har fundet en mindre fejl ved SPI til Touch.
+Er dog ikke fatal, da Touch har sin egen SPI bus.
+Medført dog ca. 4mA ekstra forbrug.
+4)	Har indført dæmpning af BackLight:
+- Efter 1 minut uden betjening + under opladning dæmpes til 40%.
+- 100% kan ’aktiveres’ igen ved et tryk på Touch (også uden at A-tasten holdes inde).
+5)	Har målet de enkelt forbrug igennem (med et OK display)
+a) CPU + Disp                                                    46,3mA
+b) CPU + Disp + Radio (20mW)                        84,4mA
+c) CPU + Disp + Radio (120mW)                       101,0mA
+d) CPU + Disp + Radio (20mW) + 40% BL       122,0mA
+e) CPU + Disp + Radio (20mW) + 100% BL     185,0mA
+
+Ladestrøm (til batteri)                                        145mA
+Ladestrøm (total)                                               266mA
+6)	MWD-500 Radio sendestyrke: 20mW, 60mW, 120mW (målt ledningsbåren, styres efter behov).
+Jf. EN 300 220-1 må der max. sende med 25mW, men det er den udstrålede effekt.
+Jeg vurdere at, der er et ret stort tab i antennen – men kan ikke måle det….
+
+MWD-520 + MWD-530 ændringer:
+1)	CAN ændret til Active mode
+2)	Radio sendestyrke: 20mW, 60mW (målt ledningsbåren, styres efter behov).
+Jf. EN 300 220-1 må der max. sende med 25mW, men det er den udstrålede effekt.
+
+Der er ingen forstærning i Procom antennen.
+Vil forvente at der tabes ca. 1,5..2dB i den relative lave antenne.
+Dvs. udstrålet effekt kan komme op på 90mW, hvilket er ca.2dB over det tilladte.
+
+I forrige version fik basen lov at sende med op til 120mW.
+
+Andet:
+1)	Oplever periodisk fejl på DC stik til opladning.
+2)	Antenneledning var loddet på antenneprint, så den gik direkte tilbage over antenne.
+Ved ikke hvor meget det betyder – men tænker det ikke er optimal…
+3)	Tror at antennen har ’problemer’ med den korte afstand til metalkabinet i siderne.
+Vil forslå vi prøver en anden løsning – tegning vedhæftet.
+4)	Da jeg har udskifte display i MWD-510 med det jeg ofte bruger til andre tests, vil jeg gerne – ved lejlighed – have et nyt display.
+
+Test:
+1)	I mine test har jeg brugte Procomm antenne, monteret i et skruestik som stod på bordet inde på kontoret.
+Har så gået rundt med MWD-510 i haven og ned af jernbanestien.
+2)	Oplever nu kun enkelte korte beep når jeg går rundt i haven.
+3)	I går lavet rigtig mange test, hvor jeg log’ede data med PC fra MWD-510.
+- Her skulle jeg ca. 150meter ned at jernbanestien før der begyndte at komme flere korte-beep.
+- Ved ca. 250..300 begyndte det oprindelige Beep af lyde.
+4)	I dag samlede jeg MWD-500 helt, og oplevede lidt kortere rækkevikke.
+- I haven, stadig kun ganske får korte beep.
+- ca. 100 meter nede af jernbanestien begyndte det oprindelige Beep signal.
+  Blev stående nogen tid på de 100 meter, hvor den holdt forbindelsen.
+";Mechtronic
+NIV-210;Niveau-sensor +/- 30 promille;;Mechtronic
+SSM-140;Ledningsnet til SSM-100;;Langhøj
+UVC-825;Kabelkit UVC-820 ;;NatDis
+MSS-xxx;MSS køreskole instrument;"Seneste MSS software kan hentes i Dokumenter sektionen nedenfor.
+URL filerne kan med fordel gemmes på skrivebordet af arbejdscomputeren. Herefter dobbelt-klikkes blot på dem hver gang en ny firmware skal hentes.";MSS
+SL408-0137;Kabel til SL408;;Smartlift
+APB-6134-W-8I8O;Powerbox I8(D) - O8(10A)+LORA 433/868Mhz;;Mechtronic
+MTC-160;Mechtronic Trip Counter;;Mechtronic
+NVG-100; New Holland vendegear;;Mechtronic
+GCR-0130;Programmeringskabel til Crawler;;GMV
+W-400-0306;Batteriindikatorkabel;;GMV
+UVC-8110;Main Modul;;NatDis
+UVC-8120;Zone Modul;;NatDis
+MWD-600;Mechtronic Wireless Device;230720: Hardware sendt til KT.;Mechtronic
+W-400-0307;Winlet CAN(1)bus kabel 400;;GMV
+W-400-0308;Kabel til arm proportionalventil W-400;;GMV
+GEM-2380;8P 2x4<16x 0.5#> J1 Curtis 1212 (Fjernb);;GMV
+GEM-2381;Wire Remote Control<10x 0,5#>Controlbox;;GMV
+GEM-2382;Radio Remote Control<10x 0,5#>Controlbox;;GMV
+W-400-03031;Forlænger 1 til Hyd. ventil kabel;;GMV
+W-400-03032;Forlænger 2 til Hyd. ventil kabel;;GMV
+SL1008;SL Box;;Smartlift
+6I5O-PSC-100;Polar Switch Current contorled;;Mechtronic
+6I5O-BTG-100;Battery Timer Guard;;Zeppelin
+CNC-GVL-100;CNC Bearbejdning af GVL kasse.;;GMV
+SL408-1000;Pose med SL408 kabelsæt;;Smartlift
+W-575-0105-3;Curtis interface til terminalprint V3.00;;GMV
+W-575-0301;VAC-Ventiler & Sensorer 575-3;;GMV
+SL1000-0304;Kabel fra PLC til Print;2022/02/10 MR: Bug 59, tegning tilrettet - præcisering af dimension for rød og sort ledning;Smartlift
+CNC-SL1000-0900;CNC bearbejdning af styrekasse til SL1000;;Smartlift
+GEM-1000;Kompl. kit for Ergomover Basic DC;;GMV
+CNC-6I5O;CNC bearbejdning 6I5O;;Mechtronic
+SL1000-0900;Styringskasse til SL1000;;Smartlift
+W-252;8 Pol til 6 Pol Molex;;GMV
+W-253;6 Pol til 8 Pol Molex;;GMV
+USB-100;Opladning og kommunikation imellem tablet & CAN;;Mechtronic
+6I5O-PWM-100;1Ch. PWM regulering 400Hz0-100%;;Mechtronic
+CNC-KAX-700;CNC bearbejdning KAX-700;;Mechtronic
+GEM-104;GSM Jumper;;GMV
+GEM-3000/6203370;Kompl. kit for Ergomover Manipulator DC;"
+";GMV
+PAD-200;Proportional Analog Divider 2-kanal;;Mechtronic
+W-0118-41;Knap incl.ledning og stik funk. til PSAC;;GMV
+GEM-110;B1- <16#> CURTIS B-;;GMV
+GEM-100;Print for Ergo Mover V1.00;18-09-2020 EK: Produktionsmatriale for print.;GMV
+MWD-630;Server modul til MWD-640;2022/01/13 MR: CAN-IC 2 tilføjet på doc. og stykliste, på anfordring af EUK.;Mechtronic
+MWD-640;Powerbox til MWD-630;;Mechtronic
+MWD-650;Ladeholder til MWD-610;;Mechtronic
+MWD-610;Remote control m/display;"21-6-2021 Software Ver 1.5.0.
+          Problem med max 32T på hænger løst.";Mechtronic
+MWD-531;MWD-530 Vægtdisplay server;"120718 Knud opdatering pga. dårligt radiosignal og stort strømforbrug.
+
+Firmware version 2.1.0 til MWD-510, MWD-520 og MWD-530 opdateret på FTP server.
+
+
+Som nævnt, fik jeg i går øje på at MWD-500 brugte lidt mere strøm end den ladestrømmen.
+-	Og fik øje på et stort forbrug fra display – det kæmpende jeg også en del med.
+Lavede bla. en mellemforbindelse til display, så jeg kunne måle strømmen i alle forbindelser imellem MMB100 og display.
+-	Konklusionen blev, at det display som var i den MWD-500 i sendte, er deffekt!
+I forhold til et andet display jeg har fået fra jer, bruger displayet ca. 52mA hvis men forsyner den direkte med +5V
++ den bruger 112mA ved 100% backligt (mod 100mA på et andet display).
+
+Udover at det blå print er forskellig på de 2 display, så er det også 2 forskellige LCD moduler.
+Har taget billede hvor selve LCD modulet er vippet op, ”Display(gammel).jpg” er den ’model’ som er OK.
+Søgte på Internet omkring dette, men fandt ikke information herom.
+
+
+MWD-510 ændringer i version 2.1.0 :
+1)	Beep signal ved lav radiosignal ændret:
+a) Ny ’kort’ beep signal hver sekund, hvis der er tabte 2 eller flere besked indenfor det sidste sekund (der sendes 10 gang pr. sekund).
+b) Det oprindelige Beep-signal kommer nu ved noget svagere signal
+    Har set en del gang, at den stadig kan holde forbindelse i lang tid når beep signal høres.
+c) Det oprindelige Beep-signal stopper når den har modtaget 10 beskeder i træk.
+2)	Har fundet en fejl i radiodelen udlæsning af Radio-signal-styrke fra Chippen, hvilket vil påvirke styrke af sendestyrke, m.m.
+3)	Har fundet en mindre fejl ved SPI til Touch.
+Er dog ikke fatal, da Touch har sin egen SPI bus.
+Medført dog ca. 4mA ekstra forbrug.
+4)	Har indført dæmpning af BackLight:
+- Efter 1 minut uden betjening + under opladning dæmpes til 40%.
+- 100% kan ’aktiveres’ igen ved et tryk på Touch (også uden at A-tasten holdes inde).
+5)	Har målet de enkelt forbrug igennem (med et OK display)
+a) CPU + Disp                                                    46,3mA
+b) CPU + Disp + Radio (20mW)                        84,4mA
+c) CPU + Disp + Radio (120mW)                       101,0mA
+d) CPU + Disp + Radio (20mW) + 40% BL       122,0mA
+e) CPU + Disp + Radio (20mW) + 100% BL     185,0mA
+
+Ladestrøm (til batteri)                                        145mA
+Ladestrøm (total)                                               266mA
+6)	MWD-500 Radio sendestyrke: 20mW, 60mW, 120mW (målt ledningsbåren, styres efter behov).
+Jf. EN 300 220-1 må der max. sende med 25mW, men det er den udstrålede effekt.
+Jeg vurdere at, der er et ret stort tab i antennen – men kan ikke måle det….
+
+MWD-520 + MWD-530 ændringer:
+1)	CAN ændret til Active mode
+2)	Radio sendestyrke: 20mW, 60mW (målt ledningsbåren, styres efter behov).
+Jf. EN 300 220-1 må der max. sende med 25mW, men det er den udstrålede effekt.
+
+Der er ingen forstærning i Procom antennen.
+Vil forvente at der tabes ca. 1,5..2dB i den relative lave antenne.
+Dvs. udstrålet effekt kan komme op på 90mW, hvilket er ca.2dB over det tilladte.
+
+I forrige version fik basen lov at sende med op til 120mW.
+
+Andet:
+1)	Oplever periodisk fejl på DC stik til opladning.
+2)	Antenneledning var loddet på antenneprint, så den gik direkte tilbage over antenne.
+Ved ikke hvor meget det betyder – men tænker det ikke er optimal…
+3)	Tror at antennen har ’problemer’ med den korte afstand til metalkabinet i siderne.
+Vil forslå vi prøver en anden løsning – tegning vedhæftet.
+4)	Da jeg har udskifte display i MWD-510 med det jeg ofte bruger til andre tests, vil jeg gerne – ved lejlighed – have et nyt display.
+
+Test:
+1)	I mine test har jeg brugte Procomm antenne, monteret i et skruestik som stod på bordet inde på kontoret.
+Har så gået rundt med MWD-510 i haven og ned af jernbanestien.
+2)	Oplever nu kun enkelte korte beep når jeg går rundt i haven.
+3)	I går lavet rigtig mange test, hvor jeg log’ede data med PC fra MWD-510.
+- Her skulle jeg ca. 150meter ned at jernbanestien før der begyndte at komme flere korte-beep.
+- Ved ca. 250..300 begyndte det oprindelige Beep af lyde.
+4)	I dag samlede jeg MWD-500 helt, og oplevede lidt kortere rækkevikke.
+- I haven, stadig kun ganske får korte beep.
+- ca. 100 meter nede af jernbanestien begyndte det oprindelige Beep signal.
+  Blev stående nogen tid på de 100 meter, hvor den holdt forbindelsen.
+";Mechtronic
+CANUSB-100;CANUSB til Superseal;;Mechtronic
+GEM-192344;GND Connector;191020EK Oprettet - ordres i antal af GMV.;GMV
+MPM-100;Mechtronic Produktion Manager;;Mechtronic
+BTN892TA-Eval;Evaluering af BTN892TA;;Mechtronic
+IBB-120;3D Print bøsning;;Mechtronic
+DISPv1.00;Udviklingsprojekt Sprit/UVC Dispenser;;DISP
+ATM-110;Opmonteret print til ATM-100;;Breeders
+ATM-111;Færdigmonteret kasse til ATM-100;;Breeders
+GEM-111;B1+ <16#> B2-;;GMV
+GEM-112;B2+ <16#> Main switch M10;;GMV
+GEM-113;PCB KL.30 <16#> Main switch M10;;GMV
+GEM-120;Tiller <16x 0,5#> Controlbox;;GMV
+GEM-130;18P Chass.Con <16x 0.5#> PCB/Curtis 1212;;GMV
+GEM-134;2P J3< 2x 0,75# > DRV Brake;;GMV
+GEM-2000;Kompl. kit for Ergomover Standard DC;;GMV
+GEM-210;B1- <25#> CURTIS B-;;GMV
+GEM-211;B1+ <25#> B2-;;GMV
+GEM-212;B2+ <25#> Main switch M10;;GMV
+GEM-213;PCB KL.30 <25#> Main switch M10;;GMV
+GEM-220XL;Tiller <16x 0,5#> Controlbox XL;;GMV
+GEM-230;18P Chass.Con <16x 0.5#> PCB2X3/Curtis;;GMV
+GEM-231;8P 2x4,2x14<16x 0.5#> J1 Curtis 1232e;;GMV
+GEM-232;8P 2x4<16x 0.5#> J1 Curtis 1212;;GMV
+GEM-233;2P 2X5 <4x 0,5#> Tiller switch 1S2;;GMV
+GEM-234;2P J3< 2x 0,75# > DRV Brake;;GMV
+GEM-235;2P 3X3< 2x 0,75# > 3S1 EMERGENCY SW.;;GMV
+GEM-236;Ø8 B2+<1X0,75>2X15 BATTERY MONITOR SUP.;;GMV
+GEM-237;6P 1X1.1<7x0.5#>1X1.2,3,4 AC Motor Tacho;;GMV
+GEM-240;Ø6 W<25# 1850mm>Ø6 W Kabel AC motor;;GMV
+GEM-241;Ø6 U<25# 1850mm>Ø6 U Kabel AC motor;;GMV
+GEM-242;Ø6 V<25# 1850mm>Ø6 V Kabel AC motor;;GMV
+GEM-250;Curtis M1 M6 <16# Sort> DRV motor - M8;;GMV
+GEM-251;Curtis M2 M6 <16# Rød> DRV motor + M8;;GMV
+GEM-252;Curtis B+ M6 <16# Rød> DRV.SUP M6;;GMV
+GEM-253;Curtis B- M6 <16# Sort> KL.31 M10;;GMV
+GEM-260;2X9,10 PCB< 4x 0,75#> HYD.VAL UP/DN;;GMV
+GEM-261;2P 2X13< 2x 0,75# > HYD.RELAY;;GMV
+GEM-262;PCBSUP M6 <10# Rød> HYD.RELAY M8;;GMV
+GEM-263;HYD.MOT.- <10# Sort> KL.31 M10;;GMV
+GEM-264;HYD.MOT.+ <10# RØD> HYD.RELAY M8;;GMV
+GEM-330;2P 2X5 <4x 0,5#> Lift switch 1S3;;GMV
+GEM-331;2P 2X5 <4x 0,5#> Tilt switch 1S4;;GMV
+GEM-332;2P 2X11< 2x 0,75# > TILT VALVE;;GMV
+W-101;Sensor Input Leax 575-600;;GMV
+W-102;Load sensor kabel 350-575-600;;GMV
+W-103;Sensor Input Leax 350,600,600HD;;GMV
+W-104;Jumper Tiellerhead;;GMV
+W-121;Load senor kabel Winlet 600-600HD;;GMV
+W-201;Winlet CAN(1)bus fordelerkabel 350-600;;GMV
+W-202;Winlet CANbus kabel Tillerhead 350-600;;GMV
+W-203;Winlet CAN(1)bus fordelerkabel 575;;GMV
+W-204;Winlet CANbus kabel Tiller head 575;;GMV
+W-205;Winlet CAN(1)bus kabel 350-600;;GMV
+W-206;Winlet CAN(1)bus kabel 575;;GMV
+W-207;Adapter for radio remote;;GMV
+W-1000-0101;Powercable 1222 Relay <-> Fuse;;GMV
+W-1000-0102;Powercable 1222 Fuse <-> B+;;GMV
+W-1000-0103;Powercable 1222 B- <-> B-;;GMV
+W-1000-0104;Powercable 1222 W <-> W;;GMV
+W-1000-0105;Powercable 1222 V <-> V;;GMV
+W-1000-0105-2;Curtis 1298/1222 interfacekabel;;GMV
+W-1000-0105-3;Curtis 1298/1222 interfacekabel;;GMV
+W-1000-0106;Drossel Valve Cable Winlet 1000.;;GMV
+W-1000-0107;Længdemåler kabel M12 5P m/stik i pose;;GMV
+W-1000-0108;Powercable 1222 U <-> U;;GMV
+W-1000-0109;Powercable 1222 Fuse <-> +1222;;GMV
+W-1000-0121;Adapter CAN;;GMV
+W-1000-(0101-0105);x;;GMV
+W-350-0105;POWERKABEL 350;;GMV
+W-350-0106;"16"" POWER 350 BAT MAIN";;GMV
+W-350-0107;"16"" POWER 350 BAT-PCB";;GMV
+W-350-0108;"16"" POWER 350 MAIN-PCB";;GMV
+W-350-0109;"16"" POWER 350 BAT BAT";;GMV
+W-350-0110;POWER DVR 350;;GMV
+W-350-0113;TILLERHEAD 350;2022/02/11 MR/KG: BUG113 aflyses, da der ikke forventes behov for flere enheder.;GMV
+W-350-0115-2;Curtis - Drive 350 V2.00;;GMV
+W-350-0117-2;Curtis-Hyd 350 V2.00;;GMV
+W-350-0119;Stik til winlet 350;;GMV
+W-350-575-0205;Spiralkabel for fjernbet.;;GMV
+W-350-575-0205-2;Spiralkabel Winlet remote V2.00;;GMV
+W-350-575-0205-3;Spiralkabel Winlet remote V3.00 8P conn.;;GMV
+W-350-575-0207;SWICH FOR TILLERHEAD;;GMV
+W-350-575-0210;Kabel for lydgiver ved kørsel;;GMV
+W-350-575-0211;Forlænger TILLERHEAD;;GMV
+W-350-600-0202;CAR EL 24V/15A 230V 350/600/600HD;;GMV
+W-350-600-600HD-0112;VENTIILKABLER 350-600-600HD;;GMV
+W-350-600-600HD-0116;VAC-VENTIL 350-600-600HD;;GMV
+W-575-0105-2;Curtis interface til terminalprint V2.00;;GMV
+W-575-0106;"16"" POWER 575 CURTIS RELAY";;GMV
+W-575-0106-1;"25"" POWER 575 CURTIS RELAY";;GMV
+W-575-0107;"16"" POWER 575 PCB RELAY";;GMV
+W-575-0108;"16"" POWER 575 PRINT+ABR";;GMV
+W-575-0108-1;"25"" POWER 575 PRINT+ABR";;GMV
+W-575-0109;"16"" POWER 575 PRINT-BAT";;GMV
+W-575-0109-1;"25"" POWER 575 PRINT-BAT";;GMV
+W-575-0110;"16"" POWER 575 WW";;GMV
+W-575-0110-1;"25"" POWER 575 WW";;GMV
+W-575-0111;"16"" POWER 575 CURTIS+D1";;GMV
+W-575-0111-1;"25"" POWER 575 CURTIS+D1";;GMV
+W-575-0112;"16"" POWER 575 U U";;GMV
+W-575-0112-1;"25"" POWER 575 U U";;GMV
+W-575-0113;"16"" POWER BAT BAT";;GMV
+W-575-0113-1;"25"" POWER BAT BAT";;GMV
+W-575-0114;"16"" POWER 575 CURTIS PUMP D2";;GMV
+W-575-0114-1;"25"" POWER 575 CURTIS PUMP D2";;GMV
+W-575-0115;"16"" POWER 575 BAT+ABR";;GMV
+W-575-0115-1;"25"" POWER 575 BAT+ABR";;GMV
+W-575-0117;VAC-VENTIL 575;;GMV
+W-575-0121;WIN-GYROKAB  Kabel til WinLet 575;;GMV
+W-575-0122;VENTILKABLER 575;;GMV
+W-575-0124;MOTORBREMSER 575;;GMV
+W-575-0126;"16"" POWER 575 V V";;GMV
+W-575-0126-1;"25"" POWER 575 V V";;GMV
+W-575-0127;"16"" POWER 575 CURTISPRINT";;GMV
+W-575-0127-1;"25"" POWER 575 CURTISPRINT";;GMV
+W-575-0128;Stik til winlet 575;;GMV
+W-575-0202;CAR EL 24V/15A 230V 575;;GMV
+W-600-0100-2;Controller for Winlet-600-2;;GMV
+W-600-0101-2;Curtis interface til terminalprint V2.00;;GMV
+W-600-0102;Powerkabel for motor - UW Ø5 850mm Ø5;;GMV
+W-600-0103;Powerkabel for motor - V V Ø5 800mm Ø5;;GMV
+W-600-0104;Powerkabel for motor - WU Ø5 750mm Ø5;;GMV
+W-600-0107;Power Curtis - hydraulik;;GMV
+W-600-600HD-0106;Power Curtis+ - relay;;GMV
+W-600-600HD-0107;Power PCB relay - Print-relay 28 cm.;;GMV
+W-600-600HD-0127;Power Curtis - print;;GMV
+W-600HD-0101-2;Curtis interface til terminalprint V2.00;;GMV
+W-600HD-0102;Powerkabel for motor - U-U Ø6 65cm Ø8;;GMV
+W-600HD-0103;Powerkabel for mortor - V-V Ø6 70 cm Ø8;;GMV
+W-600HD-0104;Powerkabel for motor- W-W Ø6 75 cm Ø8.;;GMV
+Winlet-1000;WinLet 1000;;GMV
+Winlet-350-2;WinLet 350;;GMV
+Winlet-350TH-2;WinLet 350TH;;GMV
+WINLET-575-2;WinLet 575;;GMV
+Winlet-600HD-2;WinLet 600HD;;GMV
+Winlet-785;Winlet 785;;GMV
+Winlet-Lasius;WinLet Lasius;;GMV
+W-LASIUS-0100-2;WinLet Lacius Controller;;GMV
+W-233;Service kit for PCB mont.i tiller;;GMV
+W-350-0118-4;Fjernbet. Komp.400 m/nødstop NY POT;;GMV
+W-575-0122-PROP;VENTILKABLER 575;;GMV
+W-0118-40;Komplet nødstop switch med stik;2022/01/14 MR: Tilrettet iht. bug nr. 105;GMV
+W-350-115V;Winlet 350 komplet kit m/115V lader;;GMV
+W-350-575-0203;WINLET-100;;GMV
+W-400-1000;Komplet ledningskit. GMV nr 9020718;;GMV
+W-400-10000;* Komplet kit * Winlet 400;;GMV
+W-600-0105;Pose til winlet 600;;GMV
+MWD;Produktmappe for MWD Produkter;;MWD
+MWD-6016;Mechtronic Wireless Devicekit 16Ch.;;Mechtronic
+UVC-700;UVC Radiolink;;NatDis
+W-105;Jumper Winlet Controller;;GMV
+DISP-100;Dispensorprojekt;;Naturlig Desinfektion
+6I5O-NCN-100;Signal aktivering;;Mechtronic
+AB-100;3D Print til Anker Bjerre Fjernbetjening;;Mechtronic
+MWD-631;Server til WiFi vægtvisning;;Mechtronic
+MWD-620;Powerbox I8(D) - O8(10A)+LORA 433/868Mhz;;Mechtronic
+GDL-110;GDL Controller;;Ivan Jakobsen
+URS-100;Ultrasonic Reverse Stop;290421: 1. prototype er afsendt for test, efter software opdatering. ;Zeppelin
+SL408-1135;Curtis Kabel SL408;;Smartlift
+SL608-1135;Curtis Kabel SL608;;Smartlift
+UVC-PLC;PLC styring til Naturlig Desinfektion;MJ: starter Siemens LOGO prog. UVC-PLV-V2 120121.;NatDis
+UVC-PLC-V2;UVC styring LOGO PLC;;NatDis
+Winlet-400;Winlet 400 kit;10-11-2021EK Fejl i diagram benævnelser omkring. side 2 ved P4.7. Der henvises til (124)CN3:3,4. Det er en fejl og teksten er ikke sigende for funktionen.;GMV
+FM Produkter;FM Maskiner relaterede produkter;D90121 ette er en midlertidig mappe, hvor div. doc kan udveksles;FM Maskiner
+W-254;8 Pol til 8 Pol Molex;;GMV
+MWD-1002;Mechtronic Wireless Device (2Ch);;Mechtronic
+SUPREMO;Mechtronic Fjernskrivebord;;All
+PICO Scop;PC oscilloskop;;All
+C2F-100;CAN to frekvens converter;;Mechtronic
+SL1000-0305;Kabel til SL1000;;Smartlift
+SL1000-0306;Kabel til SL1000;;Smartlift
+SL408-608-0110;Samlekasse;;Smartlift
+SL1000-0100;Kabel til SL1000;;Smartlift
+MMB-200;MMB Board med ESP32;;Mechtronic
+MWD-710;Vægtaflæsningsprodukt med MMB Board og ESP;;Mechtronic
+SL608-0121;Rød <6#>;;Smartlift
+W-575-0110-2;"25"" POWER 575 WW";;GMV
+W-575-0112-2;"25"" POWER 575 U U";;GMV
+W-575-0126-2;"25"" POWER 575 V V";;GMV
+W-575-0114-2;"25"" POWER 575 CURTIS PUMP E2";;GMV
+W-575-0111-2;"25"" POWER 575 CURTIS+E1";;GMV
+W-600HD-0102-1;Powerkabel for motor - U-U Ø6 65cm Ø10;;Mechtronic
+W-600HD-0103-1;Powerkabel for mortor - V-V Ø6 66 cm Ø10;;Mechtronic
+W-600HD-0104-1;Powerkabel for motor- W-W Ø6 66 cm Ø10;;Mechtronic
+FREI-TEMO-200;Frei Tillerhead TEMO200 modul;;Mechtronic
+MMB-ESP32 WiFi;MMB-100 ESP32 WiFi setup;;Mechtronic
+SL1000-2000;Nyudvik. 2021;;Smartlift
+SLnyt kabel;SL Ladekabel til 408/608;;Smartlift
+MONT-SL1000-0100;Monteret print;;Mechtronic
+SCC-100;CAN Interface IO Enhed;;Mechtronic
+FLS-200;Frekvens Limit Switch;;Mechtronic
+6I5O-NCN-101;Signal aktivering;;Mechtronic
+SL012207;Charge cable;;Smartlift
+MWD-720;Server WiFi/Bluetooth MWD-700;;Mechtronic
+MWD-700;Mechtronic Weight Display via Mobil;;Mechtronic
+ESP-32;WiFi/Bluetooth modul;;Mechtronic
+MWD-730;Kabelsæt til mwd-700;;Mechtronic
+W-575-0122-3;Kabel i winet 575-2;;GMV
+W-208;Adapter ( 6207190 );;GMV
+MMB-103;MMB-100 tilpasset displayvisning;;Mechtronic
+W-575-0121-1;WIN-GYROKAB  Kabel til WinLet 575 6P;;GMV
+DK80007503A;Kabel - 4 pol connector m/protective cap;;Mechtronic
+W-400-0309;Kabel til Dump lventil W-400;;GMV
+VMB-120;VMB-1000 MMB-100 og ESP32 sw;;Mechtronic
+VMB-121;Powerboks;;Mechtronic
+VMB-110;App;;Mechtronic
+JRK-221;JCB relæ kit;;Mechtronic
+GVL-120;Styring for løfteåg;;GMV
+UVC-8100;UVC MODbus UVC system med zonemoduler;;NatDis
+SSM-300;Speeder Limiter Modul;210621EK: Udviklingsstart.;NCN
+SL1000-2102;Kabel 25# 1000mm monteret U;;Smartlift
+SL1000-2103;Kabel 25# 1000mm monteret V;;Smartlift
+SL1000-2104;Kabel 25# 1000mm monteret W;;Smartlift
+SL1000-2105;Kabel 25# rød 200mm monteret;;Smartlift
+SL1000-2106;Kabel 25# 910mm monteret;;Smartlift
+SL1000-2107;Kabel 25# rød 300mm monteret;;Smartlift
+SL1000-2108;Kabel 25# rød 1070mm monteret;;Smartlift
+SL1000-2200;Kabel Curtis Interface;"2022/02/14 MR: Opdateret til version 5; farverne grå og pink ombyttet i motorstikket.
+20220112 MR: Opdateret til R0_V4 baseret på mail af 20220110 fra MR@SmartLift: ""Jeg har en lille rettelse til kabeloversigten. Hvis du kigger på fanen ”Curtis”, så kan du se at jeg har byttet to tal""
+";Smartlift
+SL1000-2109;Kabel 190686 med stik 83417701;;Smartlift
+SL1000-2110;Kabel 190686 med stik 83417701;;Smartlift
+SL1000-2111;Kabel forsyning til box +;;Smartlift
+SL1000-2114;Parts for SL1000-2000;;Smartlift
+SL1000-2112;Kabel for vejecelle;;Smartlift
+SL1000-2113;Kabler for vakuumstat;;Smartlift
+SL1000-2115;Kabel forsyning til box, minus;;Smartlift
+SL1000-2116;Kabel PLC to EL box;;Smartlift
+SL1000-2117;Kabel PLC to EL box;;Smartlift
+SL1000-0000;SmartLift billedmappe;;Smartlift
+SL1000-2118;Kabel Elbox <> Tillerhead;;Smartlift
+SSM-340;Wire Harness for SSM-300 Speed Limiter;;Mechtronic
+SL1000-FREI;Mechtronic Frei Tillerheadmodul;;Smartlift
+MMB-210;Mechtronic Mainboard FREI TEMO ;;Mechtronic
+W-1000-0122-3;VENTILKABEL  FOR 1000-M2;;GMV
+VMB-210;App kun til vægtvisning;;Mechtronic
+SL1000-2119;Cable for LightTower;;Smartlift
+SL1000-2120;Cable for Vac.pump;;Smartlift
+SL1000-2121;Cable for Hydr. pump B+;;Smartlift
+SL1000-2122;Cable for Hydr. pump GND;;Smartlift
+W-Lasius-0122-3;VENTILKABLER Lasius-3;;GMV
+W-1222-0105-3;Curtis 1222 interfacekabel;2021/12/02 MR: Benkonfiguration i molexstik på side 1 ændret. Anmodet via buglist.;GMV
+W-1298-0105-3;Curtis 1298 interfacekabel;"20211028 MR på vegne af KG: Side 2, stik ben 2 og 4 ombyttet
+20211112 MR, R2: på vegne af KG: Ledningslængder forlænget med 6 cm.
+2022/01/14 MR: R3 er tilretninger iht. bug nr. 95";GMV
+VMB-200;Weight Display;;Mechtronic
+CNC-SL1000-2900;CNC Bearbejdet kasse ;;Smartlift
+GEM-2383;Radio Remote Control<12x 0,5#>Controlbox;;Mechtronic
+SMJ-0005;Kabel;;Mechtronic
+SL1000-2101;550mm 25# B2- to B4-;;Smartlift
+SL1000-2123;Cable 25# red 550mm batteries;;Smartlift
+SL1000-2124;Sound trans. assy;;Smartlift
+CNC-SSM-100;CNC bearbejdning kasse til SSM-100;;Mechtronic
+SL408-1130;Kabel;2022/01/26 MR: Bug 109, venstre hvidt krympeflex forlænget;Smartlift
+SL608-1130;Kabel;"2022/01/26 MR: Bug 107, kabeltester oprettet
+2022/01/26 MR: Bug 110, venstre hvidt krympeflex forlænget
+";Smartlift
+SL408-1001;Kabelkit for SL408 Rev 1;;Mechtronic
+SL608-1001;Kabel kit for SL608 Rev 1;;Mechtronic
+6I5O-FBR-APC-102;Sikkerhedsrelæ for APC-102;;Mechtronic
+GCR-0100;Controller for GMV Crawler;;GMV
+GCR-0105;Curtis P6;;GMV
+GCR-0106;RELAY <16#> CURTIS+;;GMV
+GCR-0107;RELAY <16#> FUSE20;;GMV
+GCR-0108;FUSE21 <6#> FUSE20;;GMV
+GCR-0109;FUSE21 <6#> CONV.+VI;;GMV
+GCR-0110;PRINT- <6#> CONV.-VI;;GMV
+GCR-0111;PRINT- <16#> CURTIS-;;GMV
+GCR-0112;CONV.-VO <10#> PRINT-;;GMV
+GCR-0113;CONV.+VO <10#> PRINT+;;GMV
+GCR-0114;PRINT- <16#> CHASSIS;;GMV
+GCR-0115;FUSE19 <16#> FUSE20;;GMV
+GCR-0116;Overwrite SW. Kabel;;GMV
+GCR-0117;VAC-VENTIL GMV Crawler;;GMV
+GCR-0118;Jumper GCR;;GMV
+GCR-0119;Nødstop kabel (ZBE-102 - MOLEX);;GMV
+GCR-0120;Nødstop kabel (MOLEX - RELAY);;GMV
+GCR-0122;VENTILKABLER GMV Crawler;;GMV
+GCR-0123;VENTILKABLER P2 GMV Crawler;;GMV
+GCR-0124;CURTIS+ <16#> D1;;GMV
+GCR-0125;CURTIS M- <16#> D2;;GMV
+GCR-102;Load sensor kabel GCR;;GMV
+GCR-103;Venstre endstop kabel GCR;;GMV
+GCR-104;Højre endstop kabel GCR;;GMV
+GCR-6133-IO;GMV Crawler Powerbox I8(D) - O8(10A);;GMV
+MMB-211;MMB-200 med ESP32 (MWD-720);;Mechtronic
+MWD-850;Lader for MWD300/800;;Mechtronic
+CNC-MMB-211;CNC bearbejdet kasse for bl.a. MWD-720;;Mechtronic
+PWM-300;PWM frekvens reduceringsmodul;2022/02/07 MR: Bug 108 er delvis udført, men kan først færdiggøres med foto ved næste produktion.;Mechtronic
+W-575-03011;VAC-Ventiler & Sensorer 575-31;;GMV
+W-V4-0100;Controller for Winlet;;GMV
+GMV-9020134;Cable for Spyglass;;GMV
+SL1000-2126;160mm <25#> red;;Mechtronic
+SL1000-2125;160mm <25#> BK B1- to B2+;;Mechtronic
+SL1000-2127;240mm <25#> BK B3- to B4+;2022/01/14 MR: Tilrettet iht. bug nr. 99;Mechtronic
+90207251;Ventilkabel for WINLET 1400 (Crawler);20211208 MR: Længder tilrettet. Kilde: GMV/EK.;GMV
+SL1000-2910;Komplet print;;Smartlift
+21-0001;test;;slr
+MMB-ESP32 BlueTooth;MMB-ESP32 ESP32 Bluetooth setup;;Mechtronic
+VG-100;Votech styringskasse for gyllevogn;;Voltech
+VT-100;Styrekasse for Votech gylletrailer;;Voltech
+FREI-TEMO200SL;FREI CAN Interface;"01-01-23. R2 er rettet.
+HUSK Der skal påloddes manuelt parallelt over R2 3,9K 0603 Modstand. +5V forsyning tilpasses....";Smartlift
+8I10O;8in 10Out PLC Modul;"EK140322
+R17,19,21,23 ændret fra 10K til 33K.";Mechtronic
+MONT-FREI-TEMO-200;FREI-TEMO-200 produkt.;;Mechtronic
+CNC-FREI-TEMO-200;CNC bearbejdning kasse til FREI-TEMO-200;;Mechtronic
+CAB FREI-TEMO-200SL;Cable for FREI-TEMO-200SL;;Mechtronic
+SL408-608-2000 UDVIK;Udviklings projekt V2.00  CAN 408/608;;Smartlift
+W-251;Alu.prop for fejernbet.;;GMV
+APB-6133;Powerboks 8I8O;;Mechtronic
+APB-6134;Powerbox Special program;;Mechtronic
+LRR-100;Langhøj Radio Remote;;Langhøj
+SL1000-2128;Kabel for 6/2 Ventil;"20062022EK 
+Aftalt med Erling at montere DIN43650A stik på nuv. løse ledninger. Hvis ikke vi hører nærmere inden næste prod. - vil det være standard fremadrettet. ";Smartlift
+SL1000-2129;Ladekontrol kabel;;Smartlift
+LHM-101;*UNDER UDVIK* Fjernbet modul;;Langhøj
+LSC-100;Langhøj spiralkabel;;Langhøj
+Scantruck LS;Scantruck højde lift sikring;;Scantruck
+CGM-100;CAN Gateway Manipulator;;Mechtronic
+SLS-300;Scantruck Lift Secure;;Scantruck
+TDJHors-100;UDVIK. Foderautomat;;TDJHors
+VOC-110;4x0,75mm2 kabel <  3M  >DT06-4S;;Votech
+JET-140-1;Stik på lampe;;Mechtronic
+SL1000-2130;Main supply 2230mm;;Smartlift
+SL409-609-2105;Kabel 16# 1800mm B- <> CurtisB-;;Smartlift
+CAB FREI-TEMO-200GMV;Cable for FREI-TEMO-200GMV;"09-05-2022 : FREI-TEMO200GMV LedningsmonteringR2:
+SPEED SIG PU flyttet fra P6.3 til P6.2
+Jumper for P5 (ON/OFF) tilføjet.";Mechtronic
+SWC-100;Smartlift Wired CAN Controller modul;;Smartlift
+W-400-03030;Hyd. ventil kabel v2.00;;GMV
+MWD-611;Remote control m/display;;Mechtronic
+W-400-030324;Ventilkabel 400 boom;;GMV
+MWD-6108;Mechtronic Wireless Devicekit 8Ch.;;Mechtronic
+SSM-101;UDVIK. Speeder modul for Volvo S60;;Langhøj
+FREI-TEMO200GMV;FREI CAN Interface GMV;HUSK Der skal påloddes manuelt parallelt over R2 3,9K 0603 Modstand. +5V forsyning tilpasses....;Mechtronic
+MONT-SL1000-2910;Monteret print Leaded + SMD;;Smartlift
+VMB-310;App til betonblander vægtvisning;;Skarpnes
+SL409-609-2910;Komplet print for SL409/609;"EK 270223 Møde om :
+SL409-609-2910 PCB ændringer 270223.zip";Smartlift
+JET-110-3;Powerbox for Gripper/Stacker V3.0;"09-01-2023EK Software test : GRIP og ROTATION er tilføjet 1sek. forsinkelse på udgangen ved aktivering. Dette er IKKE testet. SW er placeret på følgende sti: F:\Software\Mechtronic\JET-110-3
+Filnavn : JET-110-2-09012023.S19";Mechtronic
+JET-KAB09;Kabel for Gripper / Stacker 8m m/stik;;Mechtronic
+JET-KAB03;Kabel for JET-110. 2,6M m/stik;;Mechtronic
+LHC-101-0200;Cable LHM-101;;Langhøj
+LHC-101-0300;Cable LHM-101;"17.11.22 EK 
+BU/WH ledning flyttet i P5 stikket fra P5.3 til P5.6 ";Langhøj
+LHC-101-0310;Cable LHM-101;;Langhøj
+LHC-101-0210;Cable LHM-101;;Langhøj
+CNC;* UDVIK *  Mechtronic CAN Controller;;Mechtronic
+SL409-2000;*UDVIK* Komplet kabelkit og styrekasse SL409-2000;;Smartlift
+SL609-2000;*UDVIK* Komplet kabelkit og styrekasse SL609-2000;;Smartlift
+VMB-320;Betonblander styring;;VMB
+SL609-2102;Kabel <16#> 520mm Mont U Black;;Smartlift
+SL609-2103;Kabel <16#> 440mm Mont V Black;;Smartlift
+SL609-2104;Kabel <16#> 510mm Mont W Black;;Smartlift
+SL609-2105;Kabel <16#> 1800mm Sort ;;Smartlift
+SL609-2107;Kabel <16#> 1800mm monteret Red;;Smartlift
+SL609-2108;Kabel <16#> 175mm monteret Red;;Smartlift
+SL409-609-2126;Kabel 16# 190mm Relay<>Fuse;;Smartlift
+SL609-2111;Kabel forsyning til print <10#> 1500mm Red;;Smartlift
+SL609-2200;Kabel. Curtis Multistik ;;Smartlift
+SL609-2101;700mm <16#> B+ to Main Switch Red;;Smartlift
+SL609-2115;Kabel GND til pint <10#> 1500mm Black;;Smartlift
+SL609-0134;Kabel L+R Bottom swich;;Smartlift
+SL409-609-2113;Kabler for vacuumstater;;Smartlift
+SL609-2117;Vippekontakt Højre <0.75#> 2500mm Black;;Smartlift
+SL609-2112;Kabel <10#> 700mm Red;;Smartlift
+SL409-609-2116;Kabel for PLC;;Smartlift
+SL409-609-2117;Kabel til PLC;;Smartlift
+SL609-2120;Kabel Vakuumpumpe 4x 0,75# 1500mm Sort;;Smartlift
+SL609-2118;Kabel Tiller+OVL <> Styrekasse;;Smartlift
+MCC-200;Mechtronic CAN Controller 2.Ch;;Mechtronic
+SL609-0133;Kabel OVL + Tiller ;;Smartlift
+SL609-2109;Kabel Vac.Valve RED;;Smartlift
+SL609-2130;Kabe 0,75# RE Main supply <2230mm>M8;;Smartlift
+MMB-200-PROG;FTDI MMB Programmer;;Mechtronic
+SL409-609-2140;Kabel Curtis P1;;Smartlift
+CNC-SL409-609-2900;CNC for kasse;;Smartlift
+SL609-2119;Cable for LightTower;;Smartlift
+SL409-609-2900;Komplet styrekasse for SL409/609;;Smartlift
+SL409-609-2101;Kabel 16# 800mm B+ to Main Switch Rød;;Smartlift
+SL609-2129;Kabel for ladekontrol;;Smartlift
+8I10O-BTG-100;Batteri Timer Guard;;Mechtronic
+CAB-BTG-100;Cable Battery Timer Gauge;;Mechtronic
+SL409-2118;OVL+Tiller cable SL409;;Smartlift
+SL409-609-2107;Kabel <16#> 1540mm monteret Rød;;Smartlift
+NCB-100;CAN adapter;;NC Nielsen
+SL409-609-2102;Kabel 16# 520mm Mont U;;Smartlift
+SL409-609-2103;Kabel 16# 440mm Mont V;;Smartlift
+SL409-609-2104;Kabel 16# 510mm Mont W;;Smartlift
+SL409-609-2115;Kabel Powerkabel HiFlex 10# 1900mmBlack ;;Smartlift
+SL409-609-2111;Kabel Powerkabel HiFlex 10# 650mm Red;;Smartlift
+SL409-609-2112;Kabel Fuse<10# 700mm> PCB B+ Rød;;Smartlift
+SL409-609-2200;Kabel mont. Curtis Multistik;;Smartlift
+SL409-609-0134;Kabel L+R Bottom swich;;Smartlift
+SL409-609-2120;Kabel 2x 1,5# 1500mm Black;;Smartlift
+SL409-609-2118;Kabel Tiller 7x 0,5# 1800mm Grey;;Smartlift
+SL409-609-2129;Kabel for ladekontrol;;Smartlift
+SL409-609-2109;Kabel Vac.Valve;;Smartlift
+SL409-2109;Kabel Vac.Valve;;Smartlift
+SSM-102;Speeder Servo Modul Digital;;Mechtronic
+8I10O-PWM-100;PWM signalregu. for oliefyr;Under udvikling. Afventer test (John-Ketner)...;Ketner
+MCC-110;CAN interface til MB GLB;"30-03-2023
+Har lavet ny firmware version 1.3.0 til MCC-100, som nu også kan generer hurtige blink med langlys.
+Anvender CAN2 på 250bit
+Aktiveres når In1 er høj.
+Jf. Jesper virker det rigtig fint....
+
+Bortset fra store problemer med TeamViewer, fik vi rimelig hurtigt løst opgaven.
+
+Efterfølgende forsøgte vi at løse endnu et problem med aktivering af alarm når bilen låses udefra imens motor går i tomgang.
+Det lykkedes desværre ikke (og igen gik der med tid med at jeg mistede TW forbindelsen…)
+";Mechtronic
+NCJ-100;Joystick CAN modul [NCN]];;Mechtronic
+TDJ-100;TDJ Feeder Controller;;Mechtronic
+H+H ERGO;Ergo H?H;;GMV
+LHC-101-0100;Adapter kabelsæt;;Langhøj
+LHC-101-0110;Adapter kabelsæt dørmotor;;Langhøj
+FREI-TEMO-CAB-101;FREI-TEMO-CAB-100 Kabel for FREI-TEMO-200;;Mechtronic
+SL409-609-2100;Kabel 16# 200mm B1+ <> B2-;;Smartlift
+MWD-6024;Mechtronic Wireless Devicekit 24Ch.;;Mechtronic
+SL409-609-2108;Kabel <16#> 175mm monteret Rød;;Mechtronic
+SL409-609-2910V3;Print for 409/609  box ;;Mechtronic
+SL309-2101;Kabel 16# 2100mm B+ to Main Switch Rød;;Smartlift
+SL309-2115;Kabel Powerkabel HiFlex 10# 800mmBlack ;;Smartlift
+SL309-2111;Kabel Powerkabel HiFlex 10# 1300mm Red;;Smartlift
+SL309-2112;Kabel Fuse<10# 200mm> PCB B+;;Smartlift
+SL309-2120;Kabel Vac.pump;;Smartlift
+SL309-2129;Kabel for ladekontrol;;Smartlift
+SL309-2109;Kabel Vac.Valve;;Smartlift
+SL309-2113;Kabler for vakuumstat;;Smartlift
+SL309-2140;Kabel Curtis P1;;Smartlift
+SL309-0134;Kabel L+R Bottom swich;;Smartlift
+SL309-2118;Kabel Tiller<>Styrekasse;;Smartlift
+SL309-2119;Kabel OVL<>Styrekasse;;Smartlift
+LHC-101-0400;Cable kit for remote contol 4.Ch.5m;;Mechtronic
+CNC-SL309-2900;CNC bearbejdet kasse;;Smartlift
+SSM-200;** NYUDVIK. SSM-100 ***;;Langhøj
+SSM-103;Speeder Servo Modul Analog 0V,u/relæ kond.;"EK:24022023 
+Produceres som SSM-100. Samme software.
+C23,24,35,36 skal ikke monteres.
+R10,21 Ændres til 0 Ohm.";Langhøj
+SL409-609-2910V4;Print for styrekasse.;;Smartlift
+ETA-100;Emergncy Tag Access;;Mechtronic
+SL309-2107;Kabel <16#> 1800mm monter;;Smartlift
+JET-211;Simple JET Control.;;Mechtronic
+MCC-100;CAN interface 1x CAN Lausø;;Mechtronic
+APB-613-06;Powerboks Stralis MY2019 S-Way/X-Way;;Mechtronic
+SL1000-2910V3;Komplet Print;;Smartlift
+CNC-JET-110-2;CNC bearbejdet kasse;;Mechtronic
+CNC-JET-120-2;CNC bearbejdet kasse;;Mechtronic
+CNC-JET-BET-3;CNC bearbejdet kasse;;Mechtronic
+900141;Cable repair kit.;;Just Easy Tools
+JET-300;Stacker styring 2023 (Simple);;Just Easy Tools
