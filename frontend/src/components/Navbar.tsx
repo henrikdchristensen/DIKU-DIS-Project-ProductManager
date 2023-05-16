@@ -2,6 +2,7 @@ import React from 'react'
 import { SiTeamviewer } from 'react-icons/si';
 
 const Navbar = () => {
+
     return (
         <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
             <div className='max-w-[70rem] m-auto'>
