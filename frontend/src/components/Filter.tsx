@@ -1,11 +1,8 @@
-import { log } from 'console';
-import React, { useState } from 'react'
 import { FiPlus } from 'react-icons/fi';
-import axios from 'axios';
 import {properties} from '../App'
 
-
 const Filter = (props: properties) => {
+
     const list_items: string[] = ['Produkter', 'Producerede Produkter'];
 
     let activeDropdown = list_items.map((item, i) => {

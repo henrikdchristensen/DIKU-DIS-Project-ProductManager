@@ -1,4 +1,3 @@
-import React from 'react'
 import { SiTeamviewer } from 'react-icons/si';
 
 const Navbar = () => {

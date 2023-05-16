@@ -13,6 +13,8 @@ function App() {
   // Shared state between Filter and Table
   // 0 = products, 1 = produced products
   const [listActive, setListActive] = useState(0);
+
+  const [data, setData] = useState([]);  
   
   return (
     <div>
