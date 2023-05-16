@@ -6,6 +6,10 @@ SELECT ComponentParameter.Name, Component.Number
 FROM ComponentParameter
 JOIN Component ON ComponentParameter.ComponentID = Component.ID;
 
+SELECT  Component.DeviceID, ComponentParameter.Name,  ComponentParameter.Value
+FROM ComponentParameter
+JOIN Component ON ComponentParameter.ComponentID = Component.ID;
+
 Fejl indtil videre
 Users der ikke er tilknyttet firma
 Produkt templates der ikke er tilknyttet firma
