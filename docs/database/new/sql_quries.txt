@@ -1,0 +1,15 @@
+Produced_Products:
+SELECT Serial, Number, ProductionDate, ProductionEmployee FROM `Devices` WHERE 1
+
+Component:
+SELECT ComponentParameter.Name, Component.Number
+FROM ComponentParameter
+JOIN Component ON ComponentParameter.ComponentID = Component.ID;
+
+Fejl indtil videre
+Users der ikke er tilknyttet firma
+Produkt templates der ikke er tilknyttet firma
+Produced products der ikke er tilknytttet en user eller en user der ikke findes
+Serienumre der går igen
+Enheder Produceret hvor der ikke er en template
+Redundant data da mange komponenter er templates - faktisk alle undtagen esp32
