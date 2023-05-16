@@ -3,7 +3,15 @@ import Navbar from './components/Navbar';
 import Filter from './components/Filter';
 import Table from './components/Table';
 
+export interface properties {
+  listActive: number;
+  setListActive: Function;
+}
+
 function App() {
+
+  // Shared state between Filter and Table
+  // 0 = products, 1 = produced products
   const [listActive, setListActive] = useState(0);
   
   return (

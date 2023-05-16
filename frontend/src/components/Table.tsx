@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
-interface properties {
-  listActive: number;
-  setListActive: Function;
-}
+import {properties} from '../App'
 
 const Table = (props: properties) => {
 
-  const { listActive, setListActive } = props;
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetchData(listActive);
-    }, [listActive]);
+    fetchData(props.listActive);
+    }, [props.listActive]);
 
   const fetchData = async (list:number) => {
     try {
@@ -26,6 +21,7 @@ const Table = (props: properties) => {
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
+      setData([]);
     }
   };
 
