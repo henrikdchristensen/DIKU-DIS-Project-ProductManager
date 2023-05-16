@@ -4,12 +4,14 @@ import Filter from './components/Filter';
 import Table from './components/Table';
 
 function App() {
+  const [listActive, setListActive] = useState(0);
+  
   return (
     <div>
       <Navbar />
-      <Filter />
+      <Filter listActive={listActive} setListActive={setListActive} />
       <div className='mt-8'>
-        <Table/>
+        <Table listActive={listActive} setListActive={setListActive} />
       </div>
     </div>
   );
