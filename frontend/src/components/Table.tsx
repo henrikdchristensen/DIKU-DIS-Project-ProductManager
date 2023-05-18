@@ -1,29 +1,54 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import {properties} from '../App'
+import { properties } from '../App';
 
 const Table = (props: properties) => {
-
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<any[]>([]);
+  const [offset, setOffset] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchData(props.listActive);
-    }, [props.listActive]);
+    setOffset(0);
+    setData([]);
+    fetchData(props.listActive, 0);
+  }, [props.listActive]);
 
-  const fetchData = async (list:number) => {
+  const fetchData = async (table: number, offset: number) => {
     try {
-       let s = '';
-        if (list == 0)
-            s = 'product_templates';
-        else if (list == 1)
-            s = 'produced_products';
-      const response = await axios.get(`/api/data?list=${s}`);
-      setData(response.data);
+      let t = '';
+      if (table === 0) t = 'product_templates';
+      else if (table === 1) t = 'produced_products';
+
+      const response = await axios.get(`/api/data?table=${t}&offset=${offset}`);
+      const newData = response.data.data;
+      setData((prevData) => [...prevData, ...newData]);
+      setOffset((prevOffset) => prevOffset + 100);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
       setData([]);
     }
   };
+
+  const handleScroll = () => {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+
+    if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
+      setLoading(true);
+      fetchData(props.listActive, offset);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
+  
 
     return (
         <div className='px-10'>
