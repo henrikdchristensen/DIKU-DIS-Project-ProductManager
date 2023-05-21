@@ -23,20 +23,20 @@ def get_data():
     sort_direction = 'ASC'
     if sort_by.startswith('-'):
         sort_direction = 'DESC'
-        sort_by = sort_by[1:]  # Remove the '-' prefix
+        sort_by = sort_by[1:]  # remove the '-' prefix
     if search != '':
         query = f'SELECT * FROM {table_name} WHERE {sort_by} ILIKE \'%{search}%\' ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT 100' # ILIKE is case insensitive, whereas LIKE is case sensitive
     else:
         query = f'SELECT * FROM {table_name} ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT 100'
+    
     print(query)
+    
     cursor.execute(query)
-
     data = cursor.fetchall()
     cursor.close()
     connection.close()
 
     return {'data': data}
-
 
 if __name__ == '__main__':
     app.run()

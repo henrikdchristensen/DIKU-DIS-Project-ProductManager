@@ -11,18 +11,27 @@ export interface properties {
 }
 
 function App() {
-
   // Shared state between Filter and Table
   // 0 = products, 1 = produced products
   const [listActive, setListActive] = useState(0);
-  const [search, setSearch] = useState('');  
-  
+  const [search, setSearch] = useState('');
+
   return (
     <div>
       <Navbar />
-      <Filter listActive={listActive} setListActive={setListActive} searchQuery={search} setSearchQuery={setSearch} />
-      <div className='mt-8'>
-        <Table listActive={listActive} setListActive={setListActive} searchQuery={search} setSearchQuery={setSearch} />
+      <Filter
+        listActive={listActive}
+        setListActive={setListActive}
+        searchQuery={search}
+        setSearchQuery={setSearch}
+      />
+      <div className="mt-8">
+        <Table
+          listActive={listActive}
+          setListActive={setListActive}
+          searchQuery={search}
+          setSearchQuery={setSearch}
+        />
       </div>
     </div>
   );
