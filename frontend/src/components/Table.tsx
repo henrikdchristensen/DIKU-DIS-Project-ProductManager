@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { properties } from '../App';
+import { properties } from '../pages/Overview';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const Table = (props: properties) => {

@@ -1,4 +1,4 @@
-import { properties } from '../App';
+import { properties } from '../pages/Overview';
 
 const Filter = (props: properties) => {
   const list_items: string[] = ['Produkter', 'Producerede Produkter'];
