@@ -10,6 +10,29 @@ def get_db_connection():
                             password='1234')
     return conn
 
+@app.route('/api/table_info')
+def get_table_info():    
+    connection = get_db_connection()
+    cursor = connection.cursor()
+
+    table_query = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'"    
+    cursor.execute(table_query)
+    tables = cursor.fetchall()
+    table_info = []
+
+    for table in tables:
+        table_name = table[0]
+        column_query = f"SELECT column_name FROM information_schema.columns WHERE table_schema = 'public' AND table_name = '{table_name}'"
+        cursor.execute(column_query)
+        columns = cursor.fetchall()
+        table_info.append({'table_name': table_name, 'columns': columns})
+
+    cursor.close()
+    connection.close()
+
+    return {'table_info': table_info}
+
+
 @app.route('/api/data')
 def get_data():
     table_name = request.args.get('table', default='*', type=str)
