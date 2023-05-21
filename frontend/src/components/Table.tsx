@@ -31,20 +31,23 @@ const Table = (props: properties) => {
       setLoading(true);
       const newOffset = offset + numToFetch;
       setOffset(newOffset);
-      fetchData(props.listActive, sortBy, newOffset, props.searchQuery);
+      fetchData(false, props.listActive, sortBy, newOffset, props.searchQuery);
     }
   };
 
-  const fetchData = async (table: number, sort: string, offset: number, search: string) => {
+  const fetchData = async (resetData: boolean, table: number, sort: string, offset: number, search: string) => {
     try {
+      if (resetData) setOffset(offset);
       let t = '';
       if (table === 0) t = 'product_templates';
       else if (table === 1) t = 'produced_products';
       const response = await axios.get(
-        `/api/data?table=${t}&sortBy=${sort}&offset=${offset}&search=${search}`
+        `/api/data?table=${t}&sortBy=${sort}&offset=${offset}&search=${search}&limit=${numToFetch}`
       );
       const newData = response.data.data;
-      setData((prevData) => [...prevData, ...newData]);
+      if (resetData) setData(newData);
+      else
+        setData((prevData) => [...prevData, ...newData]);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -67,24 +70,13 @@ const Table = (props: properties) => {
   useEffect(() => {
     props.setSearchQuery('');
     setSortBy(lowercaseWithUnderscore(columns[0]));
-    setOffset(0);
-    setData([]);
-    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0, props.searchQuery);
+    fetchData(true, props.listActive, lowercaseWithUnderscore(columns[0]), 0, '');
   }, [props.listActive]);
 
-  // On search change
+  // On search, sort change
   useEffect(() => {
-    setOffset(0);
-    setData([]);
-    fetchData(props.listActive, sortBy, 0, props.searchQuery);
-  }, [props.searchQuery]);
-
-  // On sort change
-  useEffect(() => {
-    setData([]);
-    setOffset(0);
-    fetchData(props.listActive, sortBy, 0, props.searchQuery);
-  }, [sortBy]);
+    fetchData(true, props.listActive, sortBy, 0, props.searchQuery);
+  }, [props.searchQuery, sortBy]);
 
   // On scroll
   useEffect(() => {

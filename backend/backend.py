@@ -1,8 +1,6 @@
 from flask import Flask, request
 import psycopg2
 
-numToFetch = 500
-
 app = Flask(__name__)
 
 def get_db_connection():
@@ -18,6 +16,7 @@ def get_data():
     sort_by = request.args.get('sortBy', default='*', type=str)
     offset = request.args.get('offset', default=0, type=int)
     search = request.args.get('search', default='', type=str)
+    limit = request.args.get('limit', default=100, type=int)
     
     connection = get_db_connection()
     cursor = connection.cursor()
@@ -27,9 +26,9 @@ def get_data():
         sort_direction = 'DESC'
         sort_by = sort_by[1:]  # remove the '-' prefix
     if search != '':
-        query = f'SELECT * FROM {table_name} WHERE {sort_by} ILIKE \'%{search}%\' ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT {numToFetch}' # ILIKE is case insensitive, whereas LIKE is case sensitive
+        query = f'SELECT * FROM {table_name} WHERE {sort_by} ILIKE \'%{search}%\' ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT {limit}' # ILIKE is case insensitive, whereas LIKE is case sensitive
     else:
-        query = f'SELECT * FROM {table_name} ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT {numToFetch}'
+        query = f'SELECT * FROM {table_name} ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT {limit}'
     
     print(query)
     

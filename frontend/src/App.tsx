@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import Navbar from './components/Navbar';
-import Filter from './components/Filter';
-import Table from './components/Table';
-
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Overview from './pages/Overview';
+import Parameters from './pages/Parameters';
+  
 export interface properties {
   listActive: number;
   setListActive: Function;
@@ -11,30 +10,14 @@ export interface properties {
 }
 
 function App() {
-  // Shared state between Filter and Table
-  // 0 = products, 1 = produced products
-  const [listActive, setListActive] = useState(0);
-  const [search, setSearch] = useState('');
-
-  return (
-    <div>
-      <Navbar />
-      <Filter
-        listActive={listActive}
-        setListActive={setListActive}
-        searchQuery={search}
-        setSearchQuery={setSearch}
-      />
-      <div className="mt-8">
-        <Table
-          listActive={listActive}
-          setListActive={setListActive}
-          searchQuery={search}
-          setSearchQuery={setSearch}
-        />
-      </div>
-    </div>
-  );
+return (
+    <Router>
+    <Routes>
+        <Route path='/' element={<Overview />} />
+        <Route path='/parameters' element={<Parameters/>} />
+    </Routes>
+    </Router>
+);
 }
-
+  
 export default App;
