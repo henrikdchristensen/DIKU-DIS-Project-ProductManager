@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { properties } from '../App';
-import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const Table = (props: properties) => {
   const lowercaseWithUnderscore = (str: string): string => {
@@ -26,26 +26,20 @@ const Table = (props: properties) => {
 
     if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
       setLoading(true);
-      setOffset((prevOffset) => prevOffset + 100);
-      fetchData(props.listActive, sortBy);
+      const newOffset = offset + 100;
+      setOffset(newOffset);
+      fetchData(props.listActive, sortBy, newOffset);
     }
   };
 
-  useEffect(() => {
-    setSortBy(lowercaseWithUnderscore(columns[0]));
-    setOffset(0);
-    setData([]);
-    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]));
-  }, [props.listActive]);
-
-  const fetchData = async (table: number, sort: string) => {
+  const fetchData = async (table: number, sort: string, offset: number) => {
     try {
       let t = '';
       if (table === 0) t = 'product_templates';
-      else if (table === 1) t = 'produced_products';
+      else if (table === 1) t = 'produced_products'
       const response = await axios.get(`/api/data?table=${t}&sortBy=${sort}&offset=${offset}`);
       const newData = response.data.data;
-      setData((prevData) => [...prevData, ...newData]);
+      setData((prevData) => [...prevData, ...newData]); // Append new data to existing data
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -53,20 +47,32 @@ const Table = (props: properties) => {
     }
   };
 
-
-  const handleSort = (column: string) => {
+  //   
+  const handleSortBy = (column: string) => {
     const newSortBy = lowercaseWithUnderscore(column);
     setSortBy((prevSortBy) => {
       if (prevSortBy === newSortBy) {
-        return `-${newSortBy}`;
+        return prevSortBy.startsWith('-') ? newSortBy : `-${newSortBy}`;
       } else {
         return newSortBy;
       }
     });
+  };
+
+    // On table change, reset state
+  useEffect(() => {
+    setSortBy(lowercaseWithUnderscore(columns[0]));
+    setOffset(0);
+    setData([]);
+    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0);
+  }, [props.listActive]);
+
+  useEffect(() => {
     setData([]);
     setOffset(0);
-    fetchData(props.listActive, newSortBy);
-  };
+    fetchData(props.listActive, sortBy, 0);
+  }, [sortBy]);
+
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -80,21 +86,26 @@ const Table = (props: properties) => {
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-auto max-w-[70rem] border border-gray-200">
         <table className="w-full text-sm text-left text-gray-500">
           <thead className="text-xs text-gray-700 uppercase bg-transparent border-b border-gray-200">
-            <tr>
-              {columns.map((column, index) => (
-                <th
-                  key={index}
-                  scope="col"
-                  className="px-6 py-3 cursor-pointer"
-                  onClick={() => handleSort(column)}
-                >
-                  <div className="flex items-center">
-                    {column}
-                    {sortBy === column && <ChevronUpDownIcon className="h-4 w-4 ml-1" />}
-                  </div>
-                </th>
-              ))}
-            </tr>
+          <tr>
+            {columns.map((column, index) => (
+              <th
+                key={index}
+                scope="col"
+                className="px-6 py-3 cursor-pointer"
+                onClick={() => handleSortBy(column)}
+              >
+                <div className="flex items-center">
+                  {column}
+                  {sortBy === lowercaseWithUnderscore(column) && sortBy.startsWith('-') ? (
+                    <ChevronDownIcon className="h-4 w-4 ml-1" />
+                  ) : sortBy === lowercaseWithUnderscore(column) ? (
+                    <ChevronDownIcon className="h-4 w-4 ml-1" />
+                  ) : null}
+                </div>
+              </th>
+            ))}
+          </tr>
+
           </thead>
           <tbody>
             {data.map((row, index) => (
