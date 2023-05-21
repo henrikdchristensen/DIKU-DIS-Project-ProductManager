@@ -6,6 +6,8 @@ import Table from './components/Table';
 export interface properties {
   listActive: number;
   setListActive: Function;
+  search: string;
+  setSearch: Function;
 }
 
 function App() {
@@ -13,15 +15,14 @@ function App() {
   // Shared state between Filter and Table
   // 0 = products, 1 = produced products
   const [listActive, setListActive] = useState(0);
-
-  const [data, setData] = useState([]);  
+  const [search, setSearch] = useState('');  
   
   return (
     <div>
       <Navbar />
-      <Filter listActive={listActive} setListActive={setListActive} />
+      <Filter listActive={listActive} setListActive={setListActive} search={search} setSearch={setSearch} />
       <div className='mt-8'>
-        <Table listActive={listActive} setListActive={setListActive} />
+        <Table listActive={listActive} setListActive={setListActive} search={search} setSearch={setSearch} />
       </div>
     </div>
   );

@@ -28,18 +28,19 @@ const Table = (props: properties) => {
       setLoading(true);
       const newOffset = offset + 100;
       setOffset(newOffset);
-      fetchData(props.listActive, sortBy, newOffset);
+      fetchData(props.listActive, sortBy, newOffset, props.search);
     }
   };
 
-  const fetchData = async (table: number, sort: string, offset: number) => {
+  const fetchData = async (table: number, sort: string, offset: number, search: string) => {
     try {
       let t = '';
       if (table === 0) t = 'product_templates';
       else if (table === 1) t = 'produced_products'
-      const response = await axios.get(`/api/data?table=${t}&sortBy=${sort}&offset=${offset}`);
+      const column = sort.startsWith('-') ? sort.substring(1) : sort;
+      const response = await axios.get(`/api/data?table=${t}&sortBy=${sort}&offset=${offset}&column=${column}&search=${search}`);
       const newData = response.data.data;
-      setData((prevData) => [...prevData, ...newData]); // Append new data to existing data
+      setData((prevData) => [...prevData, ...newData]);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -47,7 +48,6 @@ const Table = (props: properties) => {
     }
   };
 
-  //   
   const handleSortBy = (column: string) => {
     const newSortBy = lowercaseWithUnderscore(column);
     setSortBy((prevSortBy) => {
@@ -59,21 +59,30 @@ const Table = (props: properties) => {
     });
   };
 
-    // On table change, reset state
+  // On table change
   useEffect(() => {
+    props.setSearch('');
     setSortBy(lowercaseWithUnderscore(columns[0]));
     setOffset(0);
     setData([]);
-    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0);
+    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0, props.search);
   }, [props.listActive]);
 
+  // On search change
+  useEffect(() => {
+    setOffset(0);
+    setData([]);
+    fetchData(props.listActive, sortBy, 0, props.search);
+  }, [props.search]);
+
+  // On sort change
   useEffect(() => {
     setData([]);
     setOffset(0);
-    fetchData(props.listActive, sortBy, 0);
+    fetchData(props.listActive, sortBy, 0, props.search);
   }, [sortBy]);
 
-
+  // On scroll
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
