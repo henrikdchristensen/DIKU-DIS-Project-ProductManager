@@ -3,13 +3,6 @@ import Navbar from '../components/Navbar';
 import Filter from '../components/Filter';
 import Table from '../components/Table';
 import axios from 'axios';
-  
-export interface properties {
-  listActive: number;
-  setListActive: Function;
-  searchQuery: string;
-  setSearchQuery: Function;
-}
 
 export type FilterProps = {
   list: string[];
@@ -22,25 +15,31 @@ export type FilterProps = {
 export type TableProps = {
   columns: string[];
   data: any[];
-  sortBy: string;
-  desc: boolean;
   handleSortBy: Function;
+  selectedColumn: number;
+  desc: boolean;
 };
 
 const Overview = () => {
-  const lowercaseWithUnderscore = (str: string): string => {
-    const lowercased = str.toLowerCase();
-    const replaced = lowercased.replace(/\s+/g, '_');
-    return replaced;
-  };
+  const tables = ['product_templates', 'produced_products'];
 
   const [listActive, setListActive] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const [data, setData] = useState<any[]>([]);
-  const [tableInfo, setTableInfo] = useState<string[]>();
+  const [columns, setColumns] = useState<string[]>(['']);
+  const [selectedColumn, setSelectedColumn] = useState(0);
   const [offset, setOffset] = useState(0);
-  const [sortBy, setSortBy] = useState('');
   const [loading, setLoading] = useState(false);
+  const [desc, setDesc] = useState(false);
+
+  const handleSortBy = async (index: number) => {
+    if (index === selectedColumn) {
+      setDesc((prevDesc) => !prevDesc);
+    } else {
+      setDesc(false);
+      setSelectedColumn(index);
+    }
+  };
 
   const numToFetch = 500;
 
@@ -53,18 +52,16 @@ const Overview = () => {
       setLoading(true);
       const newOffset = offset + numToFetch;
       setOffset(newOffset);
-    //   fetchData(false, props.listActive, sortBy, newOffset, props.searchQuery);
     }
   };
 
-  const fetchData = async (resetData: boolean, table: number, sort: string, offset: number, search: string) => {
+  const fetchData = async (resetData: boolean, table: string, offset: number, search: string) => {
     try {
       if (resetData) setOffset(offset);
-      let t = '';
-      if (table === 0) t = 'product_templates';
-      else if (table === 1) t = 'produced_products';
+      let sort = columns[selectedColumn];
+      if (desc) sort = '-' + sort;
       const response = await axios.get(
-        `/api/data?table=${t}&sortBy=${sort}&offset=${offset}&search=${search}&limit=${numToFetch}`
+        `/api/data?table=${table}&sortBy=${sort}&offset=${offset}&search=${search}&limit=${numToFetch}`
       );
       const newData = response.data.data;
       if (resetData) setData(newData);
@@ -77,52 +74,37 @@ const Overview = () => {
     }
   };
 
-  const fetchTableInfo = async () => {
+  const fetchColumns = async (table: string) => {
     try {
       const response = await axios.get(`/api/table_info`);
       const table_info = response.data.table_info;
       for (let i = 0; i < table_info.length; i++) {
-        if (table_info[i].table_name === 'product_templates') {
-          setTableInfo(table_info[i].columns);
+        if (table_info[i].table_name === table) {
+          setColumns(table_info[i].columns);
           break;
-        }
-        else if (table_info[i].table_name === 'produced_products') {
-            setTableInfo(table_info[i].columns);
-            break;
         }
       }
     } catch (error) {
       console.error('Error fetching columns:', error);
     }
-    
   }
 
-  const handleSortBy = (column: string) => {
-    const newSortBy = lowercaseWithUnderscore(column);
-    // setSortBy((prevSortBy) => {
-    //   if (prevSortBy === newSortBy) {
-    //     return prevSortBy.startsWith('-') ? newSortBy : `-${newSortBy}`;
-    //   } else {
-    //     return newSortBy;
-    //   }
-    // });
-  };
-
   useEffect(() => {
-    fetchTableInfo();
+    fetchColumns(tables[0]);
     }, []);
 
   // On table change
   useEffect(() => {
+    fetchColumns(tables[listActive]);
     setSearchQuery('');
-    setSortBy('');
-    fetchData(true, listActive, '', 0, '');
+    setDesc(false);
+    fetchData(true, tables[listActive], 0, '');
   }, [listActive]);
 
   // On search, sort change
   useEffect(() => {
-    fetchData(true, listActive, sortBy, 0, searchQuery);
-  }, [searchQuery, sortBy]);
+    fetchData(true, tables[listActive], 0, searchQuery);
+  }, [searchQuery, selectedColumn, desc, offset]);
 
   // On scroll
   useEffect(() => {
@@ -132,21 +114,25 @@ const Overview = () => {
     };
   }, [handleScroll]);
 
-  const s = ['Produkt skabeloner', 'Producerede produkter']
 
   return (
     
     <div>
       <Navbar />
       <Filter
-        list={s}
+        list={tables}
         listActive={listActive}
         setListActive={setListActive}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
       <div className="mt-8">
-        <Table columns={['hej', 'test']} data={data} sortBy={sortBy} desc={false} handleSortBy={handleSortBy}
+        <Table
+            columns={columns}
+            data={data}
+            selectedColumn={selectedColumn}
+            handleSortBy={handleSortBy}
+            desc={desc}
         />
       </div>
     </div>

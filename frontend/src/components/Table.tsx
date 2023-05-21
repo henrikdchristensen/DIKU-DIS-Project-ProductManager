@@ -9,17 +9,17 @@ const Table = (props: TableProps) => {
         <table className="w-full text-sm text-left text-gray-500">
           <thead className="text-xs text-gray-700 uppercase bg-transparent border-b border-gray-200">
             <tr>
-              {props.columns.map((column) => (
+              {props.columns.map((column, index) => (
                 <th
                   scope="col"
                   className="px-6 py-3 cursor-pointer"
-                  onClick={() => props.handleSortBy(column)}
+                  onClick={() => props.handleSortBy(index)}
                 >
                   <div className="flex items-center">
                     {column}
-                    {column === props.sortBy && !props.desc ? (
+                    {index === props.selectedColumn && !props.desc ? (
                       <ChevronDownIcon className="h-4 w-4 ml-1" />
-                    ) : column === props.sortBy && !props.desc ? (
+                    ) : index === props.selectedColumn && props.desc ? (
                       <ChevronUpIcon className="h-4 w-4 ml-1" />
                     ) : null}
                   </div>
