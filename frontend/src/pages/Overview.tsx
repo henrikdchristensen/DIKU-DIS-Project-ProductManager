@@ -74,6 +74,7 @@ const Overview = () => {
     }
   };
 
+
   const fetchColumns = async (table: string) => {
     try {
       const response = await axios.get(`/api/table_info`);
@@ -89,8 +90,13 @@ const Overview = () => {
     }
   }
 
+  const initFetch =  async () => {
+    await fetchColumns(tables[0]);
+    fetchData(true, tables[0], 0, '');
+  }
+
   useEffect(() => {
-    fetchColumns(tables[0]);
+    initFetch();
     }, []);
 
   // On table change
