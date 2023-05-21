@@ -4,6 +4,8 @@ import { properties } from '../App';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const Table = (props: properties) => {
+  const numToFetch = 500;
+
   const lowercaseWithUnderscore = (str: string): string => {
     const lowercased = str.toLowerCase();
     const replaced = lowercased.replace(/\s+/g, '_');
@@ -30,7 +32,7 @@ const Table = (props: properties) => {
 
     if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
       setLoading(true);
-      const newOffset = offset + 100;
+      const newOffset = offset + numToFetch;
       setOffset(newOffset);
       fetchData(props.listActive, sortBy, newOffset, props.searchQuery);
     }
