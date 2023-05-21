@@ -4,35 +4,20 @@ import { properties } from '../App';
 import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
 
 const Table = (props: properties) => {
-  const [data, setData] = useState<any[]>([]);
-  const [offset, setOffset] = useState(0);
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setOffset(0);
-    setData([]);
-    fetchData(props.listActive, 0);
-  }, [props.listActive]);
-
-  const fetchData = async (table: number, offset: number) => {
-    try {
-      let t = '';
-      if (table === 0) t = 'product_templates';
-      else if (table === 1) t = 'produced_products';
-      const response = await axios.get(`/api/data?table=${t}&offset=${offset}`);
-      const newData = response.data.data;
-      setData((prevData) => [...prevData, ...newData]);
-      setOffset((prevOffset) => prevOffset + 100);
-      setLoading(false);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-      setData([]);
-    }
+  const lowercaseWithUnderscore = (str: string): string => {
+    const lowercased = str.toLowerCase();
+    const replaced = lowercased.replace(/\s+/g, '_');
+    return replaced;
   };
 
   const columns = props.listActive === 0
     ? ['Id', 'Name', 'Journal', 'Owned by']
     : ['Serial number', 'Of Type', 'Date', 'Produced by'];
+
+  const [data, setData] = useState<any[]>([]);
+  const [offset, setOffset] = useState(0);
+  const [sortBy, setSortBy] = useState(lowercaseWithUnderscore(columns[0]));
+  const [loading, setLoading] = useState(false);
 
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -41,8 +26,46 @@ const Table = (props: properties) => {
 
     if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
       setLoading(true);
-      fetchData(props.listActive, offset);
+      setOffset((prevOffset) => prevOffset + 100);
+      fetchData(props.listActive, sortBy);
     }
+  };
+
+  useEffect(() => {
+    setSortBy(lowercaseWithUnderscore(columns[0]));
+    setOffset(0);
+    setData([]);
+    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]));
+  }, [props.listActive]);
+
+  const fetchData = async (table: number, sort: string) => {
+    try {
+      let t = '';
+      if (table === 0) t = 'product_templates';
+      else if (table === 1) t = 'produced_products';
+      const response = await axios.get(`/api/data?table=${t}&sortBy=${sort}&offset=${offset}`);
+      const newData = response.data.data;
+      setData((prevData) => [...prevData, ...newData]);
+      setLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setData([]);
+    }
+  };
+
+
+  const handleSort = (column: string) => {
+    const newSortBy = lowercaseWithUnderscore(column);
+    setSortBy((prevSortBy) => {
+      if (prevSortBy === newSortBy) {
+        return `-${newSortBy}`;
+      } else {
+        return newSortBy;
+      }
+    });
+    setData([]);
+    setOffset(0);
+    fetchData(props.listActive, newSortBy);
   };
 
   useEffect(() => {
@@ -59,11 +82,16 @@ const Table = (props: properties) => {
           <thead className="text-xs text-gray-700 uppercase bg-transparent border-b border-gray-200">
             <tr>
               {columns.map((column, index) => (
-                <th key={index} scope="col" className="px-6 py-3">
+                <th
+                  key={index}
+                  scope="col"
+                  className="px-6 py-3 cursor-pointer"
+                  onClick={() => handleSort(column)}
+                >
                   <div className="flex items-center">
                     {column}
-                       <ChevronUpDownIcon className="h-4 w-4 ml-1" />
-                    </div>
+                    {sortBy === column && <ChevronUpDownIcon className="h-4 w-4 ml-1" />}
+                  </div>
                 </th>
               ))}
             </tr>
