@@ -16,7 +16,6 @@ def get_data():
     sort_by = request.args.get('sortBy', default='*', type=str)
     offset = request.args.get('offset', default=0, type=int)
     search = request.args.get('search', default='', type=str)
-    column = request.args.get('column', default='', type=str)
     
     connection = get_db_connection()
     cursor = connection.cursor()
@@ -25,8 +24,8 @@ def get_data():
     if sort_by.startswith('-'):
         sort_direction = 'DESC'
         sort_by = sort_by[1:]  # Remove the '-' prefix
-    if search != '' and column != '':
-        query = f'SELECT * FROM {table_name} WHERE {column} ILIKE \'%{search}%\' ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT 100' # ILIKE is case insensitive, whereas LIKE is case sensitive
+    if search != '':
+        query = f'SELECT * FROM {table_name} WHERE {sort_by} ILIKE \'%{search}%\' ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT 100' # ILIKE is case insensitive, whereas LIKE is case sensitive
     else:
         query = f'SELECT * FROM {table_name} ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT 100'
     print(query)

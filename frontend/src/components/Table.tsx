@@ -37,8 +37,7 @@ const Table = (props: properties) => {
       let t = '';
       if (table === 0) t = 'product_templates';
       else if (table === 1) t = 'produced_products'
-      const column = sort.startsWith('-') ? sort.substring(1) : sort;
-      const response = await axios.get(`/api/data?table=${t}&sortBy=${sort}&offset=${offset}&column=${column}&search=${search}`);
+      const response = await axios.get(`/api/data?table=${t}&sortBy=${sort}&offset=${offset}&search=${search}`);
       const newData = response.data.data;
       setData((prevData) => [...prevData, ...newData]);
       setLoading(false);
@@ -104,11 +103,11 @@ const Table = (props: properties) => {
                 onClick={() => handleSortBy(column)}
               >
                 <div className="flex items-center">
-                  {column}
-                  {sortBy === lowercaseWithUnderscore(column) && sortBy.startsWith('-') ? (
+                {column}
+                  {sortBy === `${lowercaseWithUnderscore(column)}` ? (
                     <ChevronDownIcon className="h-4 w-4 ml-1" />
-                  ) : sortBy === lowercaseWithUnderscore(column) ? (
-                    <ChevronDownIcon className="h-4 w-4 ml-1" />
+                  ) : sortBy === `-${lowercaseWithUnderscore(column)}` ? (
+                    <ChevronUpIcon className="h-4 w-4 ml-1" />
                   ) : null}
                 </div>
               </th>
