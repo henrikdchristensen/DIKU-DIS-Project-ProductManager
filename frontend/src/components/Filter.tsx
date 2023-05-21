@@ -23,15 +23,11 @@ const Filter = (props: properties) => {
   return (
     <div className="flex flex-wrap justify-center mt-24 space-x-10 w-full items-center px-10 row-span-2">
       <div className="flex space-x-3 items-center">
-        <label className="text-base text-gray-500 font-semibold">
-          Kategori:
-        </label>
+        <label className="text-base text-gray-500 font-semibold">Kategori:</label>
         <div>
           <div className="group inline-block">
             <button className="outline-none focus:outline-none items-center min-w-32 inline-flex justify-center gap-x-1.5 rounded-3xl bg-white px-3 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 w-32">
-              <span className="pr-1 font-semibold flex-1">
-                {list_items[props.listActive]}
-              </span>
+              <span className="pr-1 font-semibold flex-1">{list_items[props.listActive]}</span>
               <span>
                 <svg
                   className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"

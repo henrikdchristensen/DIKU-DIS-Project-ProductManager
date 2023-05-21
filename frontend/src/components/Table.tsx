@@ -23,12 +23,9 @@ const Table = (props: properties) => {
   const [loading, setLoading] = useState(false);
 
   const handleScroll = () => {
-    const scrollTop =
-      document.documentElement.scrollTop || document.body.scrollTop;
-    const scrollHeight =
-      document.documentElement.scrollHeight || document.body.scrollHeight;
-    const clientHeight =
-      document.documentElement.clientHeight || document.body.clientHeight;
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
 
     if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
       setLoading(true);
@@ -38,12 +35,7 @@ const Table = (props: properties) => {
     }
   };
 
-  const fetchData = async (
-    table: number,
-    sort: string,
-    offset: number,
-    search: string
-  ) => {
+  const fetchData = async (table: number, sort: string, offset: number, search: string) => {
     try {
       let t = '';
       if (table === 0) t = 'product_templates';
@@ -77,12 +69,7 @@ const Table = (props: properties) => {
     setSortBy(lowercaseWithUnderscore(columns[0]));
     setOffset(0);
     setData([]);
-    fetchData(
-      props.listActive,
-      lowercaseWithUnderscore(columns[0]),
-      0,
-      props.searchQuery
-    );
+    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0, props.searchQuery);
   }, [props.listActive]);
 
   // On search change

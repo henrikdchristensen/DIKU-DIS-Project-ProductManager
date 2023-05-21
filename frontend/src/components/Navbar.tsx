@@ -23,9 +23,7 @@ const Navbar = () => {
               </div>
               <div className="transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top">
                 <ul className="bg-white border border-gray-400 text-center divide-y divide-gray-300 rounded-md shadow-lg mt-1 hover:bg-gray-100">
-                  <li className="text-gray-700 font-bold block px-4 py-2 text-base">
-                    Log ud
-                  </li>
+                  <li className="text-gray-700 font-bold block px-4 py-2 text-base">Log ud</li>
                 </ul>
               </div>
             </div>
