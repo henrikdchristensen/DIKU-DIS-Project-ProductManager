@@ -1,4 +1,3 @@
-import { FiPlus } from 'react-icons/fi';
 import {properties} from '../App'
 
 const Filter = (props: properties) => {
@@ -31,15 +30,6 @@ const Filter = (props: properties) => {
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div>
-                <div className="group inline-block">
-                    <button type="button" className="inline-flex justify-center items-center gap-x-1 rounded-3xl bg-white px-3 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                        Tilføj
-                        <span className='transform group-hover:-rotate-180 transition duration-300 ease-in-out'><FiPlus className="text-black" /></span>
-                        
-                    </button>
                 </div>
             </div>
 
