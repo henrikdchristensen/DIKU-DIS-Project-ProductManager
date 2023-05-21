@@ -50,8 +50,8 @@ const Filter = (props: properties) => {
                         id="default-search"
                         className="block p-2.5 w-58 pl-10 pr-14 z-20 text-sm bg-white shadow-sm rounded-3xl border border-gray-300 outline-none"
                         placeholder={`Søg efter...`}
-                        value={props.search}
-                        onChange={(e) => props.setSearch(e.target.value)}
+                        value={props.searchQuery}
+                        onChange={(e) => props.setSearchQuery(e.target.value)}
                         required
                     />
                     <button

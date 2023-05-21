@@ -28,7 +28,7 @@ const Table = (props: properties) => {
       setLoading(true);
       const newOffset = offset + 100;
       setOffset(newOffset);
-      fetchData(props.listActive, sortBy, newOffset, props.search);
+      fetchData(props.listActive, sortBy, newOffset, props.searchQuery);
     }
   };
 
@@ -60,25 +60,25 @@ const Table = (props: properties) => {
 
   // On table change
   useEffect(() => {
-    props.setSearch('');
+    props.setSearchQuery('');
     setSortBy(lowercaseWithUnderscore(columns[0]));
     setOffset(0);
     setData([]);
-    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0, props.search);
+    fetchData(props.listActive, lowercaseWithUnderscore(columns[0]), 0, props.searchQuery);
   }, [props.listActive]);
 
   // On search change
   useEffect(() => {
     setOffset(0);
     setData([]);
-    fetchData(props.listActive, sortBy, 0, props.search);
-  }, [props.search]);
+    fetchData(props.listActive, sortBy, 0, props.searchQuery);
+  }, [props.searchQuery]);
 
   // On sort change
   useEffect(() => {
     setData([]);
     setOffset(0);
-    fetchData(props.listActive, sortBy, 0, props.search);
+    fetchData(props.listActive, sortBy, 0, props.searchQuery);
   }, [sortBy]);
 
   // On scroll

@@ -6,8 +6,8 @@ import Table from './components/Table';
 export interface properties {
   listActive: number;
   setListActive: Function;
-  search: string;
-  setSearch: Function;
+  searchQuery: string;
+  setSearchQuery: Function;
 }
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Filter listActive={listActive} setListActive={setListActive} search={search} setSearch={setSearch} />
+      <Filter listActive={listActive} setListActive={setListActive} searchQuery={search} setSearchQuery={setSearch} />
       <div className='mt-8'>
-        <Table listActive={listActive} setListActive={setListActive} search={search} setSearch={setSearch} />
+        <Table listActive={listActive} setListActive={setListActive} searchQuery={search} setSearchQuery={setSearch} />
       </div>
     </div>
   );
