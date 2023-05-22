@@ -19,32 +19,31 @@ export type TableProps = {
 
 const Overview = () => {
   const tables = ['product_templates', 'produced_products'];
-  const columns = [['id', 'name', 'owned_by'], ['serial_number', 'of_type', 'date', 'produced_by']];
+  const columns = [
+    ['id', 'name', 'owned_by'],
+    ['serial_number', 'of_type', 'date', 'produced_by'],
+  ];
   const initialSettings: settings = {
     table_name: tables[0],
     columns: columns[0],
     sortBy: columns[0][0],
     desc: false,
     offset: 0,
-    search: ''
+    search: '',
   };
+
   const [settings, setSettings] = useState<settings>(initialSettings);
   const [data, setData] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-  
+
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
-    if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
-      setLoading(true);
-      fetchAndUpdate({...settings, offset: 0}).then((data) => {
-        setSettings(prevSettings => ({ ...prevSettings, offset: prevSettings.offset + numToFetch }));
-        setData((prevData) => [...prevData, ...data]);
-        setLoading(false);
-    }).catch((error) => {
-      console.error('Error fetching data:', error);
-    });
+    if (scrollTop + clientHeight >= scrollHeight - 20 && data.length % numToFetch === 0) {
+      setSettings((prevSettings) => ({
+        ...prevSettings,
+        offset: prevSettings.offset + numToFetch,
+      }));
     }
   };
 
@@ -58,17 +57,35 @@ const Overview = () => {
   };
 
   useEffect(() => {
-    fetchAndUpdate(settings).then((data) => {
-      setData(data);
-      setLoading(false);
-    }).catch((error) => {
-      console.error('Error fetching data:', error);
-    });
+    fetchAndUpdate(settings)
+      .then((data) => {
+        setData(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
   }, [settings.sortBy, settings.desc, settings.search]);
 
   useEffect(() => {
-    setSettings(prevSettings => ({ ...prevSettings, offset: 0, columns: columns[tables.indexOf(settings.table_name)], sortBy: columns[tables.indexOf(settings.table_name)][0], desc: false, search: ''}));
+    setSettings((prevSettings) => ({
+      ...prevSettings,
+      offset: 0,
+      columns: columns[tables.indexOf(settings.table_name)],
+      sortBy: columns[tables.indexOf(settings.table_name)][0],
+      desc: false,
+      search: '',
+    }));
   }, [settings.table_name]);
+
+  useEffect(() => {
+    fetchAndUpdate(settings)
+      .then((data) => {
+        setData((prevData) => [...prevData, ...data]);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }, [settings.offset]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -81,11 +98,7 @@ const Overview = () => {
     <div>
       <Navbar />
       <div className="mt-8">
-        <Filter
-          tables={tables}
-          settings={settings}
-          setSettings={setSettings}
-        />
+        <Filter tables={tables} settings={settings} setSettings={setSettings} />
         <Table
           columns={columns[tables.indexOf(settings.table_name)]}
           data={data}

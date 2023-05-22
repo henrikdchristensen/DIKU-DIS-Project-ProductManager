@@ -15,8 +15,7 @@ export const fetchData = async (settings: settings) => {
   try {
     let c = settings.columns.join(',');
     let s = settings.sortBy;
-    if (settings.desc)
-      s = '-' + s;
+    if (settings.desc) s = '-' + s;
     const response = await axios.get(
       `/api/data?table=${settings.table_name}&columns=${c}&sortBy=${s}&offset=${settings.offset}&search=${settings.search}&limit=${numToFetch}`
     );

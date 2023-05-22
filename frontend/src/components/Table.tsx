@@ -2,12 +2,10 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 import { TableProps } from '../pages/Overview';
 
 const Table = (props: TableProps) => {
-
   const handleSortBy = (column: string) => {
     if (column === props.settings.sortBy)
-      props.setSettings({...props.settings, desc: !props.settings.desc});
-    else
-      props.setSettings({...props.settings, sortBy: column, desc: false});
+      props.setSettings({ ...props.settings, desc: !props.settings.desc });
+    else props.setSettings({ ...props.settings, sortBy: column, desc: false });
   };
 
   return (

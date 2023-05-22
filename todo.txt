@@ -1,7 +1,7 @@
 - parameter side
 - fetch af tabel navne; kolonne navne; kolonne bredde
 
-Mads' todo:
+- kan ikke søge i dato
 
 - login
 - styling
