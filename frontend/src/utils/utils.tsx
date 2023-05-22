@@ -8,7 +8,6 @@ export const fetchData = async (table: string, columns: string[], sortBy: string
     const response = await axios.get(
       `/api/data?table=${table}&columns=${c}&sortBy=${sortBy}&offset=${offset}&search=${search}&limit=${numToFetch}`
     );
-    console.log(response);
     return response.data.data;
   } catch (error) {
     console.error('Error fetching data:', error);
