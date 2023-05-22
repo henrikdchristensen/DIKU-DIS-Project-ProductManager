@@ -10,33 +10,11 @@ def get_db_connection():
                             password='1234')
     return conn
 
-@app.route('/api/table_info')
-def get_table_info():    
-    connection = get_db_connection()
-    cursor = connection.cursor()
-
-    table_query = "SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'"    
-    cursor.execute(table_query)
-    tables = cursor.fetchall()
-    table_info = []
-
-    for table in tables:
-        table_name = table[0]
-        column_query = f"SELECT column_name FROM information_schema.columns WHERE table_schema = 'public' AND table_name = '{table_name}'"
-        cursor.execute(column_query)
-        columns = cursor.fetchall()
-        table_info.append({'table_name': table_name, 'columns': columns})
-
-    cursor.close()
-    connection.close()
-
-    return {'table_info': table_info}
-
-
 @app.route('/api/data')
 def get_data():
     table_name = request.args.get('table', default='*', type=str)
-    sort_by = request.args.get('sortBy', default='*', type=str)
+    columns = request.args.get('columns', default='*', type=str).split(',')
+    sortBy = request.args.get('sortBy', default='*', type=str)
     offset = request.args.get('offset', default=0, type=int)
     search = request.args.get('search', default='', type=str)
     limit = request.args.get('limit', default=100, type=int)
@@ -45,13 +23,21 @@ def get_data():
     cursor = connection.cursor()
     
     sort_direction = 'ASC'
-    if sort_by.startswith('-'):
+    if sortBy.startswith('-'):
         sort_direction = 'DESC'
-        sort_by = sort_by[1:]  # remove the '-' prefix
-    if search != '':
-        query = f'SELECT * FROM {table_name} WHERE {sort_by} ILIKE \'%{search}%\' ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT {limit}' # ILIKE is case insensitive, whereas LIKE is case sensitive
+        sortBy = sortBy[1:]  # remove the '-' prefix
+        
+    # Construct the SELECT clause for the specified columns
+    if columns != ['*']:
+        column_list = ', '.join(columns)
+        select_clause = f'SELECT {column_list}'
     else:
-        query = f'SELECT * FROM {table_name} ORDER BY {sort_by} {sort_direction} OFFSET {offset} LIMIT {limit}'
+        select_clause = 'SELECT *'
+    
+    if search != '':
+        query = f'{select_clause} FROM {table_name} WHERE {sortBy} ILIKE \'%{search}%\' ORDER BY {sortBy} {sort_direction} OFFSET {offset} LIMIT {limit}'
+    else:
+        query = f'{select_clause} FROM {table_name} ORDER BY {sortBy} {sort_direction} OFFSET {offset} LIMIT {limit}'
     
     print(query)
     

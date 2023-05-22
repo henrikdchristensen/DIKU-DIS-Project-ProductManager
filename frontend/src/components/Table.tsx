@@ -13,7 +13,7 @@ const Table = (props: TableProps) => {
                 <th
                   scope="col"
                   className="px-6 py-3 cursor-pointer"
-                  onClick={() => props.handleSortBy(index)}
+                  //onClick={() => props.handleSortBy(index)}
                   key={index}
                 >
                   <div className="flex items-center">

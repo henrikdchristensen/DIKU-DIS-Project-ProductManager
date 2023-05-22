@@ -1,16 +1,16 @@
 import {FilterProps} from '../pages/Overview';
 
 const Filter = (props: FilterProps) => {
-  let activeDropdown = props.list.map((item, i) => {
+  let activeDropdown = props.tables.map((item, i) => {
     return (
       <li
         key={i}
         className={
           'text-gray-700 block px-4 py-2 text-base ' +
-          (props.listActive == i ? 'bg-gray-100' : 'hover:bg-gray-100')
+          (props.tableSelected == i ? 'bg-gray-100' : 'hover:bg-gray-100')
         }
         onClick={() => {
-          props.setListActive(i);
+          props.setTableSelected(i);
         }}
       >
         {item}
@@ -25,7 +25,7 @@ const Filter = (props: FilterProps) => {
         <div>
           <div className="group inline-block">
             <button className="outline-none focus:outline-none items-center min-w-32 inline-flex justify-center gap-x-1.5 rounded-3xl bg-white px-3 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 w-32">
-              <span className="pr-1 font-semibold flex-1">{props.list[props.listActive]}</span>
+              <span className="pr-1 font-semibold flex-1">{props.tableSelected}</span>
               <span>
                 <svg
                   className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
@@ -52,8 +52,8 @@ const Filter = (props: FilterProps) => {
             id="default-search"
             className="block p-2.5 w-58 pl-10 pr-14 z-20 text-sm bg-white shadow-sm rounded-3xl border border-gray-300 outline-none"
             placeholder={`Søg efter...`}
-            value={props.searchQuery}
-            onChange={(e) => props.setSearchQuery(e.target.value)}
+            value={props.search}
+            onChange={(e) => props.setSearch(e.target.value)}
             required
           />
           <button
