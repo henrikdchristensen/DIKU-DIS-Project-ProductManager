@@ -47,10 +47,16 @@ const Overview = () => {
     }
   };
 
+  var isFetching = false 
   const fetchAndUpdate = async (settings: settings) => {
+    if (isFetching) return [];
+    isFetching = true;
     try {
-      return await fetchData(settings);
+      var data = await fetchData(settings);
+      isFetching = false;
+      return data; 
     } catch (error) {
+      isFetching = false;
       console.error('Error fetching data:', error);
       throw error;
     }
@@ -110,7 +116,7 @@ const Overview = () => {
       <Navbar />
       <div className="mt-8">
         <Filter tables={table_names} settings={settings} setSettings={setSettings} />
-        <div className='px-10 mt-8'> 
+        <div className='px-10 my-8'> 
           <Table
             columns={settings.columns}
             data={settings.data}
