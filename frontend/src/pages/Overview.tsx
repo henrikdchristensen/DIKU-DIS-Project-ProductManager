@@ -24,6 +24,7 @@ export type TableProps = {
 
 const Overview = () => {
   const tables = ['product_templates', 'produced_products'];
+  const table_names = ['Templates', 'Produced'];
   const columns = [['id', 'name', 'owned_by'], ['serial_number', 'of_type', 'date', 'produced_by']];
 
   const [tableSelected, setTableSelected] = useState<number>(0);
@@ -89,7 +90,7 @@ const Overview = () => {
       <Navbar />
       <div className="mt-8">
         <Filter
-          tables={tables}
+          tables={table_names}
           tableSelected={tableSelected}
           setTableSelected={setTableSelected}
           search={search}
