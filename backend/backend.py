@@ -1,6 +1,7 @@
 from flask import Flask, request
 import psycopg2
 import sys
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -79,6 +80,7 @@ def get_product_template():
     query = f"SELECT P.serial_number, P.date, P.produced_by FROM product_templates JOIN produced_products P ON id = of_type WHERE id='{id}'"
     cursor.execute(query)
     product_data = cursor.fetchall()
+    product_data = [(i[0], str(i[1]), i[2]) for i in product_data]
     data["produced_products"] = product_data
 
     # Get compatible products

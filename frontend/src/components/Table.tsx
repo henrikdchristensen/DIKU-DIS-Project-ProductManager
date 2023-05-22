@@ -17,7 +17,7 @@ const Table = (props: TableProps) => {
                   key={index}
                 >
                   <div className="flex items-center">
-                    {column}
+                    <label className='text-center w-full'>{column}</label>
                     {index === props.selectedColumn && !props.desc ? (
                       <ChevronDownIcon className="h-4 w-4 ml-1" />
                     ) : index === props.selectedColumn && props.desc ? (
@@ -30,7 +30,7 @@ const Table = (props: TableProps) => {
           </thead>
           <tbody>
             {props.data.map((row, index) => (
-              <tr key={index} className="bg-white border-b">
+              <tr key={index} className="bg-white border-b text-center">
                 {row.map((value: any, idx: number) => (
                   <td key={idx}>{value}</td>
                 ))}
