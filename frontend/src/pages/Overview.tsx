@@ -15,58 +15,63 @@ export type FilterProps = {
 export type TableProps = {
   columns: string[];
   data: any[];
+  handleSortBy: Function;
   selectedColumn: number;
   desc: boolean;
 };
 
-
-
 const Overview = () => {
-
-  const tables = ['product_templates', 'produced_products']
-  const columns =  [['id', 'name', 'owned_by'], ['serial_number', 'of_type', 'date', 'produced_by']]
+  const tables = ['product_templates', 'produced_products'];
+  const columns = [['id', 'name', 'owned_by'], ['serial_number', 'of_type', 'date', 'produced_by']];
 
   const [tableSelected, setTableSelected] = useState<number>(0);
   const [columnSelected, setColumnSelected] = useState<number>(0);
-  const [sortBy, setSortBy] = useState<string>(columns[0][0])
+  const [sortBy, setSortBy] = useState<string>(columns[0][0]);
   const [offset, setOffset] = useState<number>(0);
   const [search, setSearch] = useState<string>('');
-  const [data, setData] = useState<[string[]][]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-  
+  const [data, setData] = useState<any[]>([]);
+  let loading = false;
+
+
+  const handleSortBy = (column: number) => {
+    if (column === columnSelected)
+      setSortBy((prevSortBy) => (prevSortBy[0] === '-' ? prevSortBy.slice(1) : '-' + prevSortBy));
+    else {
+      setColumnSelected(column);
+      setSortBy(columns[tableSelected][column]);
+    }
+  };
+
   const handleScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
 
     if (scrollTop + clientHeight >= scrollHeight - 20 && !loading) {
+      fetchAndUpdate(false);
     }
   };
 
   const fetchAndUpdate = async (reset: boolean) => {
-    setLoading(true);
-    let o = offset;
-    if (reset) o = 0;
-    const newData = await fetchData(tables[tableSelected], columns[columnSelected], sortBy, o, search);
-    if (reset) setData(newData);
-    else{
-      setData((prevData) => [...prevData, ...newData]);
+    try{
+      loading = true;
+      let o = offset;
+      if (reset) o = 0;
+      const newData = await fetchData(tables[tableSelected], columns[tableSelected], sortBy, o, search); // Fix the parameter to 'columns[tableSelected]'
+      if (reset) setData(newData);
+      else
+        setData((prevData) => [...prevData, ...newData]);
+      setOffset(o + numToFetch);
+      loading = false;
     }
-    setOffset(o + numToFetch);
-    setLoading(false);
+    catch (error) {
+      console.error('Error fetching data:', error);
+    }
   };
 
   useEffect(() => {
-    fetchAndUpdate(false);
-  }, []);
-
-  useEffect(() => {
-    fetchAndUpdate(false);
-  }, [tableSelected, columnSelected, sortBy, offset, search]);
-
-  useEffect(() => {
-    fetchAndUpdate(true);
-  }, [tableSelected, columnSelected, sortBy, offset, search]);
+    if (!loading) fetchAndUpdate(false);
+  }, [tableSelected, columnSelected, sortBy, search]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -76,7 +81,6 @@ const Overview = () => {
   }, []);
 
   return (
-
     <div>
       <Navbar />
       <div className="mt-8">
@@ -90,8 +94,9 @@ const Overview = () => {
         <Table
           columns={columns[tableSelected]}
           data={data}
+          handleSortBy={handleSortBy}
           selectedColumn={columnSelected}
-          desc={false}
+          desc={sortBy[0] === '-'}
         />
       </div>
     </div>
@@ -99,4 +104,3 @@ const Overview = () => {
 };
 
 export default Overview;
-

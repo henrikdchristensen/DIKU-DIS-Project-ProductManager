@@ -1,22 +1,18 @@
 import {FilterProps} from '../pages/Overview';
 
 const Filter = (props: FilterProps) => {
-  let activeDropdown = props.tables.map((item, i) => {
-    return (
-      <li
-        key={i}
-        className={
-          'text-gray-700 block px-4 py-2 text-base ' +
-          (props.tableSelected == i ? 'bg-gray-100' : 'hover:bg-gray-100')
-        }
-        onClick={() => {
-          props.setTableSelected(i);
-        }}
-      >
-        {item}
-      </li>
-    );
-  });
+  let activeDropdown = props.tables.map((table, index) => (
+    <li
+      key={index}
+      className="cursor-pointer text-gray-700 hover:bg-gray-100 hover:text-gray-900 py-2 px-4 block whitespace-no-wrap"
+      onClick={() => {
+        props.setTableSelected(index);
+        props.setSearch('');
+      }}
+    >
+      {table}
+    </li>
+  ));
 
   return (
     <div className="flex flex-wrap justify-center mt-24 space-x-10 w-full items-center px-10 row-span-2">
@@ -25,7 +21,7 @@ const Filter = (props: FilterProps) => {
         <div>
           <div className="group inline-block">
             <button className="outline-none focus:outline-none items-center min-w-32 inline-flex justify-center gap-x-1.5 rounded-3xl bg-white px-3 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 w-32">
-              <span className="pr-1 font-semibold flex-1">{props.tableSelected}</span>
+              <span className="pr-1 font-semibold flex-1">{props.tables[props.tableSelected]}</span>
               <span>
                 <svg
                   className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
