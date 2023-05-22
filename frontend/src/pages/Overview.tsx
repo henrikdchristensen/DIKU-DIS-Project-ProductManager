@@ -33,15 +33,17 @@ const Overview = () => {
   const [settings, setSettings] = useState<settings>(initialSettings);
   const [data, setData] = useState<any[]>([]);
 
+  var isAtBorrom = false;
   const handleScroll = () => {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
-    if (scrollTop + clientHeight >= scrollHeight - 20 && data.length % numToFetch === 0) {
+    const isBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+    if (isBottom && !isAtBorrom) {
+      isAtBorrom = true;
       setSettings((prevSettings) => ({
         ...prevSettings,
         offset: prevSettings.offset + numToFetch,
       }));
+    } else if (!isBottom) {
+      isAtBorrom = false;
     }
   };
 
@@ -55,6 +57,7 @@ const Overview = () => {
   };
 
   useEffect(() => {
+    console.log("settings changed");
     fetchAndUpdate(settings)
       .then((data) => {
         setData(data);
