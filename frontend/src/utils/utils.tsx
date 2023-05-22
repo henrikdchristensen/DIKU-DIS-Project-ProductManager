@@ -2,8 +2,15 @@ import axios from 'axios';
 
 export const numToFetch: number = 500;
 
+export const table_names = ['Templates', 'Produced'];
+export const tables = ['product_templates', 'produced_products'];
+export const columns = [
+  ['id', 'name', 'owned_by'],
+  ['serial_number', 'of_type', 'date', 'produced_by'],
+];
+
 export type settings = {
-  table_name: string;
+  table_index: number;
   columns: string[];
   sortBy: string;
   desc: boolean;
@@ -17,7 +24,7 @@ export const fetchData = async (settings: settings) => {
     let s = settings.sortBy;
     if (settings.desc) s = '-' + s;
     const response = await axios.get(
-      `/api/data?table=${settings.table_name}&columns=${c}&sortBy=${s}&offset=${settings.offset}&search=${settings.search}&limit=${numToFetch}`
+      `/api/data?table=${tables[settings.table_index]}&columns=${c}&sortBy=${s}&offset=${settings.offset}&search=${settings.search}&limit=${numToFetch}`
     );
     return response.data.data;
   } catch (error) {

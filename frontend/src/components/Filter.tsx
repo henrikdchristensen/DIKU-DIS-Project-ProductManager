@@ -1,4 +1,5 @@
 import { FilterProps } from '../pages/Overview';
+import { FiPlus } from 'react-icons/fi';
 
 const Filter = (props: FilterProps) => {
   let activeDropdown = props.tables.map((table, index) => (
@@ -6,7 +7,7 @@ const Filter = (props: FilterProps) => {
       key={index}
       className="cursor-pointer text-gray-700 hover:bg-gray-100 hover:text-gray-900 py-2 px-4 block whitespace-no-wrap"
       onClick={() => {
-        props.setSettings({ ...props.settings, table_name: table });
+        props.setSettings({ ...props.settings, table_index: index });
       }}
     >
       {table}
@@ -19,9 +20,9 @@ const Filter = (props: FilterProps) => {
         <label className="text-base text-gray-500 font-semibold">Kategori:</label>
         <div>
           <div className="group inline-block">
-            <button className="outline-none focus:outline-none items-center min-w-32 inline-flex justify-center gap-x-1.5 rounded-3xl bg-white px-3 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 w-32">
+            <button className="outline-none focus:outline-none items-center inline-flex justify-center min-w-[9rem] gap-x-1.5 rounded-3xl bg-white px-5 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
               <span className="pr-1 font-semibold flex-1">
-                {props.tables[props.tables.indexOf(props.settings.table_name)]}
+                {props.tables[props.settings.table_index]}
               </span>
               <span>
                 <svg
@@ -41,9 +42,20 @@ const Filter = (props: FilterProps) => {
           </div>
         </div>
       </div>
+      <div>
+        <div className="group inline-block">
+          <button type="button" className="inline-flex justify-center items-center gap-x-1 rounded-3xl bg-white px-3 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            Tilføj
+            <span className='transform group-hover:-rotate-180 transition duration-300 ease-in-out'><FiPlus className="text-black" /></span>
+          </button>
+        </div>
+      </div>
 
       <form>
         <div className="group inline-block relative text-center">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-non ">
+            <svg aria-hidden="true" className="w-5 h-5 text-gray-500 group-hover:scale-110 transition duration-200 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </div>
           <input
             type="text"
             id="default-search"

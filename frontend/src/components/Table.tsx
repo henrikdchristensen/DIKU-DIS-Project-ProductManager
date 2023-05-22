@@ -33,12 +33,12 @@ const Table = (props: TableProps) => {
                 key={index}
               >
                 <div className="flex items-center">
-                    {column}
-                    {!props.settings ? null : column === props.settings.sortBy && !props.settings.desc ? (
-                      <ChevronDownIcon className="h-4 w-4 ml-1" />
-                    ) : column === props.settings.sortBy && props.settings.desc ? (
-                      <ChevronUpIcon className="h-4 w-4 ml-1" />
-                    ) : null}
+                  <label className='text-center w-full'>{column}</label>
+                  {!props.settings ? null : column === props.settings.sortBy && !props.settings.desc ? (
+                    <ChevronDownIcon className="h-4 w-4 ml-1" />
+                  ) : column === props.settings.sortBy && props.settings.desc ? (
+                    <ChevronUpIcon className="h-4 w-4 ml-1" />
+                  ) : null}
                 </div>
               </th>
             ))}
@@ -51,7 +51,7 @@ const Table = (props: TableProps) => {
               return (
                 <tr key={index} className="bg-white border-b text-center hover:bg-gray-100" onClick={() => props.onClick && props.onClick(row)}>
                   {row.map((value: any, idx: number) => (
-                    <td key={idx} className='px-4 py-2'>{value}</td>
+                    <td key={idx} className='px-4 py-2 max-w-[10rem]'>{value}</td>
                   ))}
                 </tr>
               )

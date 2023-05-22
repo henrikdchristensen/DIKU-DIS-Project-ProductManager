@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Filter from '../components/Filter';
 import Table from '../components/Table';
-import { fetchData, numToFetch, settings } from '../utils/utils';
+import { fetchData, numToFetch, settings, columns, tables, table_names } from '../utils/utils';
 
 export type FilterProps = {
   tables: string[];
@@ -20,14 +20,9 @@ export type TableProps = {
 };
 
 const Overview = () => {
-  const tables = ['product_templates', 'produced_products'];
-  const table_names = ['Templates', 'Produced'];
-  const columns = [
-    ['id', 'name', 'owned_by'],
-    ['serial_number', 'of_type', 'date', 'produced_by'],
-  ];
+  
   const initialSettings: settings = {
-    table_name: tables[0],
+    table_index: 0,
     columns: columns[0],
     sortBy: columns[0][0],
     desc: false,
@@ -73,12 +68,12 @@ const Overview = () => {
     setSettings((prevSettings) => ({
       ...prevSettings,
       offset: 0,
-      columns: columns[tables.indexOf(settings.table_name)],
-      sortBy: columns[tables.indexOf(settings.table_name)][0],
+      columns: columns[settings.table_index],
+      sortBy: columns[settings.table_index][0],
       desc: false,
       search: '',
     }));
-  }, [settings.table_name]);
+  }, [settings.table_index]);
 
   useEffect(() => {
     fetchAndUpdate(settings)
@@ -102,14 +97,14 @@ const Overview = () => {
       <Navbar />
       <div className="mt-8">
         <Filter tables={table_names} settings={settings} setSettings={setSettings} />
-        <div className='px-10'> 
+        <div className='px-10 mt-8'> 
           <Table
-            columns={columns[tables.indexOf(settings.table_name)]}
+            columns={columns[settings.table_index]}
             data={data}
             settings={settings}
             setSettings={setSettings}
             onClick={(row : any) => {
-              if (tables.indexOf(settings.table_name) === 0) {
+              if (settings.table_index === 0) {
                 window.location.href = `/product_template?id=${row[0]}`;
               }
             }}
