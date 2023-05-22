@@ -22,11 +22,12 @@ export type TableProps = {
 
 const Overview = () => {
   const tables = ['product_templates', 'produced_products'];
+  var all_columns = [['']];
 
   const [listActive, setListActive] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const [data, setData] = useState<any[]>([]);
-  const [columns, setColumns] = useState<string[]>(['']);
+  const [render_columns, setRenderColumns] = useState<string[]>(['']);
   const [selectedColumn, setSelectedColumn] = useState(0);
   const [offset, setOffset] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -58,7 +59,7 @@ const Overview = () => {
   const fetchData = async (resetData: boolean, table: string, offset: number, search: string) => {
     try {
       if (resetData) setOffset(offset);
-      let sort = columns[selectedColumn];
+      let sort = all_columns[listActive][selectedColumn];
       if (desc) sort = '-' + sort;
       const response = await axios.get(
         `/api/data?table=${table}&sortBy=${sort}&offset=${offset}&search=${search}&limit=${numToFetch}`
@@ -75,14 +76,14 @@ const Overview = () => {
   };
 
 
-  const fetchColumns = async (table: string) => {
+  const fetchColumns = async () => {
     try {
       const response = await axios.get(`/api/table_info`);
       const table_info = response.data.table_info;
       for (let i = 0; i < table_info.length; i++) {
-        if (table_info[i].table_name === table) {
-          setColumns(table_info[i].columns);
-          break;
+        for (let j = 0; j < tables.length; j++) {
+          if (table_info[i].table_name == tables[j])
+            all_columns[j] = table_info[i].columns;
         }
       }
     } catch (error) {
@@ -91,7 +92,8 @@ const Overview = () => {
   }
 
   const initFetch =  async () => {
-    await fetchColumns(tables[0]);
+    await fetchColumns()
+    setRenderColumns(all_columns[listActive]);
     fetchData(true, tables[0], 0, '');
   }
 
@@ -99,26 +101,26 @@ const Overview = () => {
     initFetch();
     }, []);
 
-  // On table change
-  useEffect(() => {
-    fetchColumns(tables[listActive]);
-    setSearchQuery('');
-    setDesc(false);
-    fetchData(true, tables[listActive], 0, '');
-  }, [listActive]);
+  // // On table change
+  // useEffect(() => {
+  //   fetchColumns(tables[listActive]);
+  //   setSearchQuery('');
+  //   setDesc(false);
+  //   fetchData(true, tables[listActive], 0, '');
+  // }, [listActive]);
 
-  // On search, sort change
-  useEffect(() => {
-    fetchData(true, tables[listActive], 0, searchQuery);
-  }, [searchQuery, selectedColumn, desc, offset]);
+  // // On search, sort change
+  // useEffect(() => {
+  //   fetchData(true, tables[listActive], 0, searchQuery);
+  // }, [searchQuery, selectedColumn, desc, offset]);
 
-  // On scroll
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [handleScroll]);
+  // // On scroll
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [handleScroll]);
 
 
   return (
@@ -134,7 +136,7 @@ const Overview = () => {
       />
       <div className="mt-8">
         <Table
-            columns={columns}
+            columns={render_columns}
             data={data}
             selectedColumn={selectedColumn}
             handleSortBy={handleSortBy}
