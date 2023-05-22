@@ -18,6 +18,8 @@ export type TableProps = {
   handleSortBy: Function;
   selectedColumn: number;
   desc: boolean;
+  onClick?: Function;
+  errMsg?: string;
 };
 
 const Overview = () => {
@@ -93,13 +95,20 @@ const Overview = () => {
           search={search}
           setSearch={setSearch}
         />
-        <Table
-          columns={columns[tableSelected]}
-          data={data}
-          handleSortBy={handleSortBy}
-          selectedColumn={columnSelected}
-          desc={sortBy[0] === '-'}
-        />
+        <div className='px-10'> 
+          <Table
+            columns={columns[tableSelected]}
+            data={data}
+            handleSortBy={handleSortBy}
+            selectedColumn={columnSelected}
+            desc={sortBy[0] === '-'}
+            onClick={(row : any) => {
+              if (tableSelected === 0) {
+                window.location.href = `/product_template?id=${row[0]}`;
+              }
+            }}
+          />
+        </div>
       </div>
     </div>
   );

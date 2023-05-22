@@ -7,7 +7,7 @@ return (
     <Router>
     <Routes>
         <Route path='/' element={<Overview />} />
-        <Route path='/produced_product' element={<Product_template device='UVC-8120'/>} />
+        <Route path='/product_template' element={<Product_template />} /> {/* 'UVC-8120'  */}
     </Routes>
     </Router>
 );
