@@ -2,11 +2,12 @@ import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid';
 import { TableProps } from '../pages/Overview';
 import { type } from 'os';
 import { on } from 'events';
+import { columns } from '../utils/utils';
 
 const Table = (props: TableProps) => {
   const handleSortBy = (column: string) => {
     if (!props.setSettings || !props.settings) return;
-    if (column === props.settings.sortBy)
+    if (columns[props.settings.table_index].indexOf(column) === props.settings.sortBy)
       props.setSettings({ ...props.settings, desc: !props.settings.desc });
     else props.setSettings({ ...props.settings, sortBy: column, desc: false });
   };
@@ -34,9 +35,9 @@ const Table = (props: TableProps) => {
               >
                 <div className="flex items-center">
                   <label className='text-center w-full'>{column}</label>
-                  {!props.settings ? null : column === props.settings.sortBy && !props.settings.desc ? (
+                  {!props.settings ? null : index === props.settings.sortBy && !props.settings.desc ? (
                     <ChevronDownIcon className="h-4 w-4 ml-1" />
-                  ) : column === props.settings.sortBy && props.settings.desc ? (
+                  ) : index === props.settings.sortBy && props.settings.desc ? (
                     <ChevronUpIcon className="h-4 w-4 ml-1" />
                   ) : null}
                 </div>

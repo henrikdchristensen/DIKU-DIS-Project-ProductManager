@@ -24,14 +24,14 @@ const Overview = () => {
   const initialSettings: settings = {
     table_index: 0,
     columns: columns[0],
-    sortBy: columns[0][0],
+    sortBy: 0,
     desc: false,
     offset: 0,
     search: '',
+    data: [],
   };
 
   const [settings, setSettings] = useState<settings>(initialSettings);
-  const [data, setData] = useState<any[]>([]);
 
   var isAtBorrom = false;
   const handleScroll = () => {
@@ -60,7 +60,10 @@ const Overview = () => {
     console.log("settings changed");
     fetchAndUpdate(settings)
       .then((data) => {
-        setData(data);
+        setSettings((prevSettings) => ({
+          ...prevSettings,
+          data: data
+        }));
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -68,20 +71,27 @@ const Overview = () => {
   }, [settings.sortBy, settings.desc, settings.search]);
 
   useEffect(() => {
-    setSettings((prevSettings) => ({
-      ...prevSettings,
-      offset: 0,
-      columns: columns[settings.table_index],
-      sortBy: columns[settings.table_index][0],
-      desc: false,
-      search: '',
-    }));
+    fetchAndUpdate(settings)
+      .then((data) => {
+        setSettings((prevSettings) => ({
+          ...prevSettings,
+          offset: 0,
+          columns: columns[settings.table_index],
+          sortBy: 0,
+          desc: false,
+          search: '',
+          data: data,
+        }));
+      });
   }, [settings.table_index]);
 
   useEffect(() => {
     fetchAndUpdate(settings)
       .then((data) => {
-        setData((prevData) => [...prevData, ...data]);
+        setSettings((prevSettings) => ({
+          ...prevSettings,
+          data: [...settings.data, ...data]
+        }));
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -102,8 +112,8 @@ const Overview = () => {
         <Filter tables={table_names} settings={settings} setSettings={setSettings} />
         <div className='px-10 mt-8'> 
           <Table
-            columns={columns[settings.table_index]}
-            data={data}
+            columns={settings.columns}
+            data={settings.data}
             settings={settings}
             setSettings={setSettings}
             onClick={(row : any) => {

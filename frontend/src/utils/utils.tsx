@@ -12,16 +12,17 @@ export const columns = [
 export type settings = {
   table_index: number;
   columns: string[];
-  sortBy: string;
+  sortBy: number;
   desc: boolean;
   offset: number;
   search: string;
+  data: any[];
 };
 
 export const fetchData = async (settings: settings) => {
   try {
-    let c = settings.columns.join(',');
-    let s = settings.sortBy;
+    let c = columns[settings.table_index].join(',');
+    let s = columns[settings.table_index][settings.sortBy];
     if (settings.desc) s = '-' + s;
     const response = await axios.get(
       `/api/data?table=${tables[settings.table_index]}&columns=${c}&sortBy=${s}&offset=${settings.offset}&search=${settings.search}&limit=${numToFetch}`
