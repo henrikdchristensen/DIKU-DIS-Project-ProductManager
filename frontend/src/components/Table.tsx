@@ -3,6 +3,13 @@ import { TableProps } from '../pages/Overview';
 
 const Table = (props: TableProps) => {
 
+  const handleSortBy = (column: string) => {
+    if (column === props.settings.sortBy)
+      props.setSettings({...props.settings, desc: !props.settings.desc});
+    else
+      props.setSettings({...props.settings, sortBy: column, desc: false});
+  };
+
   return (
     <div className="px-10">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg m-auto max-w-[70rem] border border-gray-200">
@@ -13,14 +20,14 @@ const Table = (props: TableProps) => {
                 <th
                   scope="col"
                   className="px-6 py-3 cursor-pointer"
-                  onClick={() => props.handleSortBy(index)}
+                  onClick={() => handleSortBy(column)}
                   key={index}
                 >
                   <div className="flex items-center">
                     {column}
-                    {index === props.selectedColumn && !props.desc ? (
+                    {column === props.settings.sortBy && !props.settings.desc ? (
                       <ChevronDownIcon className="h-4 w-4 ml-1" />
-                    ) : index === props.selectedColumn && props.desc ? (
+                    ) : column === props.settings.sortBy && props.settings.desc ? (
                       <ChevronUpIcon className="h-4 w-4 ml-1" />
                     ) : null}
                   </div>
