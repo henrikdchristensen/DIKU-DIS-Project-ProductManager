@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Overview from './pages/Overview';
-import Parameters from './pages/Parameters';
+import Product_template from './pages/Product_template';
 
 function App() {
 return (
     <Router>
     <Routes>
         <Route path='/' element={<Overview />} />
-        <Route path='/parameters' element={<Parameters/>} />
+        <Route path='/produced_product' element={<Product_template device='hej'/>} />
     </Routes>
     </Router>
 );

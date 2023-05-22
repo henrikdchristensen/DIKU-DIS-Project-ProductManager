@@ -1,13 +1,14 @@
 from flask import Flask, request
 import psycopg2
+import sys
 
 app = Flask(__name__)
 
 def get_db_connection():
     conn = psycopg2.connect(host='localhost',
                             database='dis',
-                            user='dis',
-                            password='1234')
+                            user='postgres',
+                            password='qph97rjw')
     return conn
 
 @app.route('/api/table_info')
@@ -61,6 +62,49 @@ def get_data():
     connection.close()
 
     return {'data': data}
+
+@app.route('/api/product_template')
+def get_product_template():
+    # Get params from get request
+    id = request.args.get('id', default='', type=str)
+    if id == '':
+        return {'data': []}
+
+    # Connect to db
+    connection = get_db_connection()
+    cursor = connection.cursor()
+
+    # Get template data
+    query = f"SELECT * FROM product_templates WHERE id='{id}'"
+    cursor.execute(query)
+    field_names = [i[0] for i in cursor.description]
+    product_data = cursor.fetchone()
+    data = {}
+    for name, field in zip(field_names, product_data):
+        data[name] = field
+    
+    # Get params
+    query = f"SELECT P.name FROM product_templates JOIN parameters P ON id = related_to WHERE id='{id}'"
+    cursor.execute(query)
+    parameter_data = cursor.fetchall()
+    data["parameters"] = [i[0] for i in parameter_data]
+
+    # Get produced products
+    query = f"SELECT P.serial_number, P.date, P.produced_by FROM product_templates JOIN produced_products P ON id = of_type WHERE id='{id}'"
+    cursor.execute(query)
+    product_data = cursor.fetchall()
+    data["produced_products"] = product_data
+
+    # Get compatible products
+    query = f"SELECT P.component FROM product_templates JOIN compatible P ON id = compatible_to WHERE id='{id}'"
+    cursor.execute(query)
+    compatible_products = cursor.fetchall()
+    data["components"] = [i[0] for i in compatible_products]
+
+    print(parameter_data, file=sys.stdout)
+    return data
+
+
 
 if __name__ == '__main__':
     app.run()
