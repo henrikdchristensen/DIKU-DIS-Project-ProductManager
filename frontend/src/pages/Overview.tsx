@@ -22,7 +22,8 @@ export type TableProps = {
 
 const Overview = () => {
   const tables = ['product_templates', 'produced_products'];
-  var all_columns = [['']];
+  let all_columns = [['']];
+  let columns_loaded = false;
 
   const [listActive, setListActive] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
@@ -91,36 +92,34 @@ const Overview = () => {
     }
   }
 
-  const initFetch =  async () => {
-    await fetchColumns()
+  const update =  async () => {
+    if (!columns_loaded) {
+      await fetchColumns();
+      columns_loaded = true;
+    }
     setRenderColumns(all_columns[listActive]);
-    fetchData(true, tables[0], 0, '');
+    fetchData(true, tables[listActive], 0, searchQuery);
   }
 
+  // On table change
   useEffect(() => {
-    initFetch();
-    }, []);
+    setSearchQuery('');
+    setDesc(false);
+    update();
+  }, [listActive]);
 
-  // // On table change
-  // useEffect(() => {
-  //   fetchColumns(tables[listActive]);
-  //   setSearchQuery('');
-  //   setDesc(false);
-  //   fetchData(true, tables[listActive], 0, '');
-  // }, [listActive]);
+  // On search, sort change
+  useEffect(() => {
+    fetchData(true, tables[listActive], 0, searchQuery);
+  }, [searchQuery, selectedColumn, desc, offset]);
 
-  // // On search, sort change
-  // useEffect(() => {
-  //   fetchData(true, tables[listActive], 0, searchQuery);
-  // }, [searchQuery, selectedColumn, desc, offset]);
-
-  // // On scroll
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [handleScroll]);
+  // On scroll
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
 
 
   return (
