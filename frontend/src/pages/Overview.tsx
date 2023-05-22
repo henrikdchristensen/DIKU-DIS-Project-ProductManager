@@ -55,13 +55,15 @@ const Overview = () => {
   const fetchAndUpdate = async (reset: boolean) => {
     try{
       loading = true;
-      let o = offset;
-      if (reset) o = 0;
-      const newData = await fetchData(tables[tableSelected], columns[tableSelected], sortBy, o, search); // Fix the parameter to 'columns[tableSelected]'
+      let _offset = offset;
+      if (reset){
+        _offset = 0;
+      };
+      const newData = await fetchData(tables[tableSelected], columns[tableSelected], sortBy, _offset, search); // Fix the parameter to 'columns[tableSelected]'
       if (reset) setData(newData);
       else
         setData((prevData) => [...prevData, ...newData]);
-      setOffset(o + numToFetch);
+      setOffset(_offset + numToFetch);
       loading = false;
     }
     catch (error) {
@@ -70,9 +72,9 @@ const Overview = () => {
   };
 
   useEffect(() => {
-    if (!loading) fetchAndUpdate(false);
+    if (!loading) fetchAndUpdate(true);
   }, [tableSelected, columnSelected, sortBy, search]);
-
+  
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
