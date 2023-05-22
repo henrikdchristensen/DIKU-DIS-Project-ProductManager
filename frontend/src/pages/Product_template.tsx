@@ -57,9 +57,6 @@ const Produced_product = () => {
                         <Table 
                             columns={[]} 
                             data={data["parameters"]}
-                            desc={false}
-                            handleSortBy={() => {}}
-                            selectedColumn={-1}
                             errMsg='Has no parameters'/>
                     </div>
                     <div className='mt-6'>
@@ -76,9 +73,6 @@ const Produced_product = () => {
                     <Table 
                         columns={columns_produced} 
                         data={data["produced_products"]}
-                        desc={false}
-                        handleSortBy={() => {}}
-                        selectedColumn={-1}
                         errMsg='No produced products exist'/>
                 </div>      
             </div>
@@ -89,8 +83,10 @@ const Produced_product = () => {
 // export type TableProps = {
 //     columns: string[];
 //     data: any[];
-//     selectedColumn: number;
-//     desc: boolean;
-// };
+//     settings: settings;
+//     setSettings: Function;
+//     onClick?: Function;
+//     errMsg?: string;
+//   };
 
 export default Produced_product;

@@ -4,6 +4,12 @@ import { type } from 'os';
 import { on } from 'events';
 
 const Table = (props: TableProps) => {
+  const handleSortBy = (column: string) => {
+    if (!props.setSettings || !props.settings) return;
+    if (column === props.settings.sortBy)
+      props.setSettings({ ...props.settings, desc: !props.settings.desc });
+    else props.setSettings({ ...props.settings, sortBy: column, desc: false });
+  };
   var content;
   if (props.data.length === 0 && props.errMsg) {
     content = (
@@ -23,16 +29,16 @@ const Table = (props: TableProps) => {
               <th
                 scope="col"
                 className="px-3 py-3 cursor-pointer"
-                onClick={() => props.handleSortBy(index)}
+                onClick={() => handleSortBy(column)}
                 key={index}
               >
                 <div className="flex items-center">
-                  <label className='text-center w-full'>{column}</label>
-                  {index === props.selectedColumn && !props.desc ? (
-                    <ChevronDownIcon className="h-4 w-4 ml-1" />
-                  ) : index === props.selectedColumn && props.desc ? (
-                    <ChevronUpIcon className="h-4 w-4 ml-1" />
-                  ) : null}
+                    {column}
+                    {!props.settings ? null : column === props.settings.sortBy && !props.settings.desc ? (
+                      <ChevronDownIcon className="h-4 w-4 ml-1" />
+                    ) : column === props.settings.sortBy && props.settings.desc ? (
+                      <ChevronUpIcon className="h-4 w-4 ml-1" />
+                    ) : null}
                 </div>
               </th>
             ))}
