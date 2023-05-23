@@ -47,7 +47,7 @@ const Table = (props: TableProps) => {
               return (
                 <tr
                   key={index}
-                  className="bg-white border-b text-center hover:bg-gray-100"
+                  className="bg-white border-b text-center hover:bg-gray-100 cursor-pointer"
                   onClick={() => props.onClick && props.onClick(row)}
                 >
                   {row.map((value: any, idx: number) => (
