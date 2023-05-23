@@ -58,19 +58,23 @@ And in `backend\backend.py` set host to "localhost"
 
 To create the database, a script is created (`database/database.sql`):
 
-1. Log in with privliges to create a database (e.g. postgres):
+1. Open shell and navigate to the database folder:
+
+   `cd database`
+
+2. Log in with privliges to create a database (e.g. postgres):
 
    `psql -U postgres`
 
-2. Create the database called 'dis':
+3. Create the database called 'dis':
 
    `CREATE DATABASE dis;`
 
-3. Enter the new database:
+4. Enter the new database:
 
    `\c dis`
 
-4. Run the script:
+5. Run the script:
 
    `\i database.sql`
 
