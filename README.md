@@ -24,6 +24,11 @@ The PostgreSQL database consist of 8 tables and the relations between them are s
 - Optional: Package manager for Python (pip, conda, etc.)
 - NodeJS and npm: https://nodejs.org/en/download
 
+## Using docker
+Run in shell:
+
+`docker-compose up`
+
 ## Database setup
 
 To create the database, a script is created (create.sql) which can be run in the PostgreSQL shell.

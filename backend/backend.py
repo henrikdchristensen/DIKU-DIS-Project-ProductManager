@@ -4,10 +4,11 @@ import psycopg2
 app = Flask(__name__)
 
 def get_db_connection():
-    conn = psycopg2.connect(host='localhost',
+    conn = psycopg2.connect(host='database',
+                            port='5432',
                             database='dis',
-                            user='dis',
-                            password='1234')
+                            user='postgres',
+                            password='123456')
     return conn
 
 @app.route('/api/data')
@@ -93,6 +94,10 @@ def get_product_template():
     connection.close()
     
     return data
+
+@app.route('/api/hello')
+def get_hello():
+    return {'data': 'Hello from server'}
 
 
 if __name__ == '__main__':
