@@ -4,7 +4,7 @@ import psycopg2
 app = Flask(__name__)
 
 def get_db_connection():
-    conn = psycopg2.connect(host='database',
+    conn = psycopg2.connect(host='database', # 'database' is docker service name. If you run without docker, use 'localhost'
                             port='5432',
                             database='dis',
                             user='postgres',

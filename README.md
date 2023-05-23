@@ -1,4 +1,4 @@
-# Project introduction
+# Project Introduction
 
 The application allows a company to view their product-templates and the produced products which is based on a product-template.
 When clicking on a product-template; parameters, journal and all the produced products of that specific template will be shown.
@@ -15,38 +15,70 @@ To access the web application, the user must access the frontend server (port 30
 
 The PostgreSQL database consist of 8 tables and the relations between them are shown the diagram 'docs/ER-diagram.png'.
 
-# Running the project
+# Project Setup
 
-## Prerequisites
+Two options are available for running the project. Either by using docker or by installing the required software manually.
+The recommended option is to use docker, since it requires less setup.
+
+## Using Docker
+
+### Software Requirements
+
+- Docker Desktop: https://docs.docker.com/get-docker/
+
+### Running the Project
+
+1. Run the following command in root folder: `docker-compose up`
+2. The web application can now be accessed on http://localhost:3000
+
+## Without Docker
+
+If not using docker, the following changes must be made:
+
+In `frontend\package.json` set proxy to "http://127.0.0.1:5000"
+And in `backend\backend.py` set host to "localhost"
+
+### Software Requirements
 
 - PostgreSQL and pgAdmin: https://www.postgresql.org/download/
 - Python 3.8 and newer.
 - Optional: Package manager for Python (pip, conda, etc.)
 - NodeJS and npm: https://nodejs.org/en/download
 
-## Using docker
-Run in shell:
+### Database Setup
 
-`docker-compose up`
+To create the database, a script is created (`database/database.sql`):
 
-## Database setup
+1. Log in with privliges to create a database (e.g. postgres)
+   `psql -U postgres`
+2. Create the database called 'dis'
+   `CREATE DATABASE dis;`
+3. Enter the new database
+   `\c dis`
+4. Run the script
+   `\i database.sql`
 
-To create the database, a script is created (create.sql) which can be run in the PostgreSQL shell.
+### Backend Setup
 
-`psql -U postgres -f create.sql`
+If you are using a package manager, it is recommended to create a virtual environment for the project, e.g. using conda:
 
-## Backend setup
+1. Create a new environment
+   `conda create --name dis python=3.11`
+2. Activate the environment
+   `conda activate dis`
+3. Install pip
+   `conda install pip`
+4. Enter the backend folder
+   `cd backend`
+5. Install the required packages
+   `pip install -r requirements.txt`
+6. Run `python backend.py` to start the backend server
 
-If you are using a package manager, it is recommended to create a virtual environment for the project.
+### Frontend Setup
 
-To install the required packages, run `pip install -r requirements.txt` in the 'backend' folder.
-
-Afterwards, the backend can be started by running `python backend.py` in the 'backend' folder.
-
-## Frontend setup
-
-To install the required packages, run `npm install` in the 'frontend' folder.
-
-Afterwards, the frontend can be started by running `npm start` in the 'frontend' folder.
-
-You can now access the web application on http://localhost:3000
+1. Enter the frontend folder
+   `cd frontend`
+2. Install the required packages using
+   `npm install`
+3. Run `npm start` to start the frontend server
+4. You can now access the web application on http://localhost:3000

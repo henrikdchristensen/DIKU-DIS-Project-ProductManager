@@ -50,6 +50,7 @@
       "last 1 safari version"
     ]
   },
+  "_comment_to_proxy": "backend' is docker's service name. If not using docker, change it to 'http://127.0.0.1:5000'",
   "proxy": "http://backend:5000",
   "devDependencies": {
     "prettier": "^2.8.8",
