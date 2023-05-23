@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Filter from '../components/Filter';
 import Table from '../components/Table';
-import { fetchData, numToFetch, settings, columns, tables, table_names } from '../utils/utils';
+import { fetchData, numToFetch, settings, columns, table_names } from '../utils/utils';
 
 export type FilterProps = {
   tables: string[];
@@ -20,7 +20,6 @@ export type TableProps = {
 };
 
 const Overview = () => {
-  
   const initialSettings: settings = {
     table_index: 0,
     columns: columns[0],
@@ -47,14 +46,14 @@ const Overview = () => {
     }
   };
 
-  var isFetching = false 
+  var isFetching = false;
   const fetchAndUpdate = async (settings: settings) => {
     if (isFetching) return [];
     isFetching = true;
     try {
       var data = await fetchData(settings);
       isFetching = false;
-      return data; 
+      return data;
     } catch (error) {
       isFetching = false;
       console.error('Error fetching data:', error);
@@ -63,7 +62,7 @@ const Overview = () => {
   };
 
   useEffect(() => {
-    console.log("settings changed");
+    console.log('settings changed');
     fetchAndUpdate(settings)
       .then((data) => {
         setData(data);
@@ -74,18 +73,24 @@ const Overview = () => {
   }, [settings.sortBy, settings.desc, settings.search]);
 
   useEffect(() => {
-    fetchAndUpdate({ ...settings, offset: 0, columns: columns[settings.table_index], desc: false, sortBy: 0, search: '' })
-      .then((data) => {
-        setSettings((prevSettings) => ({
-          ...prevSettings,
-          offset: 0,
-          columns: columns[settings.table_index],
-          sortBy: 0,
-          desc: false,
-          search: '',
-        }));
-        setData(data);
-      });
+    fetchAndUpdate({
+      ...settings,
+      offset: 0,
+      columns: columns[settings.table_index],
+      desc: false,
+      sortBy: 0,
+      search: '',
+    }).then((data) => {
+      setSettings((prevSettings) => ({
+        ...prevSettings,
+        offset: 0,
+        columns: columns[settings.table_index],
+        sortBy: 0,
+        desc: false,
+        search: '',
+      }));
+      setData(data);
+    });
   }, [settings.table_index]);
 
   useEffect(() => {
@@ -110,13 +115,13 @@ const Overview = () => {
       <Navbar />
       <div className="mt-8">
         <Filter tables={table_names} settings={settings} setSettings={setSettings} />
-        <div className='px-10 my-8'> 
+        <div className="px-10 my-8">
           <Table
             columns={settings.columns}
             data={data}
             settings={settings}
             setSettings={setSettings}
-            onClick={(row : any) => {
+            onClick={(row: any) => {
               if (settings.table_index === 0) {
                 window.location.href = `/product_template?id=${row[0]}`;
               }
