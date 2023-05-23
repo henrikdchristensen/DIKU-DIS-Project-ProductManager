@@ -85,7 +85,7 @@ To create the database, a script is created (`database/database.sql`):
 
 ### Backend Setup
 
-If you are using a package manager, it is recommended to create a virtual environment for the project, e.g. using conda:
+It is recommended to create a virtual environment to install the required packages, e.g. using conda:
 
 1. Create a new environment:
 
