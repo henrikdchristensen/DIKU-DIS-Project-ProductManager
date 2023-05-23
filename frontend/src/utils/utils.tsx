@@ -16,7 +16,6 @@ export type settings = {
   desc: boolean;
   offset: number;
   search: string;
-  data: any[];
 };
 
 export const fetchData = async (settings: settings) => {

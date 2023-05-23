@@ -28,10 +28,10 @@ const Overview = () => {
     desc: false,
     offset: 0,
     search: '',
-    data: [],
   };
 
   const [settings, setSettings] = useState<settings>(initialSettings);
+  const [data, setData] = useState<any[]>([]);
 
   var isAtBorrom = false;
   const handleScroll = () => {
@@ -66,10 +66,7 @@ const Overview = () => {
     console.log("settings changed");
     fetchAndUpdate(settings)
       .then((data) => {
-        setSettings((prevSettings) => ({
-          ...prevSettings,
-          data: data
-        }));
+        setData(data);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -77,7 +74,7 @@ const Overview = () => {
   }, [settings.sortBy, settings.desc, settings.search]);
 
   useEffect(() => {
-    fetchAndUpdate(settings)
+    fetchAndUpdate({ ...settings, offset: 0, columns: columns[settings.table_index], desc: false, sortBy: 0, search: '' })
       .then((data) => {
         setSettings((prevSettings) => ({
           ...prevSettings,
@@ -86,18 +83,15 @@ const Overview = () => {
           sortBy: 0,
           desc: false,
           search: '',
-          data: data,
         }));
+        setData(data);
       });
   }, [settings.table_index]);
 
   useEffect(() => {
     fetchAndUpdate(settings)
       .then((data) => {
-        setSettings((prevSettings) => ({
-          ...prevSettings,
-          data: [...settings.data, ...data]
-        }));
+        setData((prevData) => [...prevData, ...data]);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -119,7 +113,7 @@ const Overview = () => {
         <div className='px-10 my-8'> 
           <Table
             columns={settings.columns}
-            data={settings.data}
+            data={data}
             settings={settings}
             setSettings={setSettings}
             onClick={(row : any) => {

@@ -5,9 +5,9 @@ import { on } from 'events';
 import { columns } from '../utils/utils';
 
 const Table = (props: TableProps) => {
-  const handleSortBy = (column: string) => {
+  const handleSortBy = (column: number) => {
     if (!props.setSettings || !props.settings) return;
-    if (columns[props.settings.table_index].indexOf(column) === props.settings.sortBy)
+    if (column === props.settings.sortBy)
       props.setSettings({ ...props.settings, desc: !props.settings.desc });
     else props.setSettings({ ...props.settings, sortBy: column, desc: false });
   };
@@ -30,7 +30,7 @@ const Table = (props: TableProps) => {
               <th
                 scope="col"
                 className="px-3 py-3 cursor-pointer"
-                onClick={() => handleSortBy(column)}
+                onClick={() => handleSortBy(index)}
                 key={index}
               >
                 <div className="flex items-center">

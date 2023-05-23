@@ -8,8 +8,8 @@ app = Flask(__name__)
 def get_db_connection():
     conn = psycopg2.connect(host='localhost',
                             database='dis',
-                            user='postgres',
-                            password='qph97rjw')
+                            user='dis',
+                            password='1234')
     return conn
 
 @app.route('/api/data')
