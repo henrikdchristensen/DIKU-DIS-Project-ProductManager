@@ -61,6 +61,7 @@ const Overview = () => {
     }
   };
 
+  // Fetch new data if sort, desc or search changes
   useEffect(() => {
     console.log('settings changed');
     fetchAndUpdate(settings)
@@ -72,6 +73,7 @@ const Overview = () => {
       });
   }, [settings.sortBy, settings.desc, settings.search]);
 
+  // Fetch new data if selected table changes
   useEffect(() => {
     fetchAndUpdate({
       ...settings,
@@ -93,10 +95,11 @@ const Overview = () => {
     });
   }, [settings.table_index]);
 
+  // 
   useEffect(() => {
     fetchAndUpdate(settings)
-      .then((data) => {
-        setSettings((prevSettings) => ({ ...prevSettings, data: data }));
+      .then((newData) => {
+        setSettings((prevSettings) => ({ ...prevSettings, data: [...prevSettings.data, ...newData] }));
       })
       .catch((error) => {
         console.error('Error fetching data:', error);

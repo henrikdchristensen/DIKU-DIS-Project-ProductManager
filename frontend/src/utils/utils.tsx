@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const numToFetch: number = 100;
+export const numToFetch: number = 500;
 
 export const table_names = ['Templates', 'Produced'];
 export const tables = ['product_templates', 'produced_products'];
