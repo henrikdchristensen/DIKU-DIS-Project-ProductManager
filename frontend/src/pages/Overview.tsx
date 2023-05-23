@@ -32,17 +32,17 @@ const Overview = () => {
 
   const [settings, setSettings] = useState<settings>(initialSettings);
 
-  var isAtBorrom = false;
+  var isAtBottom = false;
   const handleScroll = () => {
     const isBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
-    if (isBottom && !isAtBorrom) {
-      isAtBorrom = true;
+    if (isBottom && !isAtBottom) {
+      isAtBottom = true;
       setSettings((prevSettings) => ({
         ...prevSettings,
         offset: prevSettings.offset + numToFetch,
       }));
     } else if (!isBottom) {
-      isAtBorrom = false;
+      isAtBottom = false;
     }
   };
 

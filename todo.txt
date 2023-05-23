@@ -1,7 +1,0 @@
-- parameter side
-- fetch af tabel navne; kolonne navne; kolonne bredde
-
-- kan ikke søge i dato
-
-- login
-- styling

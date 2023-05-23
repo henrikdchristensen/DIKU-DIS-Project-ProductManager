@@ -29,7 +29,9 @@ const Table = (props: TableProps) => {
                   key={index}
                 >
                   <div className="flex items-center">
-                    <label className="text-center w-full">{column}</label>
+                    <label className="text-center w-full" style={{ pointerEvents: 'none' }}>
+                      {column}
+                    </label>
                     {!props.settings ? null : index === props.settings.sortBy &&
                       !props.settings.desc ? (
                       <ChevronDownIcon className="h-4 w-4 ml-1" />

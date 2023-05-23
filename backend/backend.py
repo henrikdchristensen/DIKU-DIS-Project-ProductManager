@@ -1,7 +1,5 @@
 from flask import Flask, request
 import psycopg2
-import sys
-from datetime import datetime
 
 app = Flask(__name__)
 
@@ -14,6 +12,7 @@ def get_db_connection():
 
 @app.route('/api/data')
 def get_data():
+    # Get params from get request
     table_name = request.args.get('table', default='*', type=str)
     columns = request.args.get('columns', default='*', type=str).split(',')
     sortBy = request.args.get('sortBy', default='*', type=str)
@@ -21,9 +20,11 @@ def get_data():
     search = request.args.get('search', default='', type=str)
     limit = request.args.get('limit', default=100, type=int)
     
+    # Connect to db
     connection = get_db_connection()
     cursor = connection.cursor()
     
+    # Set sort direction
     sort_direction = 'ASC'
     if sortBy.startswith('-'):
         sort_direction = 'DESC'
@@ -36,12 +37,11 @@ def get_data():
     else:
         select_clause = 'SELECT *'
     
+    # Set the query
     if search != '':
         query = f'{select_clause} FROM {table_name} WHERE {sortBy} ILIKE \'%{search}%\' ORDER BY {sortBy} {sort_direction} OFFSET {offset} LIMIT {limit}'
     else:
         query = f'{select_clause} FROM {table_name} ORDER BY {sortBy} {sort_direction} OFFSET {offset} LIMIT {limit}'
-    
-    print(query)
     
     cursor.execute(query)
     data = cursor.fetchall()
@@ -88,10 +88,11 @@ def get_product_template():
     cursor.execute(query)
     compatible_products = cursor.fetchall()
     data["components"] = [i[0] for i in compatible_products]
-
-    print(parameter_data, file=sys.stdout)
+    
+    cursor.close()
+    connection.close()
+    
     return data
-
 
 
 if __name__ == '__main__':
