@@ -24,7 +24,7 @@ const Table = (props: TableProps) => {
               {props.columns.map((column, index) => (
                 <th
                   scope="col"
-                  className="px-3 py-3 cursor-pointer"
+                  className={props.clickable ? "px-3 py-3 cursor-pointer" : "px-3 py-3 cursor-default"}
                   onClick={() => handleSortBy(index)}
                   key={index}
                 >
@@ -49,7 +49,7 @@ const Table = (props: TableProps) => {
               return (
                 <tr
                   key={index}
-                  className="bg-white border-b text-center hover:bg-gray-100 cursor-pointer"
+                  className={props.clickable ? "bg-white border-b text-center hover:bg-gray-100 cursor-pointer" : "bg-white border-b text-center hover:bg-gray-100"}
                   onClick={() => props.onClick && props.onClick(row)}
                 >
                   {row.map((value: any, idx: number) => (

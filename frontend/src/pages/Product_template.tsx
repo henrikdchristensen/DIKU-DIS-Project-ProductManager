@@ -58,7 +58,7 @@ const Produced_product = () => {
               <label className="block pl-2 text-gray-700 font-bold text-lg mb-2" htmlFor="textarea">
                 Parameters
               </label>
-              <Table columns={[]} data={data['parameters']} errMsg="Has no parameters" />
+              <Table columns={[]} data={data['parameters']} errMsg="Has no parameters" clickable={false} />
             </div>
             <div className="mt-6">
               <label className="block pl-2 text-gray-700 font-bold text-lg mb-2" htmlFor="textarea">
@@ -79,6 +79,7 @@ const Produced_product = () => {
               columns={columns_produced}
               data={data['produced_products']}
               errMsg="No produced products exist"
+              clickable={false}
             />
           </div>
         </div>

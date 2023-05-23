@@ -1,4 +1,13 @@
+# Project introduction
+
+The project is a web application that allows a company to view their product-templates and the produced products based on the template.
+When
+The company can also view the components that are used in the products and the parameters that are used to configure the components.
+
+The project consist of a database (PostgreSQL), a backend (Flask) and a frontend (React). All three are running on their own server. To access the web application, the user must access the frontend server (port 3000). The frontend server will then communicate with the backend server (port 5000), which will communicate with the database server (port 5432).
+
 # Windows installation and project setup
+
 Follow this [link](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows) to install NodeJS and npm.
 
 Run `npm install` to install all project dependencies.

@@ -15,6 +15,7 @@ export type TableProps = {
   data: any[];
   settings?: settings;
   setSettings?: Function;
+  clickable: boolean;
   onClick?: Function;
   errMsg?: string;
 };
@@ -124,6 +125,7 @@ const Overview = () => {
             data={settings.data}
             settings={settings}
             setSettings={setSettings}
+            clickable={settings.table_index === 0}
             onClick={(row: any) => {
               if (settings.table_index === 0) {
                 window.location.href = `/product_template?id=${row[0]}`;
