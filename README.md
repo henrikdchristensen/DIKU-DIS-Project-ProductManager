@@ -44,7 +44,8 @@ The recommended option is to use docker, since it requires less setup.
 
 If not using docker, the following changes must be made:
 
-In `frontend\package.json` set proxy to "http://127.0.0.1:5000"
+In `frontend\package.json` set proxy to "http://127.0.0.1:5000".
+
 And in `backend\backend.py` set host to "localhost"
 
 ### Software Requirements
