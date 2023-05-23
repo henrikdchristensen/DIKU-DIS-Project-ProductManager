@@ -52,8 +52,8 @@ And in `backend\backend.py` set host to "localhost"
 
 - PostgreSQL and pgAdmin: https://www.postgresql.org/download/
 - Python 3.8 and newer.
-- Optional: Package manager for Python (pip, conda, etc.)
 - NodeJS and npm: https://nodejs.org/en/download
+- Optional: Package- and environment management system for Python (e.g. conda)
 
 ### Database Setup
 
