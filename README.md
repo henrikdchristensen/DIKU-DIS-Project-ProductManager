@@ -49,36 +49,63 @@ And in `backend\backend.py` set host to "localhost"
 
 To create the database, a script is created (`database/database.sql`):
 
-1. Log in with privliges to create a database (e.g. postgres)
+1. Log in with privliges to create a database (e.g. postgres):
+
    `psql -U postgres`
-2. Create the database called 'dis'
+
+2. Create the database called 'dis':
+
    `CREATE DATABASE dis;`
-3. Enter the new database
+
+3. Enter the new database:
+
    `\c dis`
-4. Run the script
+
+4. Run the script:
+
    `\i database.sql`
 
 ### Backend Setup
 
 If you are using a package manager, it is recommended to create a virtual environment for the project, e.g. using conda:
 
-1. Create a new environment
+1. Create a new environment:
+
    `conda create --name dis python=3.11`
-2. Activate the environment
+
+2. Activate the environment:
+
    `conda activate dis`
-3. Install pip
+
+3. Install pip into conda environment:
+
    `conda install pip`
-4. Enter the backend folder
+
+4. Enter the backend folder:
+
    `cd backend`
-5. Install the required packages
+
+5. Install the required packages:
+
    `pip install -r requirements.txt`
-6. Run `python backend.py` to start the backend server
+
+6. Run the following command to start the backend server:
+
+   `python backend.py`
 
 ### Frontend Setup
 
-1. Enter the frontend folder
+1. Enter the frontend folder:
+
    `cd frontend`
-2. Install the required packages using
+
+2. Install the required packages using:
+
    `npm install`
-3. Run `npm start` to start the frontend server
-4. You can now access the web application on http://localhost:3000
+
+3. Run the following command to start the frontend server:
+
+   `npm start`
+
+4. You can now access the web application on:
+   http://localhost:3000
