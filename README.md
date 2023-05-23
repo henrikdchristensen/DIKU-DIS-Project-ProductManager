@@ -17,10 +17,14 @@ The PostgreSQL database consist of 8 tables and the relations between them are s
 
 # Project Setup
 
-Two options are available for running the project. Either by using docker or by installing the required software manually.
+Two options are available for running the project:
+
+1. Using Docker, see section 'Using Docker (Recommended)'
+2. Install required software manually, see section 'Without using Docker (Not recommended)'
+
 The recommended option is to use docker, since it requires less setup.
 
-## Using Docker
+## Using Docker (Recommended)
 
 ### Software Requirements
 
@@ -28,10 +32,15 @@ The recommended option is to use docker, since it requires less setup.
 
 ### Running the Project
 
-1. Run the following command in root folder: `docker-compose up`
-2. The web application can now be accessed on http://localhost:3000
+1. Run the following command in root folder:
 
-## Without Docker
+   `docker-compose up`
+
+2. The web application can now be accessed on:
+
+   http://localhost:3000
+
+## Without using Docker (Not recommended)
 
 If not using docker, the following changes must be made:
 
@@ -108,4 +117,5 @@ If you are using a package manager, it is recommended to create a virtual enviro
    `npm start`
 
 4. You can now access the web application on:
+
    http://localhost:3000
