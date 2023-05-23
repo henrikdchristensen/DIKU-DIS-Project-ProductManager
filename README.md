@@ -62,19 +62,23 @@ To create the database, a script is created (`database/database.sql`):
 
    `cd database`
 
-2. Log in with privliges to create a database (e.g. postgres):
+2. Log in with the default user postgres to create a database (e.g. postgres):
 
    `psql -U postgres`
 
-3. Create the database called 'dis':
+3. Change the password to '123456':
+
+   `ALTER USER postgres WITH PASSWORD '123456';`
+
+4. Create the database called 'dis':
 
    `CREATE DATABASE dis;`
 
-4. Enter the new database:
+5. Enter the new database:
 
    `\c dis`
 
-5. Run the script:
+6. Run the script:
 
    `\i database.sql`
 
