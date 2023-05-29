@@ -1,4 +1,4 @@
-# Introduction
+# Product Manager
 
 The application allows a company to view their product-templates and the produced products which is based on a product-template.
 When clicking on a product-template; parameters, journal and all the produced products of that specific template will be shown.
