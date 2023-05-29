@@ -1,4 +1,4 @@
-# Project Introduction
+# Introduction
 
 The application allows a company to view their product-templates and the produced products which is based on a product-template.
 When clicking on a product-template; parameters, journal and all the produced products of that specific template will be shown.
@@ -15,7 +15,7 @@ To access the web application, the user must access the frontend server (port 30
 
 The PostgreSQL database consist of 8 tables and the relations between them are shown the diagram 'docs/ER-diagram.png'.
 
-# Project Setup
+# Setup
 
 Two options are available for running the project:
 
