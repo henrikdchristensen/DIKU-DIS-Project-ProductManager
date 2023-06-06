@@ -13,7 +13,9 @@ The backend is responsible for handling the requests from the frontend and commu
 
 To access the web application, the user must access the frontend server (port 3000).
 
-The PostgreSQL database consist of 8 tables and the relations between them are shown the diagram 'docs/ER-diagram.png'.
+The PostgreSQL database consist of 8 tables and the relations between them are shown in the following ER-diagram.
+
+<img src="docs/ER-diagram.png" width="700rem"/>
 
 # Setup
 
